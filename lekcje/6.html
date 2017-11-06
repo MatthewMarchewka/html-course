@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 6 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 2452px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 2232px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 2431px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{
+top: 430px;}
+
+#druga{
+top: 500px;}
+
+#porownanie{
+position: absolute;
+left: 130px;
+border: 1px solid #8a6382;
+top: 900px;}
+
+#trzecia{
+top: 1040px;}
+
+#dwa{top: 1348px;
+text-decoration: line-through; }
+
+#czwarta{top: 1420px;}
+
+#trzy{top: 1610px;}
+
+#cztery{top: 1820px;}
+
+#piec{top: 2030px;}
+
+#a1{top: 1690px;}
+#a2{top: 1900px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2160px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="7.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="5.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">6. Adresowanie względne i bezwzględne, umieszczanie obrazków </h1>
+
+<p id="pierwsza" class="definicje">
+Bardzo często na naszej stronie internetowej chcemy umieścić obrazek. Robimy to za pomocą specjalnego znacznika samodzielnego - <strong>img</strong>, jednakże ten znacznik ma dwa obowiązkowe atrybuty: <strong>src</strong> - wskazuje na ścieżkę w której znajduje się nasz obrazek, oraz jego rozszerzenie. Oraz <strong>alt</strong><br> w którym umieszczamy tekst alternatywny który będzie się wyświetlał jeżeli użytkownik nie będzie mógł odtworzyć obrazka.
+</p>
+<div id="jeden" class="przyklady">
+&lt;img src="obrazek.jpg" alt="blad"/&gt;
+</div>
+<p id="druga" class="definicje">
+Obrazki wstawione na stronę internetową, bardzo zwiększają jej objętość, co za tym idzie czas wczytywania strony wzrasta. Pomimo tego, że duży obrazek możemy zmniejszyć w arkuszu stylów, lepiej na stronę umieszczać już pomniejszone obrazki żeby zajmowały jak najmniej miejsca. Wstawiając obrazki na stronę najlepiej użyć formatów: <strong>JPG</strong> jeżeli mamy normalne zdjęcie <strong>PNG</strong> jeżeli nasz obrazek ma przeźroczyste elementy lub <strong>GIF</strong> dzięki któremu możemy wprowadzić animację na naszą stronę. Na poniższym zdjęciu przedstawiłem różnicę<br> w rozmiarze tego samego zdjęcia w innych formatach. <strong>Pamiętaj że strona na serwerze będzie się ładowała wolniej niż na twoim komputerze!</strong>
+</p>
+
+<img id="porownanie" src="zdjecia2/porownanie.png" alt="porownanie"/>
+
+<p id="trzecia" class="definicje">
+Jak już wcześniej wspomniałem w atrybucie <strong>src</strong> wskazujemy ścieżkę do naszego pliku, ważne jest to, że istnieją dwa rodzaje adresowania. <br>
+Pierwszym rodzajem jest adresowanie bezwzględne, czyli zawierające całą ścieżkę do danego obrazka. Tego rodzaju nie można używać jeżeli chcemy wrzucić strone na serwer WWW ponieważ na tym serwerze nasz obrazek będzie miał inną ścieżkę. Poniżej pokażę ci przykład takiego adresowania <strong> ale nie używaj go na swojej stronie internetowej</strong>.
+</p>
+
+<div class="przyklady" id="dwa">
+&lt;img src="C:\mati\www\plik.gif" alt="blad"/&gt; 
+</div>
+
+<p id="czwarta" class="definicje">
+Drugim rodzajem adresowania, jest adresowanie <strong>względne</strong> którego będziemy używać w tworzeniu strony internetowej. To adresowanie polega na odnośniku względem dokumentu html w którym się znajduje. Poniżej przykład takiego adresowania (obrazek w tym samym folderze):</p>
+<p class="definicje" id="a1">Ale obrazki nie zawsze znajdują się w tym samym folderze co plik html, dlatego jeżeli chcesz otworzyć odnośnik do pliku który jest w folderze wyżej wystarczy zrobić tak:</p>
+<p class="definicje" id="a2">Możliwe jest również, że będziesz chciał się odnieść do zdjęcia które jest w folderze niżej w hierarchii wtedy musisz zapisać to w ten sposób:</p>
+
+<div class="przyklady" id="trzy">
+&lt;img src="plik.gif" alt="blad"/&gt; 
+</div>
+<div class="przyklady" id="cztery">
+&lt;img src="zdjecia/plik.gif" alt="blad"/&gt; 
+</div>
+
+<div class="przyklady" id="piec">
+&lt;img src="../zdjecia/plik.gif" alt="blad"/&gt; 
+</div>
+
+<a href="7.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

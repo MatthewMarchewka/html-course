@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 15 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 4022px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3802px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 4001px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 170px;}
+#dwa{top: 470px;}
+#trzy{padding-top: 0px; height: 93px; top: 840px;}
+
+#przykladzikowy{
+height: 50px;
+width: 50px;
+left: 230px;
+top: 990px;
+background-color: grey;
+position: relative;}
+
+#przykladzikowy2{
+height: 50px;
+width: 50px;
+left: 240px;
+top: 950px;
+background-color: #8a6382;
+position: relative;}
+
+#cztery{top: 1140px;}
+
+#przykladzikowy3{
+height: 50px;
+width: 50px;
+left: 240px;
+top: 1600px;
+background-color: #8a6382;
+position: absolute;}
+
+#piec{top: 1490px;
+padding-top: 0px;
+height: 93px;}
+#szesc{top: 1880px;}
+#siedem{top: 2070px;}
+
+#osiem{position: absolute;
+top: 2370px;
+width: 300px;
+left: 330px;
+text-align: center;
+height: 40px;
+background-color: #8a6382;
+color: white;
+border-radius: 15px;}
+
+#dziewiec{
+top: 2760px;
+height: 650px;
+padding-top: 0px;
+}
+#dziesiec{top: 3400px;}
+
+#a1{top: 550px;}
+#a2{top: 920px;}
+#a3{top: 1030px;}
+#a4{top: 1215px;}
+#a5{top: 1580px;}
+#a6{top: 1640px;}
+#a7{top: 1970px;}
+#a8{top: 2145px;}
+#a9{top: 2390px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3730px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="16.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="14.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">15. Pozycjonowanie relatywne, absolutne, statyczne oraz kontekstowe </h1>
+
+<p id="jeden" class="definicje">
+Do tej pory do pozycjonowania elementów na naszej stronie internetowej używaliśmy floatów lub marginesów. Teraz pokażę Ci drugi typ pozycjonowania, moim zdaniem lepszy ponieważ mamy większy wpływ na to gdzie są położone nasze elementy. Do ustalenia rodzaju pozycjonowania na danym elemencie użyjemy właściwości <strong>position</strong>. Ważne jest to, że jeśli używamy position <strong>nie możemy</strong> używać floatów i na odwrót.<br>
+Pierwszym rodzajem pozycjonowania jest <strong>pozycjonowanie relatywne</strong> zapisujemy je w ten sposób:</p><p class="definicje" id="a1">
+Element z takim pozycjonowaniem możemy przesuwać względem jego "położenia spoczynkowego" czyli od miejsca<br> w którym by był bez modyfikacji. Do przesuwania obiektem użyjemy właściwości <strong>left,right,top,bottom</strong> pamiętaj że left jest ważniejsze od right i top jest ważniejszy od bottom, więc jeżeli użyjesz obu wartości to mniej ważna zostanie zignorowana. Elementy możemy przesuwać o dowolną wartość, jeżeli wartość będzie ujemna to przesuniemy obiekt w drugą stronę.</p><p class="definicje" id="a2">Efekt (szary kwadrat to początkowe położenie, fioletowy to nowe):</p><p class="definicje" id="a3">
+Następnym sposobem pozycjonowania jest <strong>pozycjonowanie absolutne</strong> i ustawiamy je w ten sposób:</p><p class="definicje" id="a4">
+W tym pozycjonowaniu, położenie jest obliczane nie względem swojego pierwotnego położenia lecz od lewego rogu pojemnika w którym aktualnie się znajduje (jeżeli ma ustawione pozycjonowanie) jeśli nie jest w żadnym zewnętrznym pojemniku jest pozycjonowany względem przeglądarki. Tak samo jak przy pozycjonowaniu relatywnym działają właściwości left itd.. Element spozycjonowany absolutnie nie ma wpływu na inne elementy.</p><p class="definicje" id="a5">Efekt:</p><p class="definicje" id="a6"> 
+Trzecim sposobem jest ustawienie <strong>pozycjonowania statycznego</strong>. Wtedy element zachowuje się jakby nie był spozycjonowany (nie działają na niego left, right, top, bottom). Ta funkcja jest przydatna do wykluczenia pozycjonowania <br>z paru elementów gdy ustawiło się pozycjonowanie na cały znacznik.</p><p class="definicje" id="a7">
+Ostatnim sposobem pozycjonowania jest <strong>pozycjonowanie ustalone</strong>, które ustawiamy tak:</p><p class="definicje" id="a8">
+Elementy z takim pozycjonowaniem zachowują się podobnie jak na pozycjonowaniu absolutnym lecz z pewnymi wyjątkami. Pozycja elementu jest zawsze obliczana względem okna przeglądarki i zostaje w tym samym miejscu pomimo przewijania przeglądarki.<br>
+Wypróbuj działanie tego pozycjonowania na tej stronie:</p><p class="definicje" id="a9">
+Przejdźmy teraz do najważniejszej zalety pozycjonowania, czyli możliwości <strong>pozycjonowania kontekstowego</strong>. Dzięki temu pozycjonowaniu możemy dokładnie określić jak ułożyć elementy na naszej stronie. Pozycjonowanie kontekstowe polega na ustawieniu pozycjonowania relatywnego na element względem którego chcemy pozycjonować i pozycjonowania absolutnego na elementy które chcemy ułożyć na naszej stronie internetowej. <br>
+Przykładowo na główny pojemnik na stronie dajemy <strong>position: relative;</strong> a na każdy element taki jak: zdjęcia, tekst lub tabele dajemy <strong>position: absolute;</strong>
+</p>
+
+<div class="przyklady" id="dwa">
+position: relative;
+</div>
+
+<div class="przyklady" id="trzy">
+div {position: relative; <br>
+top: 10px; <br>
+left: 10px;}
+</div>
+
+<div id="przykladzikowy">
+</div>
+
+<div id="przykladzikowy2">
+</div>
+
+<div class="przyklady" id="cztery">
+position: absolute;
+</div>
+
+<div class="przyklady" id="piec">
+div {position: absolute; <br>
+top: 1600px; <br>
+left: 240px;}
+</div>
+
+<div id="przykladzikowy3">
+</div>
+
+<div class="przyklady" id="szesc">
+position: static;
+</div>
+
+<div class="przyklady" id="siedem">
+position: fixed;
+</div>
+
+
+<a href="zdjecia2/dodatkowa.html"><div id="osiem">
+Sprawdź pozycjonowanie ustalone
+</div></a>
+
+<div class="przyklady" id="dziewiec">
+&lt;style&gt;<br>
+#pojemnik {<br>
+position: relative;<br>
+width: 960px; <br>
+height: 1000px;}<br><br>
+h1 {position: absolute;<br>
+left: 330px;<br>
+top: 20px;}<br><br>
+img {position: absolute;<br>
+left: 400px;<br>
+top: 100px;}<br><br>
+&lt;/style&gt; <br>
+&lt;body&gt;<br>
+&lt;div id="pojemnik"&gt;<br>
+&lt;h1&gt;Nagłowek&lt;/h1&gt; <br>
+&lt;img src="zdj.jpg" alt="alternatywny"/&gt;<br>
+&lt;/div&gt;<br>
+&lt;/body&gt;
+</div>
+
+<p class="definicje" id="dziesiec">
+Pozycjonowanie najlepiej zrozumiesz próbując samemu na swoim kodzie html. Zapamiętaj zasadę o ustawianiu wysokości, szerokości i pozycjonowania relatywnego na "rodzica" <br>i absolutnego na "dziecko" które chcesz spozycjonować.<br>
+Pozostaje pytanie co jeśli spozycjonowałem jeden z pojemników względem innego, ale chce spozycjonować inne elementy względem właśnie tego "dziecka". Wtedy wystarczy że w środku tego pojemnika zrobisz nowy pojemnik który będzie miał pozycjonowanie relatywne, automatycznie jego szerokosc <br> i wysokosc ustawi sie na taka jaką ma pojemnik wyżej.
+</p>
+
+
+<a href="16.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

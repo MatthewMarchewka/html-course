@@ -1,0 +1,194 @@
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+nav{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+nav ul{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+nav li{
+position: absolute;
+display: inline-block;}
+
+nav a{
+line-height: 65px;
+text-align: center;
+background-image: url("../zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+
+
+#innetematy{
+position: absolute;
+height: 38px;
+width: 340px;
+text-align: center;
+color: white;
+left: 310px;
+top: 22px;
+border-radius: 5px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+#innetematy:hover{
+font-weight: bold;}
+
+#nastepnalekcja{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 41px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+
+#nastepnalekcja:hover{
+font-weight: bold;}
+
+#poprzednialekcja{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+left: 10px;
+top: 41px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+#poprzednialekcja:hover{
+font-weight: bold;}
+
+#tytul{
+position: absolute;
+top: 85px;
+color: #8a6382;
+width: 960px;
+text-align: center; 
+}
+
+.wciecie{
+margin-left: 40px;}
+
+.wciecie2{
+margin-left: 100px;}

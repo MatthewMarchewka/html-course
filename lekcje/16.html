@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 16 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<style>
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+#mel{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+#mel #ka{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+#mel li{
+position: absolute;
+display: inline-block;}
+
+#mel a{
+line-height: 65px;
+text-align: center;
+background-image: url("../zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+
+
+#innetematy{
+position: absolute;
+height: 38px;
+width: 340px;
+text-align: center;
+color: white;
+left: 310px;
+top: 22px;
+border-radius: 5px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+#innetematy:hover{
+font-weight: bold;}
+
+#nastepnalekcja{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 41px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+#nastepnalekcja:hover{
+font-weight: bold;}
+
+#poprzednialekcja{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+left: 10px;
+top: 41px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+#poprzednialekcja:hover{
+font-weight: bold;}
+
+#tytul{
+position: absolute;
+top: 85px;
+color: #8a6382;
+width: 960px;
+text-align: center; 
+}
+
+.wciecie{
+margin-left: 40px;}
+
+.wciecie2{
+margin-left: 100px;}
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3882px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3662px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3861px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+#jeden{top: 560px;
+padding-top: 0px;
+height: 390px;}
+
+#dwa{top: 960px;}
+#trzy{top: 1120px;
+padding-top: 0px;
+height: 93px;}
+
+#cztery{height: 150px;
+padding-top: 0px;
+top: 1380px;}
+
+#piec{height: 62px;
+padding-top: 0px;
+top: 1620px;}
+
+#szesc{height: 122px;
+padding-top: 0px;
+top: 1840px;}
+
+#siedem{height: 122px;
+padding-top: 0px;
+top: 2270px;}
+
+#osiem{top: 2500px;
+padding-top: 0px;}
+
+#dziewiec{padding-top: 0px;
+top: 2650px;}
+
+#efektowe{
+position: absolute;
+left: 250px;
+top: 2740px;
+}
+
+#efektowe > ul {
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;}
+
+#efektowe li{
+display: inline-block;}
+
+#efektowe a{
+border: 1px double black;
+background-color: #ba93b2;
+padding: 5px;
+padding-bottom: 1px;
+height: 30px;
+width: 100px;
+font-size: 20px;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;}
+
+#efektowe a:hover{
+font-weight: bold;}
+
+
+
+#efektowe ul ul{
+margin-left: -40px;
+z-index:3;
+position: absolute;
+left: 0px;
+top: 100%;
+display: none;}
+
+
+#efektowe ul li:hover > ul {
+display: block;
+}
+#efektowe ul ul li {
+display: block;}
+
+
+
+#efektowe2{
+position: absolute;
+left: 250px;
+top: 3020px;
+}
+
+#efektowe2 > ul {
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;}
+
+#efektowe2 li{
+display: inline-block;}
+
+#efektowe2 a{
+border: 1px double black;
+background-color: #ba93b2;
+padding: 5px;
+padding-bottom: 1px;
+height: 30px;
+width: 100px;
+font-size: 20px;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;}
+
+#efektowe2 a:hover{
+font-weight: bold;}
+
+#efektowe2 ul ul{
+margin-left: -40px;
+z-index:3;
+position: absolute;
+top: 100%;
+display: none;}
+
+#pierwszalista{
+left: 0px;}
+
+#przsuwanko{
+left: 100px;}
+
+
+#efektowe2 ul li:hover > ul {
+display: block;
+}
+#efektowe2 ul ul li {
+display: block;}
+#jedynascie{top: 3370px;
+padding-top: 0px;}
+
+
+
+
+#efektowe3{
+position: absolute;
+left: 250px;
+top: 3460px;
+}
+
+#efektowe3 > ul {
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;}
+
+#efektowe3 li{
+display: block;}
+
+#efektowe3 a{
+margin-bottom: 5px;
+border: 1px double black;
+background-color: #ba93b2;
+padding: 5px;
+padding-bottom: 1px;
+height: 30px;
+width: 100px;
+font-size: 20px;
+color: white;
+display: block;
+
+text-decoration: none;}
+
+#efektowe3 a:hover{
+font-weight: bold;}
+
+#efektowe3 ul ul a {margin-bottom: 0px;
+border-left: 0px;}
+
+#efektowe3 ul ul{
+margin-left: -40px;
+z-index:3;
+position: absolute;
+left: 112px;
+top: 0px;
+display: none;}
+
+
+#efektowe3 ul li:hover > ul {
+display: block;}
+
+#a1{top: 440px;}
+#a2{top: 1193px;}
+#a3{top: 1540px;}
+#a4{top: 1680px;}
+#a5{top: 1950px;}
+#a6{top: 2373px;}
+#a7{top: 2550px;}
+#a8{top: 2710px;}
+#a9{top: 2880px;}
+#a10{top: 2994px;}
+#a11{top: 3180px;}
+#a12{top: 3440px;}
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3570px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav id="mel">
+<ul id="ka">
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="17.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="15.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">16. Tworzenie menu rozwijanego pionowego lub poziomego  </h1>
+
+<p id="pierwsza" class="definicje">
+Na tej lekcji dowiesz sie jak ulepszyć swoje menu (które nauczyłeś się robić parę lekji temu) by posiadało więcej odnośników do innych stron a zajmowało tyle samo miejsca. Menu rozwijane opiera się na nieuporządkowanej liście odnośników która posiada dodatkowo listę zagnieżdżoną. Do stworzenia takiego menu musisz również opanować materiał <br> z poprzedniej lekcji (o pozycjonowaniu). Tworzenie menu będę pokazywał od razu na przykładzie ponieważ wydaję mi się, że tak najłatwiej będzie ci zrozumieć to zagadnienie.</p> <p class="definicje" id="a1">- Zacznijmy od przygotowania kodu HTML, czyli jak wcześniej wspomniałem listy z listą zagnieżdżoną z odnośnikami.
+</p>
+
+ <div class="przyklady" id="jeden">
+ &lt;nav&gt; <br>
+ &lt;ul&gt; <br>
+ <span class="wciecie"> &lt;li&gt; &lt;a href="#"&gt; 1 zakładka &lt;/a&gt; <br></span>
+ 
+ <span class="wciecie2">&lt;ul&gt;<br></span>
+ <span class="wciecie2">&lt;li&gt; &lt;a href="#"&gt; 1 opcja &lt;/a&gt; &lt;/li&gt;<br></span>
+  <span class="wciecie2">&lt;li&gt; &lt;a href="#"&gt; 2 opcja &lt;/a&gt; &lt;/li&gt;<br></span>
+   <span class="wciecie2">&lt;li&gt; &lt;a href="#"&gt; 3 opcja &lt;/a&gt; &lt;/li&gt;<br></span>
+ <span class="wciecie2">&lt;/ul&gt;<br></span>
+ <span class="wciecie">&lt;/li&gt;<br> </span>
+ <span class="wciecie"> &lt;li&gt; &lt;a href="#"&gt; 2 zakładka &lt;/a&gt; &lt;/li&gt;<br></span>
+ <span class="wciecie"> &lt;li&gt; &lt;a href="#"&gt; 3 zakładka &lt;/a&gt; &lt;/li&gt;<br></span>
+ &lt;/ul&gt; <br>
+ &lt;/nav&gt; 
+ </div>
+
+<p id="dwa" class="definicje">
+- Możemy przejść do modyfikowania poszczególnych elementów. Zacznijmy od <strong>nav</strong>a. Nav jest odpowiedzialny za położenie naszego menu więc ustawiamy mu <strong>position: absolute;</strong> oraz ustalamy jego pozycję </p>
+<p class="definicje" id="a2">
+- Przejdźmy do modyfikowania listy nadrzędnej, względem niej będziemy pozycjonować listę podrzędną więc dajemy  jej właściwość <strong>position: relative;</strong> używamy selektora dziecka by odnieść się tylko do listy nadrzędnej. Dodatkowo wyłączamy punktory listy,marginesy i paddingi:</p> <p class="definicje" id="a3">
+- Teraz zmodyfikujmy  <strong>li</strong>  z listy nadrzędnej</p> <p class="definicje" id="a4">
+-Przechodzimy teraz do modyfikowania wyglądu naszego menu w znaczniku <strong>a</strong>, zostawiam tutaj pole do własnej inicjatywy, nie zapomnij o wyłączeniu podkreślenia i ustawienia <strong>display: block;</strong> na a:</p> <p class="definicje" id="a5">
+- Możemy teraz przejść do zmodyfikowania podrzędnej. Na początku na <strong>ul</strong> ustawiamy display: none; (podrzędna lista nam zniknie), do tego ustawiamy pozycjonowanie absolutne ponieważ pozycjonujemy tą listę względem nadrzędnej. Jeśli chodzi o ustawienie poziome to jest zależne od tego z którego okienka rozwija nam się lista (polecam nadać osobne id dla każdej listy i dać inne wartości). Ale punktem wspólnym dla wszystkich list będzie właściwość <strong>top: 100%;</strong> która "dosunie" nam podrzędna listę pod samą listę nadrzędną </p> <p class="definicje" id="a6">
+- Teraz musimy zapisać zależność która po najechaniu na podpunkt listy pokaże nam listę podrzędną, zrobimy to za pomocą <strong>hovera</strong>:</p> <p class="definicje" id="a7">
+- Ostatnim etapem tworzenia menu rozwijanego jest nadanie właściwości <strong>display: block;</strong> dla li listy podrzędnej<p> <p class="definicje" id="a8">Efekt: </p> <p class="definicje" id="a9">Gdybyś chciał żeby z innych zakładek również rozwijały ci się inne podlisty, wystarczy że wkleisz listy pod zakładki i nadasz im id i przesuniesz je bardziej w prawo.</p><p class="definicje" id="a10">Efekt:</p>
+<p class="definicje" id="a11">
+Żeby przekształcić menu poziome rozwijane, w menu pionowe - wystarczy że zmienisz wartość przy nadrzędnym <strong>li</strong> na <strong>display: block;</strong>Będziesz musiał również zmodyfikować ustawienie list podrzędnych, wartość przy left będzie zawsze równa szerokości+obarmowaniu zakładki menu.</p>
+<p class="definicje" id="a12">Efekt:</p>
+<div class="przyklady" id="trzy">
+nav {position: absolute; <br>
+left: 100px; <br>
+top: 200px;}
+</div>
+
+
+<div class="przyklady" id="cztery">
+nav > ul { <br>
+position: relative; <br>
+margin: 0px; <br>
+padding: 0px; <br>
+list-style-type: none;}
+</div>
+
+<div class="przyklady" id="piec">
+nav li{<br>
+display: inline-block;}
+</div>
+
+<div class="przyklady" id="jedynascie">
+nav li{<br>
+display: block;}
+</div>
+
+<div class="przyklady" id="szesc">
+a{ <br>
+text-decoration: none; <br>
+modyfikowanie wyglądu zakładki menu <br>
+display: block;} <br>
+</div>
+
+<div class="przyklady" id="siedem">
+nav ul ul{ <br>
+position: absolute; <br>
+top: 100%; <br>
+display: none;}
+</div>
+
+<div class="przyklady" id="osiem">
+nav ul li:hover > ul { <br>
+display: block;}
+</div>
+
+<div class="przyklady" id="dziewiec">
+nav ul ul li { <br>
+display: block;}
+</div>
+
+<nav id="efektowe">
+<ul>
+<li> <a href="#"> 1 zakładka </a>
+								<ul>
+								<li> <a href="#"> 1 opcja  </a></li>
+								<li> <a href="#"> 2 opcja  </a> </li>
+								<li> <a href="#"> 3 opcja  </a> </li>
+								</ul>
+</li>
+<li> <a href="#"> 2 zakładka </a> </li>
+<li> <a href="#"> 3 zakładka </a> </li>
+</ul>
+</nav>
+
+<nav id="efektowe2">
+<ul>
+<li> <a href="#"> 1 zakładka </a>
+								<ul id="pierwszalista">
+								<li> <a href="#"> 1 opcja  </a></li>
+								<li> <a href="#"> 2 opcja  </a> </li>
+								<li> <a href="#"> 3 opcja  </a> </li>
+								</ul>
+</li>
+<li> <a href="#"> 2 zakładka </a> </li>
+<li> <a href="#"> 3 zakładka </a>
+								<ul id="przesuwanko">
+								<li> <a href="#"> 1 opcja  </a></li>
+								<li> <a href="#"> 2 opcja  </a> </li>
+								<li> <a href="#"> 3 opcja  </a> </li>
+								</ul>
+ 
+</li>
+</ul>
+</nav>
+
+<nav id="efektowe3">
+<ul>
+<li> <a href="#"> 1 zakładka </a>
+								<ul>
+								<li> <a href="#"> 1 opcja  </a></li>
+								<li> <a href="#"> 2 opcja  </a> </li>
+								<li> <a href="#"> 3 opcja  </a> </li>
+								</ul>
+</li>
+<li> <a href="#"> 2 zakładka </a> </li>
+<li> <a href="#"> 3 zakładka </a> </li>
+</ul>
+</nav>
+
+<a href="17.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

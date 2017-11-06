@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 5 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 2481px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 2582px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 2781px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 380px;}
+
+#druga{top: 460px;}
+
+#dwa{
+height: 130px;
+padding-top: 0px;
+top:550px;}
+
+#trzecia{top: 670px;}
+
+#trzy{
+height: 190px;
+padding-top: 0px;
+top:1240px;}
+
+#czwarta{top: 1420px;}
+
+#czwarty{top: 1510px;}
+
+#piata{top: 1600px;}
+
+#piaty{top: 1900px;
+font-size: 24px;}
+
+#tabelka{
+position: absolute;
+font-size: 25px;
+left: 210px;
+top: 2450px;
+}
+
+#szosta{
+top: 1980px;}
+
+#szesc{top: 2050px;
+padding-top: 0px;
+height: 370px;
+}
+
+#siodma{top: 2420px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2490px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="6.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="4.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">5.Tworzenie tabel </h1>
+
+<p id="pierwsza" class="definicje">
+Na swojej stronie możesz umieścić również tabele dla ktorej został zdefiniowany specjalny znacznik podobnie jak przy listach określamy nim ramy naszej tabeli, ten znacznik to <strong> &lt;table&gt;</strong> By tablica miała widoczne kreski podziałowe musimy dodać do znacznika atrybut <strong> border='x' </strong> gdzie <strong>x</strong> oznacza dowolną grubość tabeli.
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;table border="1"&gt;  Zawartość tabeli &lt;/table&gt;
+</div>
+
+<p id="druga" class="definicje">
+W środku kodu tablicy umieszczamy wiersze do czego służy znacznik <strong>&lt;tr&gt;</strong>.
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;table border="1"&gt;  Zawartość tabeli <br>
+<span class="wciecie">&lt;tr&gt; komórki tabeli wiersz 1 &lt;/tr&gt; <br> </span>
+<span class="wciecie">&lt;tr&gt; komórki tabeli wiersz 2 &lt;/tr&gt; <br> </span>
+&lt;/table&gt;
+</div>
+
+<p id="trzecia" class="definicje">
+Następnie w wierszu wyznaczamy ilość komórek używając znacznika <strong>&lt;td&gt;</strong> między którymi umieszcza się zawartość komórki. Żeby dodać wiersz możemy również użyć znacznika <strong>&lt;th&gt;</strong> dzięki temu te komórki możemy sformatować inaczej (normalnie tego znacznika możemy użyć do komórek nagłówkowych. W td możemy umieścić tekst, obrazki oraz inne elementy (np. inną tabelę). 
+</div>
+
+<div class="przyklady" id="trzy">
+&lt;table border="1"&gt; <br>
+<span class="wciecie">&lt;tr&gt;  <br> </span>
+<span class="wciecie2">&lt;td&gt; 1 komórka &lt;/td&gt; <br> </span>
+<span class="wciecie2">&lt;td&gt; 2 komórka&lt;/td&gt;  <br> </span>
+<span class="wciecie">&lt;/tr&gt; <br> </span>
+&lt;/table&gt;
+</div>
+
+<p id="czwarta" class="definicje">
+W znaczniku <strong>&lt;caption&gt;</strong> możemy umieścić podpis do naszej tabeli.
+</p>
+
+<div id="czwarty" class="przyklady">
+&lt;caption&gt;Podpis do tabeli&lt;/caption&gt;
+</div>
+
+<p id="piata" class="definicje">
+Naszą tabelę możemy podzielić na sekcje, w celu róznej modyfikacji np. nagłówków używając znaczników kontenerowych: <strong>&lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt;</strong> <br> <br>
+Komórki możemy również powiększać poprzez dodanie do nich atrybutu <strong> colspan="x" </strong> co spowoduje powiększenie w poziomie lub <strong> rowspan="x" </strong> co spowoduje powiększenie w pionie (ważne jest to że jeżeli wydłużamy naszą komórke musimy usunąć taką samą ilość komórek w wierszu lub kolumnie).
+</p>
+
+<div id="piaty" class="przyklady">
+&lt;td colspan="2"&gt;Komórka powiększona w poziomie&lt;/td&gt;
+</div>
+
+<p id="szosta" class="definicje">
+Przykładowa tabelka by lepiej zrozumieć temat:
+</p>
+
+<div class="przyklady" id="szesc">
+&lt;table border=&quot;1&quot; id=&quot;tabelka&quot;&gt; <br>
+<span class="wciecie">&lt;tr&gt;<br></span>
+<span class="wciecie2">&lt;td rowspan=&quot;2&quot;&gt;1&lt;/td&gt;<br></span>
+<span class="wciecie2">&lt;td&gt;2&lt;/td&gt;<br></span>
+<span class="wciecie">&lt;/tr&gt;<br></span>
+<span class="wciecie">&lt;tr&gt;<br></span>
+<span class="wciecie2">&lt;td&gt;3&lt;/td&gt;<br></span>
+<span class="wciecie">&lt;/tr&gt;<br></span>
+<span class="wciecie">&lt;tr&gt;<br></span>
+<span class="wciecie2">&lt;td colspan=&quot;2&quot;&gt;4&lt;/td&gt;<br></span>
+<span class="wciecie">&lt;/tr&gt;<br> </span>
+&lt;/table&gt;
+</div>
+
+<table border="1" id="tabelka">
+	<tr>
+		<td rowspan="2">1</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td colspan="2">4</td>
+	</tr>
+</table>
+
+<p id="siodma" class="definicje">
+Efekt:
+</p>
+
+<a href="6.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+
+</body>
+
+</html>

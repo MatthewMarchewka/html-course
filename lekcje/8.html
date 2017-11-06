@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 8 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3132px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 2912px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3111px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{
+top: 530px;}
+#druga{
+font-size: 22px;
+top: 605px;}
+#trzecia{
+top: 690px;}
+#dwa{
+padding-top: 0px;
+top: 850px;
+height: 220px;
+}
+#czwarta{top: 1060px;}
+
+#trzy{
+top: 1250px;}
+#cztery{
+top: 1462px;}
+#piec{top: 1670px;
+font-size: 22px;}
+
+#szesc{
+padding-top: 0px;
+top: 2550px;
+height: 280px;
+}
+
+#a1{top: 1330px;}
+#a2{top: 1540px;}
+#a3{top: 1750px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2860px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="9.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="7.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">8. Podstawowe informacje na temat arkusza stylów CSS </h1>
+
+<p id="pierwsza" class="definicje">
+Po opublikowaniu 5 wersji języka HTML, wiele funkcji umożliwiających formatowanie wyglądu strony zostało przeniesione do języka CSS. Zrobienie przyjemnej dla oka strony w samym dokumencie HTML graniczy z cudem. Dlatego do modyfikowania wyglądu zawartości strony zaczęliśmy używać języka CSS3. <strong>Arkusze stylów CSS zawierają tylko reguły modyfikujące zawartość HTML </strong><br>
+Reguła stylów w CSS składa się z: <strong>selektora</strong> czyli: znacznika, identyfikatora lub klasy. Następnie otwieramy nawias klamrowy, w którym znajduje się <strong>właściwość</strong> a po dwukropku <strong>wartość</strong> przystosowana dla tej właściwości. Przykładowa reguła stylu:
+</p>
+<div id="jeden" class="przyklady">
+p{color:blue;}
+</div>
+<p id="druga" class="definicje">
+p - selektor <br>
+color:blue; - deklaracja stylu <br>
+a całość tworzy - regułe stylu
+</p>
+<p id="trzecia" class="definicje">
+W jednym nawiasie klamrowym możemy zawrzeć dowolną ilość deklaracji stylu dla wybranego selektora. Deklaracje w tym samym nawiasie klamrowym są oddzielone średnikami, lecz reguł nie trzeba oddzielać. Przykładowy arkusz stylów: 
+</p>
+
+<div id="dwa" class="przyklady">
+p{<br>
+<span class="wciecie"> cecha1:wartosc1;<br></span>
+<span class="wciecie"> cecha2:wartosc2; }<br><br></span>
+h1{<br>
+<span class="wciecie"> cecha1:wartosc1;<br></span>
+<span class="wciecie"> cecha2:wartosc2; }</span>
+</div>
+
+<p id="czwarta" class="definicje">
+Istnieją trzy typy arkuszów stylu: <br>
+- <strong>zewnętrzny</strong> - w headzie dokumentu html musimy zawrzeć <strong>link</strong> do arkusza stylów (sprawdź zdjęcie poniżej). Dzięki temu możemy zastosować takie same formatowanie dla wielu różnych dokumentów html.</p>
+<p class="definicje" id="a1">
+- <strong>wewnętrzny</strong> - Zawieramy go w headzie, pomiędzy znacznikami <strong>style</strong>. Ma taką samą konstrukcje co zewnętrzny, różnią jest, że dotyczy tylko jednego dokumentu HTML.</p> <p class="definicje" id="a2">
+- <strong>lokalny</strong> - miałeś już okazję się z nim spotkać przy okazji modyfikowania list. Jego zapis wygląda jak, zapis atrybutu dla znacznika. Poniżej przykład jak powinny wyglądać takie reguły.</p><p class="definicje" id="a3">
+Przy stosowaniu arkusza stylów obowiązuje nas <strong>kaskadowość</strong>. Kaskadowość polega na tym, że im reguła stylu jest bliższa miejsca w dokumencie którego dotyczy tym jest ważniejsza dla interpretowania przeglądarki. Priorytet ważności stylów wygląda tak:<br><br>
+<span style="line-height: 52px;">
+1.<strong>Lokalny arkusz stylów</strong><br>
+2.<strong>Rozciąganie stylu</strong> (reguła dla znacznika <strong>span</strong> obejmującego większą ilość elementów)<br>
+3.<strong>Wydzielone bloki - DIV</strong> (reguła dla bloku w którym znajdują się elementy (divy przybliżę ci w następnych lekcjach)) <br>
+4.<strong>Wewnętrzny arkusz stylów</strong><br>
+5.<strong>Zewnętrzny arkusz stylów</strong> <br>
+6.<strong>Zimportowany arkusz stylów</strong> (np. z przeglądarki)<br>
+7.<strong>Domyślne ustawienia przeglądarki</strong></span><br>
+Poniżej przedstawię ci przykładowy wygląd arkusza stylów wewnętrznego ponieważ to jego najłatwiej stosować na początku przy mniej zaawansowanych stronach:</p>
+
+<div id="trzy" class="przyklady">
+&lt;link rel="stylesheet" href="arkusz.css"/&gt;
+</div>
+<div id="cztery" class="przyklady">
+&lt;style&gt;Arkusz stylów CSS&lt;/style&gt;
+</div>
+
+<div id="piec" class="przyklady">
+&lt;p style="cecha1:wartosc1; cecha2:wartosc2;"&gt;Zmodyfikowany tekst&lt;/p&gt;
+</div>
+
+
+<div id="szesc" class="przyklady">
+&lt;style&gt; <br>
+p{<br>
+<span class="wciecie"> cecha1:wartosc1;<br></span>
+<span class="wciecie"> cecha2:wartosc2; }<br><br></span>
+h1{<br>
+<span class="wciecie"> cecha1:wartosc1;<br></span>
+<span class="wciecie"> cecha2:wartosc2; }<br></span>
+&lt;/style&gt;
+
+</div>
+
+<a href="9.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

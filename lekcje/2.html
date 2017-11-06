@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 2 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 2581px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 2362px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 2561px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+#pierwsza{
+top: 150px;
+}
+
+#formatowanie{
+position: absolute;
+width: 700px;
+left: 130px;
+top: 370px;}
+
+#druga{
+top: 620px;}
+
+.bialykwadrat{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+top: 730px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#trzecia{
+top: 810px;
+}
+
+#headziki{
+padding-top: 0px;
+top: 950px;
+height: 247px;}
+
+#titlowy{
+top: 1460px;
+}
+
+.wciecie{
+margin-left: 40px;}
+
+.wciecie2{
+margin-left: 100px;}
+
+#czwarta{
+top: 1200px;}
+
+#piata{
+top: 1550px;}
+
+#metowy{
+top: 1615px;}
+
+#szosta{
+top: 1700px;}
+
+#szkielet{
+padding-top: 0px;
+top: 1870px;
+height: 340px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2250px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="3.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="1.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">2. Struktura pliku HTML </h1>
+
+<p id="pierwsza" class="definicje">
+Żeby twój dokument HTML był poprawnie interpretowany przez przeglądarkę musi spełniać ścisłe wymagania dotyczące jego budowy. Zacznijmy od tego, że przed pisaniem strony warto sprawdzić czy typ kodowania w programie jest ustawiony poprawnie (na "<strong>Koduj w UTF-8 bez BOM</strong>"), jest to system znaków który zawiera polskie litery.
+</p>
+
+<img src="zdjecia2/formatowanie.png" id="formatowanie" alt="formatowanie"/>
+
+<p id="druga" class="definicje">
+Na początku dokumentu HTML musi znajdować się nagłówek definiujący typ dokumentu, w naszym przypadku będzie to: 
+</p>
+
+<div class="bialykwadrat">
+&lt;!DOCTYPE html&gt;
+</div>
+
+<p id="trzecia" class="definicje">
+Wszystko co interpretuje nasza przeglądarka musi znajdować się pomiędzy znacznikiem <strong> html </strong> W znaczniku html znajduje się miejsce na informacje o stronie (<strong>head</strong>) i zawartość strony(<strong>body</strong>).
+</p>
+
+<div class="bialykwadrat" id="headziki">
+&lt;html&gt; <br>
+<span class="wciecie">
+	&lt;head&gt; <br></span><span class="wciecie2">
+	Informacje o stronie <br></span><span class="wciecie">
+	&lt;/head&gt; <br></span><span class="wciecie">
+	
+	&lt;body&gt; <br></span><span class="wciecie2">
+	Zawartość strony <br></span><span class="wciecie">
+	&lt;/body&gt; <br></span>
+
+&lt;/html&gt; <br>
+</div>
+
+<p id="czwarta" class="definicje">
+Jeżeli chodzi o body to mamy sporą dowolność co do jego budowy, na początku będziemy umieszczać tam "luźno" wszystkie elementy dopiero z czasem będziemy uczyli się jak je segregować, natomiast w headzie musi znaleźć się pare linijek obowiązkowych. Pierwszą z nich jest <strong> title </strong> między którego wpisujemy tytuł naszej strony, który będzie się wyświetlał na górnym pasku przeglądarki.
+</p>
+
+<div class="bialykwadrat" id="titlowy">
+&lt;title&gt;Tytuł naszej strony&lt;/title&gt;
+</div>
+
+<p id="piata" class="definicje">
+Ponownie musimy zawrzeć nasz typ kodowania:
+</p>
+<div class="bialykwadrat" id="metowy">
+&lt;meta charset="UTF-8"/&gt;
+</div>
+
+<p id="szosta" class="definicje">
+Do tego w headzie możemy również dodać kto jest autorem strony oraz jakie są słowa kluczowe dotyczące naszej strony internetowej. Tak przedstawia się <strong>szkielet</strong> naszej strony html którego będziemy stosować za każdym razem.
+</p>
+
+<div class="bialykwadrat" id="szkielet">
+&lt;html&gt; <br>
+<span class="wciecie">
+	&lt;head&gt; <br></span>
+	<span class="wciecie2">
+	&lt;title&gt;Tytuł strony &lt;/title&gt; <br></span>
+	<span class="wciecie2">
+	&lt;meta charset="UTF-8"/&gt; <br></span>
+	<span class="wciecie2" style="font-size: 24px;">
+	&lt; meta name="author" content="autor_strony"/&gt; <br></span>
+	<span class="wciecie2" style="font-size: 21px;">
+	&lt; meta name="keywords" content="słowa_kluczowe"/&gt; <br></span>
+	<span class="wciecie">
+	&lt;/head&gt; <br></span>
+	<span class="wciecie">
+	
+	&lt;body&gt; <br></span>
+	<span class="wciecie2">
+	Zawartość strony <br></span>
+	<span class="wciecie">
+	&lt;/body&gt; <br></span>
+
+&lt;/html&gt; <br>
+</div>
+<a href="3.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+
+</html>

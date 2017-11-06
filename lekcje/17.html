@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 17 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 7422px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:7202px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 7401px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 400px;
+padding-top: 0px;
+height: 93px;}
+
+#dwa{top: 690px;
+padding-top: 0px;
+height: 93px;}
+
+#trzy{top: 910px;}
+
+input[name="tekstowy"]{
+position: absolute;
+top: 1020px;
+left: 200px;}
+
+input[name="haslo"]{
+position: absolute;
+top: 1292px;
+left: 200px;}
+
+#cztery{top: 1170px;}
+
+#piec{top: 1450px;}
+
+input[name="akceptacja"]{
+position: absolute;
+top: 1560px;
+left: 200px;}
+
+#szesc{top: 1680px;}
+
+input[name="guzik"]{
+position: absolute;
+top: 1800px;
+left: 200px;}
+
+#siedem{top: 1960px;}
+
+input[name="zresetuj"]{
+position: absolute;
+top: 2070px;
+left: 200px;}
+
+#osiem{top: 2200px;}
+
+input[name="guzikzdjecie"]{
+position: absolute;
+top: 2310px;
+width: 100px;
+height: 70px;
+left: 210px;}
+
+#dziewiec{padding-top: 0px;
+height: 93px;
+top: 2560px;}
+
+input[name="plik"]{
+position: absolute;
+top: 2670px;
+left: 200px;}
+
+#dziesiec{padding-top: 0px;
+height: 170px;
+font-size: 24px;
+top: 2900px;}
+
+#pierwszylabel{
+position: absolute;
+left: 220px;
+top: 3090px;}
+
+#drugilabel{
+position: absolute;
+left: 420px;
+top: 3090px;}
+
+#jedynascie{
+font-size: 23px;
+padding-top: 0px;
+height: 162px;
+top: 3250px;}
+
+#trzecilabel{
+position: absolute;
+left: 220px;
+top: 3450px;}
+
+#czwartylabel{
+position: absolute;
+left: 420px;
+top: 3450px;}
+
+#dwanascie{top: 3700px;}
+
+#trzynascie{top: 3880px;}
+
+#wlasnynapis{position: absolute;
+top: 3990px;
+left: 215px;}
+
+#czternascie{top: 4150px;
+font-size: 24px;}
+
+#placeholderik{position: absolute;
+left: 215px;
+top: 4260px;}
+
+#pietnascie{top: 4400px;}
+
+#readonlowy{top: 4500px;
+position: absolute;
+left: 215px;}
+
+#szesnascie{top: 5050px;
+height: 152px;
+padding-top: 0px;}
+
+#selectowy{
+position: absolute;
+left: 315px;
+top: 5220px;}
+
+#selectowy2{
+position: absolute;
+left: 335px;
+top: 5280px;}
+
+#siedemnascie{
+height: 62px;
+top: 5560px;
+padding-top: 0px;}
+
+textarea{
+position: absolute;
+left: 215px;
+top: 5640px;}
+
+#osiemnascie {
+top: 6060px;}
+
+#dziewietnascie{
+top: 6280px;
+height: 93px;
+padding-top: 0px;}
+
+#dwadziescia{
+top: 6430px;}
+
+#ostatki{
+position: absolute;
+top: 6540px;
+left: 215px;}
+
+#dwadziesciajeden{
+position: absolute;
+height: 123px;
+padding-top: 0px;
+top: 6765px;}
+
+#ostatnielement{
+position: absolute;
+top: 6920px;
+left: 130px;}
+
+#a1{top: 470px;}
+#a2{top: 775px;}
+#a3{top: 990px;}
+#a4{top: 1030px;}
+#a5{top: 1260px;}
+#a6{top: 1320px;}
+#a7{top: 1528px;}
+#a8{top: 1565px;}
+#a9{top: 1770px;}
+#a10{top: 1820px;}
+#a11{top: 2040px;}
+#a12{top: 2090px;}
+#a13{top: 2300px;}
+#a14{top: 2370px;}
+#a15{top: 2638px;}
+#a16{top: 2685px;}
+#a17{top: 3060px;}
+#a18{top: 3100px;}
+#a19{top: 3420px;}
+#a20{top: 3470px;}
+#a21{top: 3780px;}
+#a22{top: 3960px;}
+#a23{top: 4005px;}
+#a24{top: 4230px;}
+#a25{top: 4280px;}
+#a26{top: 4470px;}
+#a27{top: 4520px;}
+#a28{top: 5195px;}
+#a29{top: 5250px;}
+#a30{top: 5370px;}
+#a31{top: 5620px;}
+#a32{top: 5780px;}
+#a33{top: 5930px;}
+#a34{top: 6150px;}
+#a35{top: 6360px;}
+#a36{top: 6510px;}
+#a37{top: 6560px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 7100px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="18.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="16.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">17. Tworzenie formularzy</h1>
+
+<p id="pierwsza" class="definicje">
+Twoja strona może służyć nie tylko do prezentowania treści, może je również pobierać od użytkownika, dzięki formularzom. Do wyznaczenia ram formularza używamy znacznika kontenerowego <strong>form</strong>, który posiada dwa atrybuty: <strong>action</strong>, który określa do jakiego pliku php będą wysyłane dane oraz <strong>method</strong>, który przy wartości <strong>get</strong> pokazuje jakie dane zostały wpisane w formularz, a przy właściwości <strong>post</strong> informacje są szyfrowane.</p><p class="definicje" id="a1">
+Elementy interaktywne formularza tworzymy dzięki znacznikowi samodzielnemu <strong>input</strong>, a znacznik kontenerowy <strong>label</strong> łączy dla nas opis pola z elementem interaktywnym. Znacznik <strong>input</strong> posiada dwa atrybuty, jeden to <strong>type</strong>, który określa typ pola interaktywnego i <strong>name</strong>, który określa jego nazwę.</p> <p class="definicje" id="a2">
+Input ma wiele różnych typów. Najbardziej podstawowym rodzajem jest pole, które pobiera od użytkownika zwyczajny tekst. W tym wypadku w atrybucie strong wpiszemy <strong>text</strong>.</p><p class="definicje" id="a3">Efekt:</p> <p class="definicje" id="a4">
+Następnym rodzajem jest <strong>password</strong>, który służy do pobierania hasła od użytkownika. Różni się tym od typu text, że jego wartości są "zagwiazdkowane".</p><p class="definicje" id="a5">Efekt:</p> <p class="definicje" id="a6">
+Jeżeli chcesz umieścić w swoim formularzu przycisk, który sprawi, że formularz zostanie wysłany do skryptu php, użyj wartości <strong>submit</strong> </p><p class="definicje" id="a7">Efekt:</p><p class="definicje" id="a8">Jeżeli chcesz w swoim formularzu umieścić guzik, którego potem dopiero określisz działanie, użyj wartości <strong>button</strong>.</p> <p class="definicje" id="a9">Efekt:</p> <p class="definicje" id="a10">Możesz również umieścić specjalny guzik, który resetuje wpisane wartości w formularzu, by użytkownik mógł wpisywać je na nowo. Taki input dla atrybuty type ma wartość <strong>reset</strong>.</p> <p class="definicje" id="a11">Efekt:</p><p class="definicje" id="a12">Następnym typem jest input zawierający zdjęcie, działa jak submit. Ten input ma type <strong>image</strong>.</p><p class="definicje" id="a13">Efekt:</p><p class="definicje" id="a14">Następnym typem inputa jest <strong>file</strong>, dzięki któremu użytkownik może wysłać pliki na nasz serwer. Żeby input działał poprawnie w formie  musi być wpisane <strong>method="post"</strong> <br>i <strong>enctype="multipart/form-data"</strong> do tego w inpucie obowiązkowo musi być typ danych jakie przyjmuje formularz.</p><p class="definicje" id="a15">Efekt:</p><p class="definicje" id="a16">Do swojego formularza możesz również dodać pola wielokrotnego wyboru, w których użytkownik może zaznaczyć więcej niż jedną opcję. Do tego służy input typu <strong>checkbox</strong> Wszystkie inputy, które mają być jednego rodzaju musza mieć taką samą nazwę.</p> <p class="definicje" id="a17">Efekt:</p> <p class="definicje" id="a18"> Podobnym typem do checkbox jest <strong>radio</strong>, różnica jest taka, że radio jest jednokrotnego wyboru, nazwy również muszą być takie same.</p> <p class="definicje" id="a19">Efekt:</p> <p class="definicje" id="a20">W swoim inpucie możesz określić czy jest wymagane wpisanie do niego zawartości. Robimy to atrybutem <strong>required</strong> jeżeli chcemy, żeby pole było wymagane wpisujemy wartość <strong>required</strong>, a jeśli nie to <strong>optional</strong>. Jeśli chcesz odnieść się do konkretnych inputów możesz zrobić to w CSS w ten sposób: <strong>input:required{}</strong> lub <strong>input:optional{}</strong>.</p> <p class="definicje" id="a21">Jeżeli chcesz żeby na guziku wyświetlał się tekst, który sam określisz musisz użyć atrybutu <strong>value</strong>.</p> <p class="definicje" id="a22">Efekt:</p> <p class="definicje" id="a23"> Możesz również określić co będzie znajdowało się w danej komórce i będzie znikać jeżeli użytkownik wpisze coś w to okienko, robimy to za pomocą właściwości <strong>placeholder</strong>:</p><p class="definicje" id="a24">Efekt:</p><p class="definicje" id="a25">Na swojego inputa możesz również dać właściwość <strong>readonly</strong>, żeby użytkownik nie mógł modyfikować jego zawartości.</p> <p class="definicje" id="a26">Efekt:</p> <p class="definicje" id="a27">Właściwością <strong>tabindex</strong> możesz ustawić kolejność tabów w twoim formularzu w formacie <strong>tabindex="1"</strong>, liczba zależy od kolejności. Właściwością <strong>acceskey</strong> możesz ustalić literkę skrótu do danego pola.  Gdy wpiszemy właściwość <strong>autofocus</strong> do inputa to strona włączy się z kursorem, który znajduje się już w tym zaznaczonym polu. Właściwością <strong>maxlength</strong> ustalamy maksymalną długość tekstu wpisywanego do danej komórki.<br><br>
+W swoim formularzu możesz również łatwo umieszczać listy wyboru. Miejsce, w którym znajduje się taka lista wyznacza znacznik kontenerowy <strong>select</strong> atrybut <strong>size</strong> określa ile wartości jest w niej wyświetlane bez przewijania. Elementy wyboru muszą znajdować się między znacznikiem <strong>&lt;option&gt;</strong> Jeżeli chcemy pogrupować opcje wyboru możemy zrobić to za pomocą znacznika <strong>&lt;optgroup&gt;</strong> z atrybutem <strong>label</strong>, który określa jak się nazywa podgrupa.</p><p class="definicje" id="a28">Efekt (bez size):</p><p class="definicje" id="a29">Efekt (z size="5"):</p><p class="definicje" id="a30">Jeśli chcesz umieścić na swojej stronie pole tekstowe, które jest większe niż jedna linijka, możesz użyć znacznika kontenerowego <strong>textarea</strong>, którego rozmiar wyznaczamy w ten sposób: atrybut <strong>rows="liczba"</strong> wyznacza jego wysokość, a <strong>cols="liczba"</strong> określa jego szerokość. Przykładowo:</p> <p class="definicje" id="a31">Efekt:</p> <p class="definicje" id="a32"> Ostatnim elementem formularza, który ci dzisiaj pokażę jest lista wyboru z polem tekstowym. Taka lista polega na tym, że użytkownik wpisuje wartość, a ona może być dopasowana do wartości z listy. Tworzenie takiej listy pokażę ci na przykładzie:</p> <p class="definicje" id="a33">
+- Zacznijmy od stworzenia inputa z atrybutem <strong>list</strong>, który określa z jakiej listy danych będzie korzystać i nazwijmy go atrybutem <strong>name</strong></p><p class="definicje" id="a34"> - Następnie wyznaczamy ramy listy danych znacznikiem <strong>datalist</strong> i nadajemy jej takie <strong>id</strong> jak napisaliśmy w właściwości list  w inpucie.</p> <p class="definicje" id="a35">Teraz dodajemy opcje wyboru w ten sposób:</p><p class="definicje" id="a36">Efekt:</p> <p class="definicje" id="a37">HTML oferuje również specjalny znacznik do grupowania elementów w twoim formularzu. Do stworzenia obramowania naobkoło niektórych elementów formularza użyj znacznika kontenerowego <strong>fieldset</strong> żeby zrobić na tym obramowaniu napis użyj znacznika <strong>legend</strong>.
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;form action="/action_page.php" method="get"&gt; <br>
+Zawartość formularza <br>
+&lt;/form&gt;
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;label&gt; <br>
+Podpis &lt;input name="nazwa" type="typ"/&gt;<br>
+&lt;/label&gt;
+</div>
+
+<div class="przyklady" id="trzy">
+&lt;input name="tekstowy" type="text"/&gt;
+</div>
+
+<input name="tekstowy" type="text"/>
+
+<div class="przyklady" id="cztery">
+&lt;input name="haslo" type="password"/&gt;
+</div>
+
+<input name="haslo" type="password"/>
+
+<div class="przyklady" id="piec">
+&lt;input name="akceptacja" type="submit"/&gt;
+</div>
+
+<input name="akceptacja" type="submit"/>
+
+<div class="przyklady" id="szesc">
+&lt;input name="guzik" type="button"/&gt;
+</div>
+
+<input name="guzik" type="button" value="efekt"/>
+
+<div class="przyklady" id="siedem">
+&lt;input name="zresetuj" type="reset"/&gt;
+</div>
+
+<input name="zresetuj" type="reset" value="Resetowanie strony"/>
+
+<div class="przyklady" id="osiem">
+&lt;input type="image" src="zdjecie.png" alt="blad"/&gt;
+</div>
+
+<input type="image" name="guzikzdjecie" src="../zdjecia/BJUTI.png" alt="blad"/>
+
+<div class="przyklady" id="dziewiec">
+&lt;form method="post" enctype="multipart/form-data"&gt; <br>
+&lt;input name="plik" accept="image/jpg" type="file"/&gt; <br>
+&lt;/form&gt;
+</div>
+
+<input name="plik" accept="image/jpg" type="file"/> 
+
+<div class="przyklady" id="dziesiec">
+&lt;label&gt; <br>
+Pierwszy wybór &lt;input name="wybor"  type="checkbox"/&gt; <br>
+&lt;/label&gt; <br>
+&lt;label&gt; <br>
+Drugi wybór &lt;input name="wybor"  type="checkbox"/&gt; <br>
+&lt;/label&gt; 
+</div>
+
+<div class="przyklady" id="jedynascie">
+&lt;label&gt; <br>
+Pierwszy wybór &lt;input name="jedenwybor"  type="radio"/&gt; <br>
+&lt;/label&gt; <br>
+&lt;label&gt; <br>
+Drugi wybór &lt;input name="jedenwybor"  type="radio"/&gt; <br>
+&lt;/label&gt; 
+</div>
+
+<label id="pierwszylabel"> 
+Pierwszy wybór <input name="wybor" type="checkbox"/> 
+</label> 
+<label id="drugilabel"> 
+Drugi wybór <input name="wybor" type="checkbox"/> 
+</label>
+
+
+<label id="trzecilabel"> 
+Pierwszy wybór <input name="jedenwybor" type="radio"/> 
+</label> 
+<label id="czwartylabel"> 
+Drugi wybór <input name="jedenwybor" type="radio"/> 
+</label>
+
+<div class="przyklady" id="dwanascie">
+&lt;input type="text" required="required"/&gt;
+</div> 
+
+<div class="przyklady" id="trzynascie">
+&lt;input type="button" value="Przykladowy napis"/&gt;
+</div> 
+
+<input id="wlasnynapis" type="button" value="Przykladowy napis"/>
+
+<div class="przyklady" id="czternascie">
+&lt;input type="text" placeholder="Przykładowy napis"/&gt;
+</div>
+
+<input id="placeholderik" type="text" placeholder="Przykładowy napis"/>
+
+<div class="przyklady" id="pietnascie">
+&lt;input type="text"  readonly="readonly"/&gt;
+</div>
+
+<input type="text" placeholder="Nie da sie zmienić zawartości" id="readonlowy" readonly="readonly"/>
+
+<div class="przyklady" id="szesnascie">
+&lt;select size="5"&gt; <br>
+<span class="wciecie">&lt;optgroup label="Nazwa podgrupy"&gt;<br></span>
+<span class="wciecie2">&lt;option&gt; element do wyboru &lt;/option&gt; <br> </span>
+<span class="wciecie">&lt;/optgroup&gt;<br></span>
+&lt;/select&gt;
+</div>
+
+<select  id="selectowy"> 
+<optgroup label="Nazwa podgrupy">
+<option> element do wyboru 1 </option>
+<option> element do wyboru 2 </option>
+<option> element do wyboru 3 </option>
+<option> element do wyboru 4 </option>
+<option> element do wyboru 5 </option> 
+</optgroup>
+<option> element do wyboru 1 </option>
+<option> element do wyboru 2 </option>
+<option> element do wyboru 3 </option>
+<option> element do wyboru 4 </option>
+</select>
+
+<select size="5" id="selectowy2"> 
+<optgroup label="Nazwa podgrupy">
+<option> element do wyboru 1 </option>
+<option> element do wyboru 2 </option>
+<option> element do wyboru 3 </option>
+<option> element do wyboru 4 </option>
+<option> element do wyboru 5 </option> 
+</optgroup>
+<option> element do wyboru 1 </option>
+<option> element do wyboru 2 </option>
+<option> element do wyboru 3 </option>
+<option> element do wyboru 4 </option>
+</select>
+
+
+<div id="siedemnascie" class="przyklady">
+&lt;textarea rows="10" cols="30"&gt; <br>
+&lt;/textarea&gt;
+</div>
+
+<textarea rows="10" cols="30"> 
+</textarea>
+
+<div class="przyklady" id="osiemnascie">
+&lt;input list="lista" name="lista"&gt;
+</div>
+
+<div class="przyklady" id="dziewietnascie">
+&lt;datalist id="lista"&gt; <br>
+Elementy listy <br>
+&lt;/datalist&gt;
+</div>
+
+<div class="przyklady" id="dwadziescia">
+&lt;option value="element" &gt;
+</div>
+
+<form id="ostatki">
+<div class="pozycjonowanie">
+  <input list="lista" name="lista">
+  <datalist id="lista">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  </div>
+</form>
+
+<div class="przyklady" id="dwadziesciajeden">
+&lt;fieldset&gt; <br>
+<span class="wciecie">&lt;legend&gt; Opis sekcji &lt;/legend&gt; <br> </span>
+<span class="wciecie"> Elementy Sekcji <br> </span>
+&lt;/fieldset&gt;
+</div>
+<div id="ostatnielement">
+<fieldset>
+<legend> Efekt tego zabiegu </legend>
+<input type="text" placeholder="Przykładowy element" style="display: block; margin-top: 10px;"/>
+<input type="text" placeholder="Przykładowy element 2" style="display: block; margin-top: 20px;"/>
+<input type="submit" value="przykladowy guzik" style="display: block; margin-top: 30px;"/>
+</fieldset>
+</div>
+
+<a href="18.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

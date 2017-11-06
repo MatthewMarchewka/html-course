@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 11 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3752px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3532px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3731px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 699px;}
+#dwa{top: 920px;}
+#trzy{top: 1136px;
+padding-top: 0px;
+height: 93px;}
+#cztery{top: 1310px;
+padding-top: 0px;
+height: 93px;}
+
+#piec{
+font-size: 23px;
+padding-top: 0px;
+height: 436px;
+top: 1560px;}
+
+#szesc{top: 1980px;}
+
+#siedem{top: 2080px;
+padding-top: 0px;
+height: 95px;}
+
+#osiem{top: 2290px;
+padding-top: 0px;
+height: 95px;}
+
+#dziewiec{top: 2540px;
+padding-top: 0px;
+height: 95px;}
+
+#dziesiec{top: 2710px;}
+
+#a1{top: 780px;}
+#a2{top: 1000px;}
+#a3{top: 1215px;}
+#a4{top: 1390px;}
+#a5{top: 2160px;}
+#a6{top: 2370px;}
+#a7{top: 2620px;}
+#a8{top: 2800px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3470px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="12.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="10.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">11. Pudełkowy układ strony </h1>
+
+<p id="pierwsza" class="definicje">
+Do tej pory nasze strony internetowe składały się z jednego bloku do którego "wrzucaliśmy" elementy. W tej lekcji pokażę Ci jak dzielić twoją stronę internetową na mniejsze bloki (<strong>divy</strong>). Teraz nie będziemy wrzucać elementów do body lecz do specjalnego pojemnika który stanie się naszą stroną internetową. Pudełkowy układ strony możemy porownać do wkładania mniejszych pudełek do dużego pudełka, które tworzy naszą stronę internetową.<br>
+Zacznijmy od pojęcia <strong>identyfikatora</strong> i <strong>klasy</strong>. Na naszej stronie internetowej będziemy umieszczać teraz więcej niż jeden obiekt który ma taki sam znacznik. Gdybyśmy chcieli inaczej zmodyfikować te elementy możemy nadać elementom <strong> identyfikator</strong> i to do niego odwołać się w regule CSS. Ważne jest to, że identyfikatory nie mogą się powtarzać - <strong>są unikatowe</strong>. Więc jeżeli jednemu pojemnikowi nadasz identyfikator <strong>pojemnik</strong> nie może być innego elementu na stronie z takim identyfikatorem.</p><p class="definicje" id="a1">
+Gdybyśmy chcieli zmodyfikować większą ilość elementów w ten sam sposób możemy nadać im tę samą klasę. Tą samą klasę może mieć dowolna liczba elementów na stronie.</p><p class="definicje" id="a2">
+Każdy element może mieć maksymalnie jeden identyfikator i jedną klasę. Odwołując się do klasy znacznika w CSS wpisujemy ją razem z kropką:</p><p class="definicje" id="a3">
+Odwołując się do identyfikatora danego elementu, wpisujemy go z hashtagiem (<strong>#</strong>):</p><p class="definicje" id="a4">
+Gdy już będziemy mieli parę pojemników na naszej stronie, przydałoby się je jakoś poukładać. Przeanalizujmy przykładowy przypadek:<br>
+- Najpierw przygotujmy sobie kod html
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;div id="identyfikator"/&gt;
+</div>
+<div class="przyklady" id="dwa">
+&lt;div class="klasa"/&gt;
+</div>
+
+<div class="przyklady" id="trzy">
+.klasa { <br>
+<span class="wciecie">cecha1:wartość1; <br></span>
+<span class="wciecie">cecha2: wartość2;}<br></span>
+</div>
+
+<div class="przyklady" id="cztery">
+#identyfikator { <br>
+<span class="wciecie">cecha1:wartość1; <br></span>
+<span class="wciecie">cecha2: wartość2;}<br></span>
+</div>
+
+<div class="przyklady" id="piec">
+&lt;body&gt; <br>
+&lt;div id="pojemnik"&gt; <br>
+<span class="wciecie">&lt;header&gt;<br></span>
+<span class="wciecie2">nagłówek<br></span>
+<span class="wciecie">&lt;/header&gt;<br></span>
+<span class="wciecie">&lt;div id="kolumna_lewa"&gt;<br></span>
+<span class="wciecie2">kolumna lewa<br></span>
+<span class="wciecie">&lt;/div&gt;<br></span>
+<span class="wciecie">&lt;div id="kolumna_prawa"&gt;<br></span>
+<span class="wciecie2">kolumna prawa<br></span>
+<span class="wciecie">&lt;/div&gt;<br></span>
+<span class="wciecie">&lt;footer&gt;<br></span>
+<span class="wciecie2">stopka<br></span>
+<span class="wciecie">&lt;/footer&gt;<br></span>
+&lt;/div&gt; <br>
+&lt;/body&gt; <br>
+</div>
+
+<p class="definicje" id="szesc">
+- Teraz ustawmy stałą szerokość na główny pojemnik oraz wyśrodkujmy go w przeglądarce </p> <p class="definicje" id="a5">
+- Ustawmy stałą szerokość na lewą kolumnę oraz <strong> nadajmy jej wartość float: left; żeby ustawiała się maksymalnie po lewej stronie przeglądarki</strong></p><p class="definicje" id="a6">
+- Analogicznie postępujemy z prawą kolumną, dosuwamy ją maksymalnie w lewo żeby przylegała lewą krawędzią do lewej kolumny oraz nadajemy jej taką szerokość by obie kolumny razem dawały szerokość pojemnika</p><p class="definicje" id="a7">
+- Ostatnim krokiem będzie nadanie footerowi właściwości clear: both by zajmował całą szerokość pojemnika</p><p class="definicje" id="a8">
+Pamiętaj że jeżeli chcesz dać któremuś z pojemników border, musisz zmniejszyć szerokość pojemnika o szerokość obramowania. Nasz układ powinien wyglądać tak:
+</p>
+
+<div class="przyklady" id="siedem">
+#pojemnik{ <br>
+<span class="wciecie">width: 960px; <br></span>
+<span class="wciecie">margin: 0px auto;}</span>
+</div>
+
+<div class="przyklady" id="osiem">
+#kolumna_lewa{ <br>
+<span class="wciecie">width: 300px; <br></span>
+<span class="wciecie">float: left;}</span>
+</div>
+<div class="przyklady" id="dziewiec">
+#kolumna_prawa{ <br>
+<span class="wciecie">width: 660px; <br></span>
+<span class="wciecie">float: left;}</span>
+</div>
+
+<div class="przyklady" id="dziesiec">
+footer{ <br>
+<span class="wciecie">clear: both;} </span>
+</div>
+
+<div style="position: absolute; left: 130px; width: 700px; height: 500px; top: 2940px; border: 1px solid black;"> 
+</div> 
+<div style="position: absolute; left: 280px; width: 400px; height: 80px; text-align: center; top: 2940px; border: 1px solid black;"> Nagłówek
+</div> 
+<div style="position: absolute; left: 280px; width: 400px; height: 80px; text-align: center; top:3360px; border: 1px solid black;">Stopka 
+</div>
+<div style="position: absolute; left: 280px; width: 150px; height: 340px; text-align: center; top:3020px; border: 1px solid black;">Lewa kolumna
+</div>  
+<div style="position: absolute; right: 278px; width: 248px; height: 340px; text-align: center; top:3020px; border: 1px solid black;">Prawa kolumna
+</div> 
+
+<a href="12.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

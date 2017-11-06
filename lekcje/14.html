@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 14 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3122px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:2902px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3101px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 320px;
+padding-top: 0px;
+height: 93px;}
+
+#dwa{top: 490px;
+padding-top: 0px;
+height: 93px;}
+
+#przykladowy{
+position: absolute;
+top: 650px;
+left: 170px;
+text-align: center;
+background-color: #8a6382;
+color:white;
+border: 1px solid black;}
+
+#trzy{top: 880px;}
+
+#cztery{top: 1100px;
+padding-top: 0px;}
+
+#pojawianiesie{position: absolute;
+top: 1200px;
+left: 460px;
+border: 1px solid black;}
+
+#pojawianko{opacity:0;}
+#pojawianko:hover{opacity: 1;}
+
+#piec{top: 1640px;
+padding-top: 0px;
+height: 185px;}
+
+#szesc{top: 1800px;}
+
+#siedem{top: 1920px;
+padding-top: 0px;}
+
+#osiem{padding-top: 0px;
+height: 92px;
+top: 2100px;}
+
+#dziewiec{padding-top: 0px;
+height: 92px;
+top: 2280px;}
+
+
+#spozycjonujsie{
+position: absolute;
+top: 2380px;
+left: 380px;}
+
+
+
+#glowny{
+position: relative;
+width: auto;
+overflow: hidden;
+}
+#podpisik{
+opacity: 0;				
+width: 196px;
+position: absolute;
+top: 10px;
+border: 2px solid #8a6382;
+right: 0px;}
+
+#glowny:hover #podpisik{
+opacity: 1;
+transition-duration: 1s;
+border: 2px solid #ecadcc;
+color: white;
+background-color: #8a6382;}
+
+#dziesiec{top: 2600px;}
+
+#pojawianiesie2{position: absolute;
+top: 2720px;
+left: 399px;
+border: 1px solid black;}
+
+#pojawianko2{opacity:0;}
+#pojawianko2:hover{opacity: 1;}
+
+#pojawianiesie3{position: absolute;
+top: 2775px;
+left: 369px;
+border: 1px solid black;}
+
+#pojawianko3{opacity:0;}
+#pojawianko3:hover{opacity: 1;
+transition-duration: 2s;}
+
+#a1{top: 400px;}
+#a2{top: 570px;}
+#a3{top: 1170px;}
+#a4{top: 1230px;}
+#a5{top: 1380px;}
+#a6{top: 1970px;}
+#a7{top: 2180px;}
+#a8{top: 2380px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2800px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="15.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="13.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">14. Tworzenie "galerii zdjęć" </h1>
+
+<p id="pierwsza" class="definicje">
+W tej lekcji nauczysz się dodawać podpis do zdjęcia, oraz jak go modyfikować. Pierwszym znacznikiem który przyda Ci się do robienia galerii zdjęć jest <strong>figure</strong> służy on do łączenia zdjęć <br>i podpisu w jedną całość. Figure to znacznik kontenerowy. </p> <p class="definicje" id="a1">
+Drugim znacznikiem jest <strong>figcaption</strong>, w nim zawieramy podpis do naszego zdjęcia.</p><p class="definicje" id="a2">
+W ten prosty sposób możesz stworzyć podstawowy podpis do twojego obrazka.<br>Efekt:
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;figure&gt; <br>
+<span class="wciecie"> Obrazek z podpisem <br> </span>
+&lt;/figure&gt;
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;figcaption&gt; <br>
+<span class="wciecie"> Podpis do zdjęcia <br> </span>
+&lt;/figcaption&gt;
+</div>
+
+<figure id="przykladowy">
+<img src="zdjecia1/rys3.jpg" alt="slonce"/>
+<figcaption> podpis do zdjęcia </figcaption>
+</figure>
+
+<p id="trzy" class="definicje">
+Bardzo przydatną właściwością w CSS jest <strong>opacity</strong>. Możemy posłużyć sie nią by domyślnie schować elementy na stronie, by np. po najechaniu na jakiś element pojawiały się. Jeżeli chcemy by nasz obiekt znikł nadajemy mu właściwość <strong>opacity: 0;</strong> a jak chcemy żeby się pojawił np. po najechaniu na miejsce gdzie powinien się znajdować w jego hoverze dajemy <strong>opacity: 1;</strong></p><p class="definicje" id="a3">Efekt: (najedź na kwadrat)</p> <p class="definicje" id="a4">
+Na przyszłość możesz również zapamiętać, że są jeszcze dwa specjalne znaczniki wyznaczające charakterystyczne miejsca. <strong>Article</strong> wyznacza miejsce artykułu a <strong>Section</strong> miejsce akcji. Oba są kontenerowe.</p> <p class="definicje" id="a5">
+Teraz pokażę Ci jak zrobić bardziej zaawansowany podpis do obrazka. <strong>Uwaga ten sposób będzie zawierał pozycjonowanie które będzie wyjaśnione dopiero w następnej lekcji</strong> jak wydaje Ci się, że może ci to przeszkodzić w dokładnym zrozumieniu wróć tutaj po przeanalizowaniu następnej lekcji. <br>
+Jeżeli chcesz żeby podpis do twojego obrazka pojawiał się na obrazku po najechaniu na obrazek, zrób to w ten sposób:<br>
+</p>
+
+<div class="przyklady" id="cztery">
+img {opacity: 0;}<br>
+img:hover {opacity: 1;}
+</div>
+
+
+<div id="pojawianiesie">
+<img src="zdjecia1/zdj.png" id="pojawianko" alt="slonce"/>
+</div>
+
+<div class="przyklady" id="piec">
+&lt;figure&gt; <br>
+<span class="wciecie">&lt;img src="zdjecie.jpg" alt="blad"/&gt;<br></span>
+<span class="wciecie">&lt;figcaption&gt; <br> </span>
+<span class="wciecie2"> Podpis do obrazka <br> </span>
+<span class="wciecie">&lt;/figcaption&gt; <br> </span>
+&lt;/figure&gt;
+</div>
+
+<p class="definicje" id="szesc">
+ - Nadaj swojemu <strong>figurowi</strong> pozycjonowanie relatywne i nadaj mu właściwość <strong>overflow hidden</strong> (wartość która nie będzie się mieścić zostanie zignorowana)</p><p class="definicje" id="a6">
+ - Daj do swojego ficaption pozycjonowanie absolutne, oraz spozycjonuj go żeby pojawiał się na środku obrazka, gdy go już spozycjonujesz daj mu właściwość <strong>opacity: 0;</strong></p><p class="definicje" id="a7">
+ - Zapisz hover do figure który sprawi że twój podpis do zdjęcia się pojawi:</p><p class="definicje" id="a8">
+ Efekt (najedź na zdjęcie):
+</p>
+
+<div class="przyklady" id="siedem">
+overflow: hidden; <br>
+position: relative;
+</div>
+
+<div class="przyklady" id="osiem">
+position: absolute; <br>
+pozycjonowanie, wielkość elementu <br>
+opacity: 0;
+</div>
+
+<div class="przyklady" id="dziewiec">
+figure:hover figcaption{ <br>
+<span class="wciecie">opacity: 1;<br></span>
+<span class="wciecie">wygląd elementu}<br></span>
+</div>
+
+<div id="spozycjonujsie">
+<figure id="glowny">
+			<img src="zdjecia1/rys3.jpg"/>
+			<figcaption id="podpisik">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt ornare congue. Nam diam ipsum, tincidunt a metus ac, auctor tincidunt felis. Suspendisse potenti. </p>
+			</figcaption>
+</figure>
+</div>
+
+<p class="definicje" id="dziesiec">
+Jeśli chcesz żeby twój hover nie działał odrazu ale stopniowo, wstaw do niego właściwość <strong>transition-duration</strong> i jednostkę czasu ile ma trwać dana interakcja. <br> Bez transition-duration: <br> <br> Z transition-duration: 
+</p>
+
+<div id="pojawianiesie2">
+<img src="zdjecia1/zdj.png" id="pojawianko2" alt="slonce"/>
+</div>
+
+<div id="pojawianiesie3">
+<img src="zdjecia1/zdj.png" id="pojawianko3" alt="slonce"/>
+</div>
+
+<a href="15.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

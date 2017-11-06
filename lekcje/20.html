@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 20 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3422px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3202px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3401px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+table,td,th,tr {
+border: 2px solid #8a6382;}
+
+table{position: absolute;
+color: #8a6382;
+font-size: 22px;
+left: 80px;
+text-align: center;
+top: 440px;
+width: 800px;}
+
+th{font-weight: bold;}
+
+#jeden{
+padding-top: 0px;
+top: 580px;}
+
+#dwa{
+padding-left: 0px;
+width: 700px;
+top: 698px;
+height: 93px;
+padding-top: 0px;
+font-size: 19px;}
+
+.gradienty{
+position: absolute;
+width: 200px;
+color: red;
+text-align: center;
+font-weight: bold;
+border: 1px solid black;
+height: 100px;}
+
+#jedengradient{top: 1140px;
+background: linear-gradient(to right top, black, white);
+background: -moz-linear-gradient(to right top, black, white);
+background: -o-linear-gradient(to right top, black, white);
+background: -webkit-linear-gradient(to right top, black, white);
+left: 130px;}
+
+#drugigradient{top: 1140px;
+background: linear-gradient(43deg, black, white);
+background: -moz-linear-gradient(43deg, black, white);
+background: -webkit-linear-gradient(43deg, black, white);
+background: -o-linear-gradient(43deg, black, white);
+right: 130px;}
+
+#trzecigradient{
+background: linear-gradient(to left bottom, black, grey 75%, white);
+background: -webkit-linear-gradient(to left bottom, black, grey 75%, white);
+background: -moz-linear-gradient(to left bottom, black, grey 75%, white);
+background: -o-linear-gradient(to left bottom, black, grey 75%, white);
+left: 380px;
+top: 1140px;}
+
+#czwartygradient{
+left: 380px;
+top: 1500px;
+background: linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -moz-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -o-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -webkit-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+}
+
+#trzy{top: 1390px;
+padding-top: 0px;
+height: 93px;
+padding-left: 0px;
+font-size: 17px;}
+
+#szesc{top: 2540px;
+padding-top: 0px;
+height: 93px;
+padding-left: 0px;
+font-size: 17px;}
+
+#siedem{top: 2880px;
+padding-top: 0px;
+height: 93px;
+padding-left: 0px;
+font-size: 17px;}
+
+
+
+#cztery{top: 1780px;}
+
+#piatygradient{
+left: 380px;
+background: repeating-linear-gradient(black 33%, white 66%);
+background: -webkit-repeating-linear-gradient(black 33%, white 66%);
+background: -moz-repeating-linear-gradient(black 33%, white 66%);
+background: -o-repeating-linear-gradient(black 33%, white 66%);
+top: 1890px;}
+
+#piec{
+padding-top: 0px;
+top: 2080px;}
+
+#szostygradient{
+background: radial-gradient(closest-side at 25% 75%, white, black);
+background: -webkit-radial-gradient(closest-side at 25% 75%, white, black);
+background: -moz-radial-gradient(closest-side at 25% 75%, white, black);
+background: -o-radial-gradient(closest-side at 25% 75%, white, black);
+left: 380px;
+top: 2670px;}
+
+#siodmygradient{
+background: repeating-radial-gradient(white 33%, black 66%); 
+background: -webkit-repeating-radial-gradient(white 33%, black 66%); 
+background: -moz-repeating-radial-gradient(white 33%, black 66%); 
+background: -o-repeating-radial-gradient(white 33%, black 66%);
+left: 380px;
+top: 2990px;}
+
+#a1{top: 500px;}
+#a2{top: 630px;}
+#a3{top: 780px;}
+#a4{top: 1230px;}
+#a5{top: 1610px;}
+#a6{top: 1980px;}
+#a7{top: 2130px;}
+#a8{top: 2770px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3130px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="21.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="19.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">20. Dodawanie gradientów  </h1>
+
+<p id="pierwsza" class="definicje">
+CSS umożliwia zrezygnowanie z jednolitego, jednokolorowego tła na rzecz <strong>gradientów</strong>, które są generowane przez przeglądarkę więc nie zajmują dodatkowego miejsca w naszym projekcie. Gradienty dzielimy na <strong>liniowe</strong> i <strong>promieniste</strong>. Przeglądarki niestety różnią się od siebie w interpretowaniu gradientów dlatego zapisując nasz gradient na stronie musimy 3 razy powtórzyć nasz kod z innymi przedrostkami, które wyglądają tak:</p> <p class="definicje" id="a1">
+Do dodawania gradientów liniowych służy ta właściwość:</p> <p class="definicje" id="a2">
+Więc finalny kod będzie wyglądał tak:</p> <p class="definicje" id="a3">
+Gdzie <strong>kierunek</strong> oznacza w którym kierunku będzie podążał nasz gradient, możemy podać wartośc słowną lub kątową. Słowne kierunki to: <strong>to top</strong> z doły  do góry, <strong>to right top</strong> z lewego dolnego narożnika do prawego górnego, <strong>to right</strong> poziomo z lewej do prawej, <strong>to right bottom</strong> z lewego-górnego do prawego-dolnego, <strong>to bottom</strong> z góry do dołu, <strong> to left bottom</strong> z prawego górnego do lewego dolnego, <strong>to left</strong> z prawej do lewej, <strong>to left top</strong> z prawego dolnego do lewego górnego.<br>
+Wartości kątowe wyznaczamy w formacie kąt_deg, 0deg to gradient z dołu do góry, a 180deg to gradient z góry do dołu. </p> <p class="definicje" id="a4"> Następnie podajemy kolory (musimy podać przynajmniej dwa) jeśli nie podamy odległości wybranego koloru to zostaną one rozłożone równomiernie, jak podamy to będą zajmować tyle ile podamy.</p><p class="definicje" id="a5">Do gradientu możemy dodać przedrostek <strong>-repeating-</strong> dzięki czemu nasz gradient będzie się powtarzać na długości całego selektora. Warunkiem jest by początkowa i ostateczna wartość przy kolorze nie była równa 0 lub 100.</p> <p class="definicje" id="a6">
+Do stworzenia gradientu promienistego używamy tej właściwości:</p> <p class="definicje" id="a7"> Do gradientów radialnych również musimy stosować przedrostki przeglądarek. W miejsce kształtu możemy wpisać <strong>circle</strong> dla kształtu okręgu i <strong>ellipse</strong> dla kształtu elipsy. Do okreslenia rozmiaru możemy użyć fraz <strong>closest-side</strong> wtedy gradient będzie rozchodził się do najbliższej krawędzi elementu, <strong>farthest-side</strong> do najdalszej krawędzi elementu, <strong>closest-corner</strong> do najbliższego narożnika, <strong>farthest-corner</strong> do najdalszego narożnika. Pozycje możemy ustawić dowolnymi jednostkami miar np. <strong>10% 20%</strong>. Kolory wyznaczamy tak samo jak przy gradientach liniowych. <br>Z ułożeniem gradientów najlepiej eksperymentować dlatego pokażę ci tylko jeden przykład takiego gradientu. </p> <p class="definicje" id="a8"> Radial promienisty również możemy powtarzać, dodając przedrostek <strong>repeating-</strong>.
+</p>
+
+<table>
+<tr>
+<th>X</th>
+<th>Google Chrome</th>
+<th>Microsoft Edge</th>
+<th>Mozilla Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+<tr>
+<td>Przedrostki</td>
+<td>-webkit-</td>
+<td>bez przedrostka</td>
+<td>-moz-</td>
+<td>-webkit-</td>
+<td>-o-</td>
+</tr>
+</table>
+
+<div class="przyklady" id="jeden">
+background: linear-gradient(kierunek,kolor1 odległość1, kolor2 odległość2..)
+</div>
+
+<div class="przyklady" id="dwa">
+background: linear-gradient(kierunek,kolor1 odległość1, kolor2 odległość2..); <br>
+<span style="font-size: 18px;">background: -webkit-linear-gradient(kierunek,kolor1 odległość1, kolor2 odległość2..); <br></span>
+background: -moz-linear-gradient(kierunek,kolor1 odległość1, kolor2 odległość2..); <br>
+background: -o-linear-gradient(kierunek,kolor1 odległość1, kolor2 odległość2..);
+</div>
+
+<div class="gradienty" id="jedengradient">
+linear-gradient(to right top, black, white)
+</div>
+
+<div class="gradienty" id="drugigradient">
+linear-gradient(43deg, black, white)
+</div>
+
+<div class="gradienty" id="trzecigradient">
+linear-gradient(to left bottom, black, grey 75%, white)
+</div>
+<div class="gradienty" id="czwartygradient">
+
+</div>
+
+<div class="przyklady" id="trzy">
+background: linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -moz-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -o-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+background: -webkit-linear-gradient(to right, red 45%, yellow, blue 60%, purple);
+</div>
+
+<div class="przyklady" id="cztery">
+background: repeating-linear-gradient(black 33%, white 66%);
+</div>
+
+<div class="gradienty" id="piatygradient">
+</div>
+
+<div class="przyklady" id="piec">
+background: radial-gradient(kształt rozmiar at pozycja, kolor1 odległość1, kolor2 odległość2...)
+</div>
+
+<div class="przyklady" id="szesc">
+background: radial-gradient(closest-side at 25% 75%, white, black); <br>
+background: -webkit-radial-gradient(closest-side at 25% 75%, white, black); <br>
+background: -moz-radial-gradient(closest-side at 25% 75%, white, black); <br>
+background: -o-radial-gradient(closest-side at 25% 75%, white, black); <br>
+</div>
+
+<div class="gradienty" id="szostygradient">
+</div>
+
+<div class="przyklady" id="siedem">
+background: repeating-radial-gradient(white 33%, black 66%); <br>
+background: -webkit-repeating-radial-gradient(white 33%, black 66%); <br>
+background: -moz-repeating-radial-gradient(white 33%, black 66%); <br>
+background: -o-repeating-radial-gradient(white 33%, black 66%); <br>
+</div>
+
+<div class="gradienty" id="siodmygradient">
+</div>
+
+
+<a href="21.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kurs HTML/CSS </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+<style>
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+nav{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+nav ul{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+nav li{
+position: absolute;
+display: inline-block;}
+
+nav a{
+line-height: 65px;
+text-align: center;
+background-image: url("zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 1131px;
+background-color: #fffafa;
+}
+#my-slider{
+position: absolute;
+left: 130px;
+top: 39px;}
+
+#najlepsi{
+position: absolute;
+left: 310px;
+top: 330px;
+width: 340px;
+height: 104px;
+text-align: center;
+}
+
+#kurs{
+margin-top: 3px;
+margin-bottom: 6px;
+font-size: 26px;
+color: #8a6382;
+text-shadow: 1px 1px #ceb7c7;
+}
+#podkurs{
+margin: 0px;
+font-size: 19px;
+color: #8a6382;
+text-shadow: 1px 1px #ceb7c7;
+}
+
+#rozpocznijkurs{
+position: absolute;
+top: 70px;
+background-color: #8a6382;
+width: 220px;
+left: 60px;
+height: 34px;
+color: white;
+font-size: 140%;
+border-radius: 15px;
+padding-top: 3px;
+text-decoration: none;
+}
+
+
+.kreska{
+position: absolute;
+height: 2px;
+background-color: #ba93b2;
+width: 220px;}
+
+
+
+
+
+#jedendwa{
+position: absolute;
+left: 130px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-image: url("zdjecia/1.jpg");
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+font-size: 22px;
+}
+
+#dwadwa{
+position: absolute;
+left: 310px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-image: url("zdjecia/2.jpg");
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+font-size: 22px;
+}
+#trzydwa{
+position: absolute;
+right: 310px;
+width: 160px;
+height: 159px;
+top: 474px;
+background-image: url("zdjecia/3.jpg");
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+font-size: 22px;
+}
+
+#czterydwa{
+position: absolute;
+right: 130px;
+width: 160px;
+height: 159px;
+top: 474px;
+background-image: url("zdjecia/4.jpg");
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+font-size: 22px;
+}
+
+.tekstowo{
+opacity: 1;
+margin-top: 99px;}
+
+.masaze{
+margin-top: 99px;}
+
+#medium{
+font-size: 72%;}
+
+#trzecia{
+position: absolute;
+left: 130px;
+top: 673px;
+height: 219px;
+width: 700px;
+background-color: #ba93b2;
+border-radius: 20px;
+}
+
+img[src="zdjecia/usmiech.jpg"]{
+position: absolute;
+left: 90px;
+top: 13px;}
+
+img[src="zdjecia/dyplom.jpg"]{
+position: absolute;
+left: 330px;
+top: 9px;}
+
+img[src="zdjecia/butelka.png"]{
+position: absolute;
+right: 88px;
+top: 5px;}
+
+.trzeciakolumna{
+color: white;
+text-align: center;
+font-size: 14px;
+position: absolute;
+top: 50px;
+width: 220px;
+height: 149px;
+}
+#usmiechowa{
+left: 0px;}
+
+#dyplomowa{
+left: 240px;}
+
+#butelkowa{
+left: 480px;
+}
+
+#skontaktuj{
+position: absolute;
+left: 310px;
+top: 972px;
+width: 340px;
+height: 100px;
+background-color: #ba93b2;
+border-radius: 15px;
+}
+
+#skontaktuj p{
+color: white;
+text-align: center;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+padding: 0px;
+margin-top: 5px;
+font-size: 30px;
+}
+
+#lewadolna{
+left: 70px;
+top: 1021px;
+}
+
+#prawadolna{
+right: 70px;
+top: 1021px;}
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 1131px;
+background-color: #e2c3dc;
+}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 1330px;}
+
+
+
+
+#jedendwahover{
+opacity: 0;
+position: absolute;
+left: 130px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-color: rgba(186,147,178,0.8); 
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+}
+
+#jedendwahover ul{
+text-align: left;
+position: absolute;
+top: 35px;
+left: -6px;}
+
+.tytul{font-size: 22px;
+margin-top: 2px;}
+
+#firstkwadrat:hover  .tekstowo{ opacity: 0;
+transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;}
+#firstkwadrat:hover  #jedendwahover{opacity: 1;
+transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-o-transition-duration: 1s;}
+
+#dwadwahover{
+opacity: 0;
+position: absolute;
+left: 310px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-color: rgba(186,147,178,0.8); 
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+}
+
+#dwadwahover ul{
+text-align: left;
+position: absolute;
+top: 35px;
+left: -6px;}
+
+
+
+#secondkwadrat:hover  .tekstowo{ opacity: 0;
+transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;}
+#secondkwadrat:hover  #dwadwahover{opacity: 1;
+transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-o-transition-duration: 1s;}
+
+#trzydwahover{
+opacity: 0;
+position: absolute;
+right: 310px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-color: rgba(186,147,178,0.8); 
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+}
+
+#trzydwahover ul{
+text-align: left;
+position: absolute;
+top: 25px;
+left: -6px;}
+
+
+
+#thirdkwadrat:hover  .masaze{ opacity: 0;
+transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;}
+
+#thirdkwadrat:hover  #trzydwahover{opacity: 1;
+transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-o-transition-duration: 1s;}
+
+#czterydwahover{
+opacity: 0;
+position: absolute;
+right: 130px;
+top: 474px;
+width: 160px;
+height: 159px;
+background-color: rgba(186,147,178,0.8); 
+text-align: center;
+color: white;
+text-shadow: 1px 1px 1px #a56c96;
+}
+
+#czterydwahover ul{
+text-align: left;
+position: absolute;
+top: 35px;
+left: -12px;}
+
+
+
+#czwartykwadrat:hover  .tekstowo{ opacity: 0;
+transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;}
+#czwartykwadrat:hover  #czterydwahover{opacity: 1;
+transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-o-transition-duration: 1s;}
+
+
+#cien{
+position: absolute;
+left: 119px;
+top: 274px;}
+
+</style>
+
+</head>
+<body>
+<script>
+$(function(){
+	$('#multitab li').hover(
+		function(){ $(this).stop().animate({"right": "302px"}, 1000); } ,
+		function(){ $(this).stop().animate({"right": "0"}, 1000); }
+	);
+});
+</script>
+<div id="pojemnik">
+<header>
+<img src="zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="index.html"><strong> Start </strong></a> </li>
+<li id="cennik"> <a class="menuchy" href="lekcje/kurs.html"> Kurs </a> </li>
+<li id="galeria"> <a class="menuchy" href="lekcje/galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="lekcje/kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+
+<div class="ism-slider" data-play_type="loop" data-interval="5000" id="my-slider">
+  <ol>
+    <li>
+      <img src="ism/image/slides/_u/1492257572875_442449.jpg" alt="1">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1492257384920_371779.jpg" alt="2">
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1492258626982_958642.jpg" alt="3">
+    </li>
+  </ol>
+</div>
+
+<div id="najlepsi">
+<div class="pozycjonowanie">
+<p id="kurs"> Kurs HTML5 i CSS </p>
+<p id="podkurs"> Naucz się tworzyć strony internetowe. </p>
+<a href="lekcje/kurs.html" class="menuchy"><div id="rozpocznijkurs">START</div></a>
+</div>
+</div>
+
+
+
+
+<a id="firstkwadrat" href="lekcje/kurs.html#poziompodst" >
+<div id="jedendwa">
+<p class="tekstowo"> Poziom <br> podstawowy </p>
+</div>
+<div id="jedendwahover">
+<div class="pozycjonowanie">
+<p class="tytul"> Poziom <br> podstawowy </p>
+<strong style="position: absolute; left: 0px; top: 55px; font-weight: normal">Ten poziom zawiera informacje dla ludzi którzy nigdy nie mieli styczności z językiem HTML. </strong>
+</div>
+</div>
+</a>
+
+<a id="secondkwadrat" href="lekcje/kurs.html#poziomsredniowy">
+<div id="dwadwa">
+<p class="tekstowo">Poziom <br> średni</p>
+</div>
+<div id="dwadwahover">
+<div class="pozycjonowanie">
+<p class="tytul"> Poziom <br> średni </p>
+<strong style="position: absolute; left: 0px; top: 55px; font-weight: normal">Na tym poziomie nauczysz się umieszczać elementy na stronie i poznasz podstawy języka CSS </strong>
+</div>
+</div>
+</a>
+<a id="thirdkwadrat" href="lekcje/kurs.html#poziomsredniowyzaaw">
+<div id="trzydwa">
+<p class="masaze">Poziom <br><span id="medium"> średniozaawansowany </span></p>
+</div>
+<div id="trzydwahover">
+<div class="pozycjonowanie">
+<p class="tytul"> Poziom </p>
+<strong style="position: absolute; left: 0px; top: 30px; font-weight: normal">średniozaawansowany <br><br> Naucz się tworzenia układów strony i ich rodzajów, oraz elementów interakcji
+ </strong>
+</div>
+</div>
+</a>
+
+<a id="czwartykwadrat" href="lekcje/kurs.html#zaaw">
+<div id="czterydwa">
+<p class="tekstowo">Poziom <br>zaawansowany</p>
+</div>
+<div id="czterydwahover">
+<div class="pozycjonowanie">
+<p class="tytul"> Poziom <br> zaawansowany </p>
+<strong style="position: absolute; left: 0px; top: 55px; font-weight: normal"> Ten poziom zawiera:  Pozycjonowanie, tworzenie menu <br> i formularzy oraz multimedia
+ </strong>
+</div>
+</div>
+</a>
+
+<div id="trzecia">
+<div class="pozycjonowanie">
+<img src="zdjecia/usmiech.jpg" alt="usmiech"/>
+<img src="zdjecia/dyplom.jpg" alt="dyplom"/>
+<img src="zdjecia/butelka.png" alt="butelka"/>
+
+<p id="usmiechowa" class="trzeciakolumna">
+Zamiarem tego kursu jest <br> łatwe i poprawne <br> wprowadzenie cię w <br> temat tworzenia stron <br> internetowych. Kurs nie <br> wymaga absolutnie żadnej <br> wiedzy o programowaniu.
+</p>
+<p id="dyplomowa" class="trzeciakolumna">
+Kurs napisany jest prostym <br> językiem co pomoże w <br> dokładnym zrozumieniu <br> opisywanych problemów. <br> Każda lekcja dodatkowo <br> posiada dedykowane <br> zadanie - wykorzystujące <br> poznaną wiedzę
+</p>
+<p id="butelkowa" class="trzeciakolumna">
+Nauczenie się tworzenia <br> stron nigdy nie było takie <br> proste! W tym kursie <br> znajdziesz wszystkie <br> najważniejsze informacje <br> których potrzebujesz do <br> pisania stron <br> internetowych.
+</p>
+</div>
+</div>
+
+<div id="skontaktuj">
+<p> 21 Lekcji  4 Poziomy </p>
+<p style="font-size: 130%;"> Kurs pogrupowany tematycznie</p>
+</div>
+
+<div id="lewadolna" class="kreska"></div>
+<div id="prawadolna" class="kreska"></div>
+<div id="cien"><img src="zdjecia/cien.png" alt="cien"/></div>
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+</div>
+</body>
+
+</html>

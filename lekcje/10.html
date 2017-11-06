@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 10 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 6532px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 6312px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 6511px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#boxmodel{
+position: absolute;
+left: 130px;
+width: 700px;
+top: 350px;}
+
+#druga{top: 670px;}
+#jeden{top: 1140px;}
+#dwa{top: 1320px;
+padding-top: 0px;
+height: 93px;}
+#trzecia{top: 1410px;}
+#czwarta{top: 1410px;
+border: 1px solid black;
+padding: 0px;
+width: auto;
+left: 199px;}
+
+#trzy{top: 1600px;
+padding-top: 0px;
+height: 120px;}
+#czwartal{top: 1730px;}
+
+#piata{top: 1730px;
+border: 1px solid black;
+padding: 0px;
+width: auto;
+left: auto;
+right: 130px;}
+#szosta{top: 1780px;}
+
+#cztery{top: 2030px;}
+#piec{top: 2240px;}
+#szesc{top: 2420px;}
+#siedemprzyklad{top: 2630px;}
+#siodma{top: 2990px;
+border: 3px dotted black;}
+
+#siodma2{top: 3040px;
+border: 3px dashed blue;}
+
+#siodma3{top: 3090px;
+border: 3px double red;}
+
+#osma{top: 3160px;}
+#siedem{top: 3340px;}
+
+#osiem{top: 3530px;}
+#dziewiec{top: 3660px;}
+
+#dziewiaty{top:3790px;
+padding-top: 0px;
+}
+#dziesiaty{top: 4060px;}
+#jedynasty{top: 4300px;}
+
+#przyklad{
+position: absolute;
+left: 130px;
+width: 700px;
+overflow: scroll;
+height: 130px;
+background-image: url("zdjecia1/html5.png");
+
+background-attachment: fixed;
+top: 4400px;
+}
+
+#dwunasty{top: 4520px;}
+
+#trzynasty{top: 4640px;
+padding-top: 0px;
+height: 94px;}
+
+#czternasty{
+top: 4820px;}
+#pietnasty{
+top: 5000px;}
+
+#drugiindexowe{
+z-index: 1;
+top: 5100px;}
+#indexowe{top: 5120px; 
+position: absolute; 
+z-index: 2;
+left: 130px;}
+
+#overflowik{top: 5140px;}
+#przykladover{top: 5250px;}
+
+#ostatni{
+position: absolute;
+left: 130px;
+width: 700px;
+top: 5360px;
+height: 130px;
+overflow: scroll;}
+
+#radiusowy{
+top: 5480px;}
+
+#radiusowyprzyklad{
+top: 5610px;}
+
+#radiusefekt{
+position: absolute;
+height: 50px;
+width: 180px;
+top: 5720px;
+border-radius: 20px;
+left: 220px;
+border: 1px solid black;}
+
+#cienelement{
+top: 5970px;}
+
+#cienefekt{
+position: absolute;
+top: 6080px;
+width: 180px;
+height: 80px;
+left: 130px;
+background-color: #ecadcc;
+box-shadow: 10px 5px 3px #8a6382;}
+
+#a1{top: 1220px;}
+#a2{top: 1920px;}
+#a3{top: 2110px;}
+#a4{top: 2320px;}
+#a5{top: 2500px;}
+#a6{top: 2720px;}
+#a7{top: 3240px;}
+#a8{top: 3460px;}
+#a9{top: 3890px;}
+#a10{top: 4180px;}
+
+#a11{top: 5710px; }
+#a12{top: 5775px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 6190px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="11.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="9.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">10. Właściwości modyfikujące odległość, tło i wygląd elementów </h1>
+
+<p id="pierwsza" class="definicje">
+Do tej pory tylko tworzyliśmy i modyfikowaliśmy elementy na stronie. Po przyswojeniu tej lekcji będziesz umiał również spozycjonować swoje elementy oraz zmienić ich wygląd. Wszystkie elementy stworzone w języku HTML mają budowę <strong>modelu pudełka</strong> (przedstawionego poniżej). </p>
+
+<img src="zdjecia2/boxmodel.png" alt="boxmodel" id="boxmodel"/>
+
+<p id="druga" class="definicje">
+Każdy z elementów tej budowy można dowolnie modyfikować. Dodatkowo można ustalać różne wartości dla każdego z boków danego poziomu. <br>
+- Głównym elementem jest <strong> Content </strong> w którym znajduje się aktualna zawartość danego znacznika np. tekst w <strong>p</strong>.<br>
+- Następny jest <strong>Padding</strong> wyznacza on odległość pomiędzy zawartością elementu a jego obramowaniem. <br>
+- Kolejną warstwą jest <strong>border</strong> który może służyć walorom estetycznym oraz jest granicą danego elementu. <br>
+- Ostatnią warstwą jest <strong>margin</strong> i wyznacza on odległość od granic nadrzędnego elementu do podrzędnego.<br><br>
+Spróbujmy pokazać to na przykładzie:<br>
+Zacznijmy od stworzenia contentu w HTML </p><p class="definicje" id="a1">
+Teraz w CSS nadajmy obramowanie (<strong>border</strong>). Oraz wyzerujmy <strong>padding</strong>.
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;p&gt;Content&lt;/p&gt;
+</div>
+<div class="przyklady" id="dwa">
+p{<br>
+<span class="wciecie">border: 1px solid black;<br></span>
+<span class="wciecie">padding: 0px;}</span>
+</div>
+
+<p class="definicje" id="trzecia">
+Efekt: <br>
+Jak widać nasza zawartość jest "przyklejona" gdy nie ma żadnego paddingu.<br>
+Wyzerujmy jeszcze <strong>margin</strong> z prawej strony by zobaczyć czy nasz element zareaguje.
+</p>
+
+<p class="definicje" id="czwarta">
+Content
+</p>
+
+<div class="przyklady" id="trzy">
+p{<br>
+<span class="wciecie">border: 1px solid black;<br></span>
+<span class="wciecie">margin-right: 0px;<br></span>
+<span class="wciecie">padding: 0px;}</span>
+</div>
+
+<p class="definicje" id="czwartal">
+Efekt:</p>
+
+<p class="definicje" id="piata">
+Content
+</p>
+
+<p class="definicje" id="szosta">
+Myślę, że nie ma już żadnych wątpliwości co do budowy pudełkowej elementów HTML. Teraz przejdźmy do dokładnego omówienia tych właściwości: <br>
+<strong>Margin,border i padding możemy wyznaczać w 4 sposobach.</strong> </p> <p class="definicje" id="a2">
+- Pierwszy z nich to podanie jednej własności dla wszystkich czterech boków.</p> <p class="definicje" id="a3">
+- Następny sposób to podanie dwóch wartości, z czego pierwsza będzie dotyczyła góry i dołu a druga strony lewej <br> i prawej.</p><p class="definicje" id="a4">
+- Trzecim sposobem jest podanie wartości na każdą stronę osobno.</p><p class="definicje" id="a5">
+- Czwartym sposobem jest zapisanie <strong>auto</strong> zamiast wartości. Przykładowo dając taką właściwość jak poniżej wyśrodkujemy nasz element.</p> <p class="definicje" id="a6">
+Ustaliliśmy sobie że można dać dowolne wartości dla dowolnego boku w modelu pudełkowym. Teraz przejdźmy do modyfikacji wyglądu <strong>border'a</strong> ponieważ jest to jedyny widoczny element.<br> Definiując border na przykładzie powyżej użyłem stwierdzeń solid i black. Zamiast Black możesz użyć <strong>dowolnego koloru</strong>. Natomiast <strong>solid</strong> oznacza obramowanie stałe, możesz również użyć innych <a href="https://www.w3schools.com/css/css_border.asp">wartości</a>: </p>
+</div>
+
+<div class="przyklady" id="cztery">
+margin: 0px;
+</div>
+
+<div class="przyklady" id="piec">
+padding: 0px 100px;
+</div>
+
+<div class="przyklady" id="szesc">
+border-left: 1px solid black;
+</div>
+
+<div class="przyklady" id="siedemprzyklad">
+margin: 0px auto;
+</div>
+
+<p class="definicje" id="siodma">
+border: 3px dotted black;
+</p>
+
+<p class="definicje" id="siodma2">
+border: 3px dashed blue;
+</p>
+
+<p class="definicje" id="siodma3">
+border: 3px double red;
+</p>
+
+<p class="definicje" id="osma">
+Nasze elementy mogą mieć również różne tła, dlatego teraz przedstawię ci parę właściwości modyfikujących właśnie tło.</p> <p class="definicje" id="a7">
+Najbardziej podstawowym tłem jest jednolity kolor. Ustawiamy go w ten sposób:</p><p class="definicje" id="a8">Jako tło możesz ustawić również zdjęcie.
+</p>
+
+<div class="przyklady" id="siedem">
+background-color: #ba93b2;
+</div>
+
+<p class="definicje" style="top: 3420px; color: white; background-color: #ba93b2;">Efekt</p>
+
+<div class="przyklady" id="osiem">
+background-image: url("zdjecie.jpg");
+</div>
+
+<p class="definicjeefekt" style="top: 3610px; color: #ba93b2;">Efekt</p>
+
+<p class="definicje" id="dziewiec">
+Jak widzisz wstawiając tło ze zdjęciem, jeżeli zdjęcie zmieści się więcej niż jeden raz na szerokości elementu to będzie się powtarzać. Możesz zatrzymać ten efekt tą modyfikacją:</p><p class="definicje" id="a9">
+Możesz również powtarzać tło w pionie <strong>repeat-y</strong> lub <br> w poziomie <strong>repeat-x</strong>.<br>
+Jeśli chcesz zmienić ustawienie tła możesz użyć tej właściwości by ustawić tło na lewej, prawej stronie lub środku :</p> <p class="definicje" id="a10">
+Możesz również ustawić żeby twoje tło zostało w tym samym miejscu pomimo przewijania strony. Właściwość odpowiedzialna za tę funkcje to:
+</p>
+<div class="przyklady" id="dziewiaty">
+background-image: url("zdjecie.jpg"); <br>
+<strong>background-repeat: no-repeat;</strong> <br>
+</div>
+
+<p class="definicjeefekt" style="top: 3850px; color: #ba93b2; background-repeat: no-repeat">Efekt</p>
+
+<div class="przyklady" id="dziesiaty">
+background-position: center;
+</div>
+
+<p class="definicjeefekt" style="top: 4140px; color: #ba93b2; background-repeat: no-repeat; background-position: center;">Efekt</p>
+
+<div class="przyklady" id="jedynasty">
+background-attachment: fixed;
+</div>
+
+<div id="przyklad">
+Pokazanie tej właściwości nie jest takie proste ponieważ ustawiając tą wartość na przykładzie tło i tak bierzę pod uwagę przesuwanie całej przeglądatki, mimo tego musicie mi zaufać na słowo lub przetestować tą właściwość <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment"> na tej stronie </a>
+Pokazanie tej właściwości nie jest takie proste ponieważ ustawiając tą wartość na przykładzie tło i tak bierzę pod uwagę przesuwanie całej przeglądatki, mimo tego musicie mi zaufać na słowo lub przetestować tą właściwość <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment"> na tej stronie </a>
+Pokazanie tej właściwości nie jest takie proste ponieważ ustawiając tą wartość na przykładzie tło i tak bierzę pod uwagę przesuwanie całej przeglądatki, mimo tego musicie mi zaufać na słowo lub przetestować tą właściwość <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment"> na tej stronie </a>
+</div>
+
+<p class="definicje" id="dwunasty">
+Możesz również ustalać szerokość elementów na twojej stronie, dzięki właściwości <strong>width</strong> oraz wysokość elementów dzięki właściwości <strong>height</strong>.
+</p>
+<div class="przyklady" id="trzynasty">
+p{<br>
+<span class="wciecie">width: 100px; <br></span>
+<span class="wciecie">height: 100px;}</span>
+</div>
+
+<p class="definicjeefekt" style="border: 1px solid black; top: 4720px; color: #ba93b2; background-repeat: no-repeat; background-position: center; width: 100px; height: 100px;">Efekt</p>
+
+<p class="definicje" id="czternasty"> Na naszej stronie możemy również ustawiać obiekty warstwami. Dzięki właściwości w CSS: <strong>z-index</strong> Możesz ustawić jeden obrazek na drugim obrazku. Wystarczy, że na element który ma być wyżej ustawisz większą wartość przy z-index.</p>
+
+<div class="przyklady" id="pietnasty">
+p{z-index: 1;} <br>
+img{z-index: 2;} <br>
+</div>
+
+<img src="zdjecia1/zdj.png" alt="zdjecie" id="indexowe"/>
+<p class="definicje" id="drugiindexowe"> Efekt </p>
+
+<p class="definicje" id="overflowik">
+Jeżeli chcesz żeby jakiś element miał możliwość przewijania swojej zawartości musisz nadać mu właściwość:</p>
+<div class="przyklady" id="przykladover">
+overflow: scroll; </div>
+
+<div id="ostatni">
+Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text 
+</div>
+
+<p class="definicje" id="radiusowy">
+Jeżeli chcesz żeby twój element nie miał "ostrego" obramowania, możesz użyć właściwości <strong>border-radius</strong> która spowoduje że twój element będzie miał zaokrąglone rogi.</p><p class="definicje" id="a11">Efekt:</p><p class="definicje" id="a12">Jeśli chcesz żeby twój element rzucał cień możesz użyć właściwości <strong>box-shadow</strong> z czterema własnościami. Pierwsza liczba to oddalanie cienia od obiektu poziomo, druga liczba to oddalenie pionowo, trzecia liczba to rozmazanie cienia <br>a czwarta wartość to kolor cienia.
+</p>
+
+<div class="przyklady" id="radiusowyprzyklad">
+border-radius: 20px;
+</div>
+
+<div id="radiusefekt">
+
+</div>
+
+<div class="przyklady" id="cienelement">
+box-shadow: 10px 5px 3px #8a6382;
+</div>
+
+
+<div id="cienefekt">
+
+</div>
+
+<a href="11.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</body>
+
+</html>

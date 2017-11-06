@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 18 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 2972px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:2752px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 2951px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{
+height: 62px;
+padding-top: 0px;
+top: 530px;}
+
+#dwa{
+padding-top: 0px;
+height: 93px;
+top: 990px;}
+
+#trzy{
+padding-top: 0px;
+height: 182px;
+top: 1460px;}
+
+#cztery{
+padding-top: 0px;
+height: 122px;
+top: 1870px;}
+
+#piec{
+top: 2100px;
+height: 92px;
+padding-top: 0px;}
+
+#szesc{
+top: 2300px;
+height: 92px;
+padding-top: 0px;}
+
+#siedem{
+top: 2470px;
+height: 92px;
+padding-top: 0px;}
+
+#osiem{position: absolute;
+padding-top: 7px;
+top: 2590px;
+width: 300px;
+left: 330px;
+text-align: center;
+height: 30px;
+background-color: #8a6382;
+color: white;
+border-radius: 15px;}
+
+#a1{top: 580px;}
+#a2{top: 675px;}
+#a3{top: 1070px;}
+#a4{top: 1625px;}
+#a5{top: 1790px;}
+#a6{top: 1970px;}
+#a7{top: 2190px;}
+#a8{top: 2380px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 2680px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="19.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="17.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">18. Rodzaje układów strony i responsywność </h1>
+
+<p id="pierwsza" class="definicje">
+W tym kursie nie będę dokładnie pokazywać na czym polega <strong>responsywność</strong>, ponieważ jest to zbyt obszerny temat. Pracę <br>z nim można zacząć dopiero jak ma się już dużą wprawę <br>w pisaniu stron internetowych. Żeby zrozumieć <strong>RWD</strong> (czyli właśnie responsywność), trzeba kompletnie zmienić myślenie, ponieważ w pisaniu responsywnych stron będziesz musiał operować proporcjami a nie rozmiarami, ponieważ wraz ze zmianą rozdzielczości nasza strona musi się dopasowywać. Podstawą do stworzenia responsywnej strony jest operowanie na procentach zamiast pixeli i stosować funkcje <strong>@media</strong> w  CSS by dostosować swój CSS do urządzeń mobilnych.</p><p class="definicje" id="a1">Tworząc stronę internetową musisz zdecydować się na jeden <br>z układów elementów na niej. Najczęściej używanymi układami są:</p> <p class="definicje" id="a2">
+- <strong>Układ o stałej szerokości</strong> to najprostszy układ do stworzenia. Operujemy na stałych wartościach które nie będą się zmieniać ze zmianą rozdzielczością ekranu. Do zalet należy największy wpływ na pozycje i wielkość elementu. Do wad natomiast to, że strona nie będzie dostosowana na urządzenia mobilne. Stworzenie takiego układu polega na nadaniu stałej szerokości <br>i wysokości każdemu elementowi oraz spozycjonowaniu ich <br>w dowolny sposób. Najczęściej jako wartość szerokości całej strony ustala się <strong>960 pixeli</strong>.</p> <p class="definicje" id="a3">
+- <strong> Układ płynny </strong> to układ który cechuje że zamiast używać jednostek stałych używamy procentów do wyrażania szerokości oraz vh do wyrażania wysokości. Układ cechuje się tym że np. dając na główny pojemnik strony szerokość 80% a w środku są dwa inne pojemniki, to suma długości tych pojemników ma być równa 100% a nie 80%. Żeby elementy nie przybierały nienaturalnych rozmiarów w tym układzie ustalamy minimalną wysokość i szerokość <strong>min-width i min-height</strong> oraz maksymalną wysokość i szerokość <strong>max-width i max-height</strong>. Żeby nie musieć obliczać procentowo długości obramowań do każdego pojemnika warto dać wartość w CSS <strong>box-sizing: border-box</strong>.</p> <p class="definicje" id="a4">
+- <strong>Układ hybrydowy</strong> to połączenie dwóch poprzednich układów. Główny pojemnik na stronie ma szerokość ustawioną procentowo, a kolumny które zawiera mają albo szerokośc w pixelach albo w procentach. Taki układ tworzymy w ten sposób:</p><p class="definicje" id="a5">
+- Najpierw przygotujmy sobie kod HTML</p> <p class="definicje" id="a6">
+- Ustawmy szerokość głównego pojemnika w procentach (wartość z procentem będzie określała procent przeglądarki jaki będzie zajmował pojemnik)</p> <p class="definicje" id="a7">
+- Na lewej kolumnie ustawiamy szerokość w pixelach <br>i ustawiamy <strong>float: left;</strong></p> <p class="definicje" id="a8">
+- Na prawej kolumnie ustawiamy lewy margines o szerokości lewej kolumny i procentową szerokość kolumny
+</p>
+
+<div class="przyklady" id="jeden">
+@media screen and (min-width: 480px) { <br>
+modyfikowanie elementów }
+</div>
+
+<div class="przyklady" id="dwa">
+#pojemnik{ <br>
+width: 960px; <br>
+margin: 0px auto;}
+</div>
+
+<div class="przyklady" id="trzy">
+#pojemnik{ <br>
+<span class="wciecie">	width: 80%;} <br></span>
+#lewa_kolumna{ <br>
+<span class="wciecie">	width: 20%;} <br></span>
+#prawa_kolumna{ <br>
+<span class="wciecie">	width: 80%;} </span>
+</div>
+
+<div class="przyklady" id="cztery">
+&lt;div id="pojemnik"&gt; <br>
+<span class="wciecie">	&lt;div id="lewa"&gt; lewa kolumna &lt;/div&gt; <br> </span>
+<span class="wciecie">	&lt;div id="prawa"&gt; prawa kolumna &lt;/div&gt; <br> </span>
+&lt;/div&gt;
+</div>
+
+<div class="przyklady" id="piec">
+#pojemnik{ <br>
+margin: 0px auto; <br>
+width: 80%; }
+</div>
+
+<div class="przyklady" id="szesc">
+#lewa{ <br>
+width: 100px; <br>
+float: left;}
+</div>
+
+<div class="przyklady" id="siedem">
+#prawa{ <br>
+margin-left: 102px; <br>
+width: 68%;}
+</div>
+
+<a href="zdjecia2/hybrydowy.html">
+<div id="osiem">
+Sprawdź efekt układu hybrydowego
+</div>
+</a>
+
+<a href="19.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

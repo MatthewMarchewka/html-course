@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 19 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3422px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3202px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3401px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top:420px;
+padding-top: 0px;
+height: 90px;}
+
+#dwa{top:670px;
+padding-top: 0px;
+height: 90px;}
+
+table,td,th,tr {
+border: 2px solid #8a6382;}
+
+table{position: absolute;
+color: #8a6382;
+font-size: 22px;
+left: 180px;
+top: 900px;
+width: 600px;}
+
+th{font-weight: bold;}
+
+#trzy{top: 1120px;}
+
+#cztery{top:1330px;
+padding-top: 0px;
+height: 90px;}
+
+#piec{top:1670px;
+padding-top: 0px;
+height: 90px;}
+
+audio{position: absolute;
+left: 240px;
+top: 1440px;}
+
+#drugatabela{top: 1880px;}
+#siedem{top: 2290px;
+padding-top: 0px;
+height: 93px;}
+#szesc{top: 2100px;}
+
+video{position: absolute;
+left: 240px;
+top: 2400px;}
+
+iframe{left: 200px;
+position: absolute;
+top: 2800px;}
+
+#a1{top: 270px;}
+#a2{top: 500px;}
+#a3{top: 750px;}
+#a4{top: 1410px;}
+#a5{top: 1460px;}
+#a6{top: 1745px;}
+#a7{top: 2400px;}
+#a8{top: 2570px;}
+#a9{top: 2780px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3140px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="20.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="18.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">19. Umieszczanie multimediów na stronie </h1>
+
+<p id="pierwsza" class="definicje">
+Na tej lekcji nauczysz się umieszczać muzykę lub video na twoją stronę internetową. Do tego pokażę ci jak umieścić filmik <br>z youtuba na twojej stronie.</p> <p class="definicje" id="a1">
+Do umieszczania muzyki na stronie służy kontenerowy znacznik <strong>audio</strong>. Do tego żeby wyświetliły nam się kontrolki włączenia, ściszania i pobierania musimy dodać atrybut <strong>controls</strong> bez żadnej wartości.</p> <p class="definicje" id="a2">
+Do znacznika <strong>audio</strong> możemy również dodać trzy inne atrybuty: <strong>autoplay</strong> żeby muzyka włączyła się przy uruchomieniu strony, <strong>preload</strong> żeby muzyka załadowała się automatycznie i <strong>loop</strong> żeby muzyka się zapętlała.</p> <p class="definicje" id="a3">
+Na swojej stronie internetowej możesz umieszczać muzykę z rozszerzeniem <strong>MP3</strong>, <strong>Wav</strong> lub <strong>Ogg</strong>, lecz nie wszystkie przeglądarki wspierają każdy z tych formatów.
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;audio controls&gt;<br>
+pliki muzyczne <br>
+&lt;/audio&gt;
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;audio controls autoplay preload loop&gt;<br>
+pliki muzyczne <br>
+&lt;/audio&gt;
+</div>
+
+<table >
+<tr>
+<th>Przeglądarka</th>
+<th>MP3</th>
+<th>Wav</th>
+<th>Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>TAK</td>
+<td>NIE</td>
+<td>NIE</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>NIE</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+
+</table>
+
+<p class="definicje" id="trzy">
+Żeby wstawić muzykę na stronę internetową używamy znacznika <strong>source</strong> który ma dwa obowiązkowe atrybuty. <strong>Source</strong> który określa jaki plik muzyczny ma być na stronie, oraz <strong>type</strong> który określa jaki to jest typ pliku, <strong>type</strong> przybiera trzy wartości zależnie od formatu wstawionej muzyki: <strong>audio/mpeg</strong>, <strong>audio/ogg</strong> lub <strong>audio/wav</strong>.</p> <p class="definicje" id="a4">Efekt:</p> <p class="definicje" id="a5">Do umieszczania video na stronie internetowej służy znacznik kontenerowy <strong>video</strong>. Możemy w nim umieścić atrybuty: <strong>autoplay</strong> żeby film się sam uruchomił, <strong>poster="zdjecie.jpg"</strong> by wstawić miniaturkę filmiku oraz <strong>controls</strong> aby pokazać ikonki zarządzania filmem.</p> <p class="definicje" id="a6">
+Na swoją stronę internetową możesz wstawić video z następującymi rozszerzeniami: <strong>MP4</strong>,<strong>WebM</strong> i <strong>Ogg</strong>. Lecz nie wszystkie przeglądarki będą je akceptowały.
+</p>
+
+<div class="przyklady" id="cztery">
+&lt;audio controls  preload &gt;<br>
+&lt;source type="audio/ogg" src="zdjecia2/horse.ogg"/&gt; <br>
+&lt;/audio&gt;
+</div>
+
+<audio controls preload >
+<source type="audio/ogg" src="zdjecia2/horse.ogg"/> 
+</audio>
+
+<div class="przyklady" id="piec">
+&lt;video autoplay poster="zdjecie.jpg" controls&gt;<br>
+pliki filmowe <br>
+&lt;/video&gt;
+</div>
+
+<table id="drugatabela">
+<tr>
+<th>Przeglądarka</th>
+<th>MP4</th>
+<th>WebM</th>
+<th>Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>TAK</td>
+<td>NIE</td>
+<td>NIE</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>TAK</td>
+<td>NIE</td>
+<td>NIE</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>TAK</td>
+<td>TAK</td>
+<td>TAK</td>
+</tr>
+
+</table>
+
+<p class="definicje" id="szesc">
+Do umieszczania filmików na stronie służy znacznik samodzielny <strong>source</strong> który posiada dwa obowiązkowe atrybuty, <strong>src</strong> który określa źródło filmiku i <strong>type</strong> który określa typ wstawianego filmiku i przyjmuje wartości <strong>video/mp4</strong>, <strong>video/ogg</strong> i <strong>video/webm</strong>. </p><p class="definicje" id="a7"> Efekt:</p> <p class="definicje" id="a8">Na swojej stronie internetowej możesz również umieszczać filmy z youtube, żeby to zrobić musisz:<br>
+- Wejść na wybrany film <br>
+- Pod filmem kliknij udostępnij <br>
+- Przejdź do zakładki "Umieść na stronie" <br>
+- Skopiuj tekst i wstaw go do body </p>
+<p class="definicje" id="a9">Efekt:
+</p>
+
+<div class="przyklady" id="siedem">
+&lt;video  controls&gt;<br>
+&lt;source src="zdjecia2/filmik.mp4" type="video/mp4"/&gt; <br>
+&lt;/video&gt;
+</div>
+
+<video controls>
+<source src="zdjecia2/filmik.mp4" type="video/mp4"/> 
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BoRb2YKEt48"  allowfullscreen></iframe>
+
+
+
+<a href="20.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 21 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 6922px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:6702px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 6901px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{
+height: 92px;
+padding-top: 0px;
+top: 430px;}
+
+#przykladrotate{
+left: 130px;
+top: 590px;
+background-color: black;
+}
+
+#przykladrotate2{
+
+left: 290px;
+top: 590px;
+background-color: #8a6382;
+transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+}
+
+#dwa{top: 1030px;}
+
+#przykladrotate3{
+left: 220px;
+top: 1160px;
+background-color: black;
+}
+
+#przykladrotate4{
+
+left: 380px;
+top: 1160px;
+background-color: #8a6382;
+transform: rotate(10deg) scale(2,1);
+-webkit-transform: rotate(10deg) scale(2,1);
+-ms-transform: rotate(10deg) scale(2,1);
+}
+
+.przy{
+width: 140px;
+height: 60px;
+position: absolute;
+}
+
+#przykladrotate5{
+left: 220px;
+top: 1510px;
+background-color: black;
+}
+
+#przykladrotate6{
+
+left: 380px;
+top: 1510px;
+background-color: #8a6382;
+transform: skew(30deg,30deg);
+-webkit-transform:  skew(30deg,30deg);
+-ms-transform:  skew(30deg,30deg);
+}
+
+#trzy{
+top: 1360px;}
+
+#cztery{top: 1700px;}
+
+#piec{
+padding-top: 0px;
+top: 2130px;}
+
+#szesc{
+height: 150px;
+padding-top: 0px;
+top: 2400px;}
+
+#siedem{top: 2790px;
+padding-top: 0px;}
+
+@keyframes 'animacja'{ 
+from{background-color: red;} 
+50% {background-color: green;} 
+to {background-color: yellow;} 
+}
+@-webkit-keyframes 'animacja'{ 
+from{background-color: red;} 
+50% {background-color: green;} 
+to {background-color: yellow;} 
+}
+@-moz-keyframes 'animacja'{ 
+from{background-color: red;} 
+50% {background-color: green;} 
+to {background-color: yellow;} 
+}
+
+@keyframes 'animacja2'{ 
+from{background-color: red; left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow; left: 0px;} 
+}
+@-webkit-keyframes 'animacja2'{ 
+from{background-color: red; left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow; left: 0px;} 
+}
+@-moz-keyframes 'animacja2'{ 
+from{background-color: red;
+left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow;
+left: 0px;} 
+}
+
+#przykladdzialania{
+position: absolute;
+left: 210px;
+top: 2870px;
+animation: animacja 5s infinite;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+}
+
+#przykladdzialania2{
+position: absolute;
+left: 210px;
+top: 3240px;
+animation: animacja2 5s infinite;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+}
+
+#osiem{
+height: 216px;
+padding-top: 0px;
+top: 3005px;}
+
+#a1{top: 510px;}
+#a2{top: 650px;}
+#a3{top: 1150px;}
+#a4{top: 1240px;}
+#a5{top: 1590px;}
+#a6{top: 1799px;}
+#a7{top: 2180px;}
+#a8{top: 2540px;}
+#a9{top: 2660px;}
+#a10{top: 2850px;}
+#a11{top: 2910px;}
+#a12{top: 3270px;}
+#a13{top: 3460px;
+padding-top: 0px;
+height: 62px;}
+#a14{top: 3510px;}
+#a15{top: 3760px;
+padding-top: 0px;
+height: 62px;}
+
+#przykladdzialania3{
+position: absolute;
+left: 210px;
+top: 3840px;
+animation: animacja2 5s infinite;
+animation-direction: alternate;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+}
+
+#a16{top: 3880px;}
+
+#a17{top: 4090px;
+padding-top: 0px;
+height: 62px;}
+
+#a18{
+top: 4140px;}
+
+#a19{
+top: 4270px;
+height: 122px;
+padding-top: 0px;}
+
+#przykladdzialania4{
+position: absolute;
+top: 4399px;
+animation: animacja2 5s infinite;
+animation-play-state: paused;
+animation-direction: alternate;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+}
+#przykladdzialania4:hover{
+animation-play-state: running;}
+
+#a20{
+top: 4440px;}
+
+#przykladdzialania5{
+position: absolute;
+top: 4599px;
+animation: animacja3 5s infinite;
+animation-direction: alternate;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+}
+
+
+
+@keyframes 'animacja3'{ 
+from{background-color: red; left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow; left: 0px;
+transform: scale(-1,1) rotate(180deg)} 
+}
+
+@-webkit-keyframes 'animacja3'{ 
+from{background-color: red; left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow; left: 0px;
+transform: scale(-1,1) rotate(180deg)} 
+}
+
+@-moz-keyframes 'animacja3'{ 
+from{background-color: red; left: 910px;} 
+50% {background-color: green;} 
+to {background-color: yellow; left: 0px;
+transform: scale(-1,1) rotate(180deg)} 
+}
+
+#a21{top: 4670px;}
+#a23{top: 4880px;}
+#a22{top: 4800px;}
+#a24{top: 5010px;
+height: 122px;
+padding-top: 0px;}
+
+#a25{top: 5120px;}
+
+#a26{top: 5180px;
+height: 122px;
+padding-top: 0px;}
+
+#a27{
+top: 5300px;}
+
+#a28{
+height: 252px;
+padding-top: 0px;
+top: 5420px;}
+
+#a29{
+padding-top: 0px;
+height: 93px;
+top: 5710px;}
+
+#a29 span{
+position: absolute;
+top: 0px;
+right: 0px;
+height: 100%;
+background-color: white;
+width: auto;
+animation: pisz 5s steps(13,end);
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;}
+
+#a29 p{ 
+font-family: courier; 
+position: relative; 
+width: 370px;
+white-space: nowrap;} 
+
+@-webkit-keyframes 'pisz'{ 
+from {width:100%;} 
+to{width:0%;} 
+}
+
+@keyframes 'pisz'{ 
+from {width:100%;} 
+to{width:0%;} 
+}
+
+#a30{
+top: 5800px;}
+
+#a31{
+top: 5950px;
+padding-top: 0px;
+height: 92px;}
+
+#a32{top: 6020px;}
+
+#a33{height: 122px;
+top: 6180px;
+padding-top: 0px;
+}
+
+#a34{top: 6300px;}
+
+#a35{height: 92px;
+padding-top: 0px;
+top: 6393px;}
+
+#tekst{
+		position: absolute;
+		left: 130px;
+		top: 6518px;
+		padding: 15px; 
+		border: 1px solid black;
+		width: 700px;
+		margin: 0 auto;
+		overflow: hidden;
+		background-color: #fffafa;
+	}
+#tekst h2{
+		white-space: nowrap;
+		color: #8a6382;
+		animation: przesun 25s;
+		-webkit-animation-iteration-count: infinite;
+	}
+	@-webkit-keyframes 'przesun'{
+	0% {transform:translateX(-48%);}
+	100%{transform:translateX(110%);}
+	}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="../index.html">
+<div id="nastepnalekcja">
+Zakończ kurs -&gt;&gt;
+</div>
+</a>
+<a href="20.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">21. Tworzenie animacji w CSS </h1>
+
+<p id="pierwsza" class="definicje">
+Dzięki tej lekcji nauczysz się ingerować w położenie i wygląd elementów oraz zdobędziesz wiedzę na temat tworzenia prostych animacji w CSS. Pierwszą właściwością służącą do zmiany wyglądu naszego elementu jest <strong>transform</strong>. Dla tej właściwości możemy określić różne rodzaje akcji: <strong> rotate</strong> czyli obrócenie elementu o wybrany kąt, każdorazowo przy użyciu właściwości transform musimy dodać przedrostki przeglądarek w ten sposób:</p><p class="definicje" id="a1">Efekt (czarny kwadrat przed zmianą, fioletowy po zmianie):</p> <p class="definicje" id="a2">Drugim rodzajem akcji jest skalowanie czyli zmienienie wielkości wybranego elementu, tą akcje możemy wywołać wartością <strong>scale</strong> lub <strong>scaleX</strong> lub <strong>scaleY</strong>. Wszystkie akcje można ze sobą łączyć zapisując je po spacji. Skalowanie można wywołać obu osiowo lub osobno o oś X i oś Y. Jeżeli skalowanie jest wywołane liczbą większą od 1 to jest to powiększenie elementu a jeżeli o liczbę z przedziału od 0 do 1 to jest to pomniejszenie elementu. Charakterystycznym skalowaniem jest skalowanie <br>o wektor (-1,1) ponieważ jest to stworzenie lustrzanego odbicia, transformacje zapisujemy w ten sposób (na przykładzie połączenie dwóch transformacji):</p> <p class="definicje" id="a3">Efekt:</p><p class="definicje" id="a4">Następną akcją dla właściwości transform jest <strong>skew</strong> i jest to "rozjechanie" elementu również o wybrany kąt.</p> <p class="definicje" id="a5">Następną akcją jest translacja, jest to zwykłe przesunięcie o wybraną ilość pixeli, lub innych jednostek.</p> <p class="definicje" id="a6">Teraz przejdźmy do tworzenia animacji w CSS. Wszystkie animacje napisane w tym języku składają się z dwóch elementów. Ze zdefiniowania animacji i zastosowania animacji we właściwościach któregoś z elementu.<br>Pamiętaj że żeby animacja działała poprawnie w każdej przeglądarce należy użyć przedrostków (umieszczamy je pomiędzy <strong>keyframes a małpą</strong>) które poznałeś na lekcji <br>o gradientach. Żeby zdefiniować animację używamy tego szablonu: </p> <p class="definicje" id="a7">W przebiegu animacji określamy rodzaj interakcji naszego obiektu. Przebieg animacji składa się ze zdefiniowania modyfikacji początkowej <strong>from</strong> i wartości końcowej <strong>to</strong> w odcinku pomiędzy tymi definicjami możemy zmodyfikować interakcje odnosząc się do procentu przejścia danej animacji. Przykładowo: </p> <p class="definicje" id="a8"> W tej animacji nasz obiekt będzie zaczynął z czerownym tłem które w połowie zmieni się na zielone a skończy swoją animację z żółtym tłem.</p> <p class="definicje" id="a9">
+Żeby zastosować animację na jakimś obiekcie musimy wstawić taką linijkę w jego arkusz stylów (właściwość <strong>animation</strong> ma dwie wartości: nazwa_animacji i jej czas):</p> <p class="definicje" id="a10">Efekt:</p><p class="definicje" id="a11">Na etapach swojej animacji możemy dodać więcej niż jedną modyfikację by urozmaicić naszą animację, na przykład:
+</p>
+
+<p class="definicje" id="a12">Pomimo tego że wartości animacji można wpisywać po spacji istnieją specjalne właściwości wyodrębniające każdą z cech naszej animacji. Pierwszą komendą jest <strong>animation-duration</strong> który określa czas trwania animacji.
+Istnieje również właściwość określająca nazwę wykorzystywanej animacji: <strong>animation-name</strong>.
+</p>
+
+<div class="przyklady" id="a13">
+animation-name: animacja; <br>
+animation-duration: 5s;
+</div>
+
+<div id="przykladdzialania">
+</div>
+
+<div class="przyklady" id="jeden">
+transform: rotate(10deg);<br>
+-webkit-transform: rotate(10deg);<br>
+-ms-transform: rotate(10deg);
+</div>
+
+<div class="przy" id="przykladrotate">
+</div>
+
+<div class="przy" id="przykladrotate2">
+</div>
+
+<div class="przy" id="przykladrotate3">
+</div>
+
+<div class="przy" id="przykladrotate4">
+</div>
+
+<div class="przy" id="przykladrotate5">
+</div>
+
+<div class="przy" id="przykladrotate6">
+</div>
+
+<div class="przyklady" id="dwa">
+transform: scale(2,1) rotate(10deg);
+</div>
+
+<div class="przyklady" id="trzy">
+transform: skew(30deg,30deg);
+</div>
+
+<div class="przyklady" id="cztery">
+transform: translateX(10px);
+</div>
+
+<div class="przyklady" id="piec">
+@keyframes 'nazwa_animacji'{ <br>
+przebieg animacji}
+</div>
+
+<div class="przyklady" id="szesc">
+@keyframes 'animacja'{ <br>
+from{background-color: red;} <br>
+50% {background-color: green;} <br>
+to {background-color: yellow;} <br>
+}
+</div>
+
+<div class="przyklady" id="siedem">
+#obiekt{ <br>
+animation: animacja 5s;}
+</div>
+
+<div class="przyklady" id="osiem">
+@keyframes 'animacja'{ <br>
+from{background-color: red; <br>
+<span class="wciecie">left: 910px;} <br> </span>
+50% {background-color: green;} <br>
+to {background-color: yellow; <br>
+<span class="wciecie">left: 0px;} <br> </span>
+}
+</div>
+
+<div id="przykladdzialania2">
+</div>
+
+<p class="definicje" id="a14">
+Możesz również określić ilość powtórzeń twojej animacji lub określić żeby animacja powtarzała się w nieskończoność, służy do tego właściwość <strong>animation-iteration-count</strong> do określenia nieskończoności służy wartość: <strong>infinite</strong>. Możesz również określić żeby animacja po zakończeniu, odtwarzała się od końca do początku. Służy do tego właściwość <strong>animation-direction </strong> a wartośc to <strong>alternate</strong>.
+</p>
+
+<div class="przyklady" id="a15">
+animation-iteration-count: infinite; <br>
+animation-direction: alternate;
+</div>
+
+<div id="przykladdzialania3">
+</div>
+
+<p class="definicje" id="a16">
+Właściwość <strong>animation-delay</strong> określa opóźnienie startu animacji po włączeniu strony. Możesz również użyć właściwości <strong>animation-timing-function</strong> określającej tempo animacji. Wartość <strong>easy-in</strong> to animacja wolna na początku, potem przyśpiesza. Wartość <strong>easy-out</strong> to zwolnienie tempa animacji na końcu. 
+</p>
+
+<div class="przyklady" id="a17">
+animation-delay: 5s;<br>
+animation-timing-function: easy-in;
+</div>
+
+<p class="definicje" id="a18">
+Możesz również określić pauze animacji i na przykład po najechaniu na dany przedmiot animacja się włączy, wykorzystaj do tego właściwość <strong>animation-play-state</strong>.</p>
+
+
+<div class="przyklady" id="a19">
+div{<br>
+<span class="wciecie">animation-play-state: paused; }<br></span>
+div:hover{ <br>
+<span class="wciecie">animation-play-state: running; }<br></span>
+</div>
+
+
+<div id="przykladdzialania4">
+</div>
+
+<p class="definicje" id="a20">
+Podążaj kursorem za kwadratem. <br>Przykład innego wykorzystania animacji <strong> Własnosć rotate(180deg) i scale (-1,1)</strong> w polu <strong>"to"</strong> animacji:
+</p>
+
+<div id="przykladdzialania5">
+</div>
+
+<p class="definicje" id="a21">
+Dzięki właściwościom poznanym na tej lekcji możesz odtworzyć animacje np. maszyny do pisania. Robimy to w ten sposób:<br>
+- Zacznijmy od stworzenia HTML do naszej animacji
+</p>
+
+<div class="przyklady" id="a22">
+&lt;p&gt; Witaj w świecie bajek &lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+</div>
+
+<p class="definicje" id="a23">
+- Teraz dajmy do naszego <strong>p</strong> potrzebne właściwości żeby nasza maszyna do pisania działała. Warto jest ustawić czcionkę <br>o równej szerokości.
+</p>
+
+<div class="przyklady" id="a24">
+p{ <br>
+<span class="wciecie">font-family: courier;     <br></span>
+<span class="wciecie">position: relative;     <br></span>
+<span class="wciecie">white-space: nowrap;}   <br></span>
+</div>
+
+<p class="definicje" id="a25">
+- Teraz możemy przejść do tworzenia animacji
+</p>
+
+<div class="przyklady" id="a26">
+@-webkit-keyframes 'pisz'{ <br>
+from {width:100%;} <br>
+to{width:0%;} <br>
+}
+</div>
+
+<p class="definicje" id="a27">
+- Ostatnim etapem będzie dodanie wartości do spana i podłączenie animacji do elementu. Wartość step służy do podzielenia animacji na tyle kroków ile podamy w nawiasie.
+</p>
+
+<div class="przyklady" id="a28">
+span{ <br>
+<span class="wciecie">		position: absolute;<br></span>
+<span class="wciecie">		top: 0px;<br></span>
+<span class="wciecie">	right: 0px;<br></span>
+<span class="wciecie">		height: 100%;<br></span>
+<span class="wciecie">		width: 100%;<br></span>
+<span class="wciecie">		background-color: white;<br></span> 
+<span class="wciecie">		animation: pisz 5s steps(22);}</span>
+</div>
+
+<div class="przyklady" id="a29">
+<p>Witaj w świecie bajek<span></span></p>
+</div>
+
+<p class="definicje" id="a30">
+Na swojej stronie możesz umieścić animację odpowiedzialną za przesuwanie tekstu, co może urozmaicić na przykład nagłówek twojej strony.<br>
+- Standardowo na początku przygotujmy nasz HTML
+</p>
+
+<div class="przyklady" id="a31">
+&lt;div&gt; <br>
+<span class="wciecie">&lt;h2&gt; Wysuwający sie tekst &lt;/h2&gt; <br> </span>
+&lt;/div&gt;
+</div>
+
+<p class="definicje" id="a32">
+- Na diva ustawiamy <strong>overflow: hidden;</strong> i  modyfikujemy jego wygląd<br>
+- Tworzymy animacje która przesunie nasz tekst przez całą długość.</p>
+
+<div class="przyklady" id="a33">
+@-webkit-keyframes 'przesun'{ <br>
+<span class="wciecie">	0% {transform:translateX(-48%);} <br></span>
+<span class="wciecie">	100%{transform:translateX(110%);}<br></span>
+}
+</div>
+
+<p class="definicje" id="a34">
+- Ostatnim etapem jest nadanie znacznikowi z tekstem wartości <strong>white-space: nowrap;</strong> i podpięcie do niego animacji </p>
+
+<div class="przyklady" id="a35">
+h2{ <br>
+<span class="wciecie">white-space: nowrap;<br></span>
+<span class="wciecie">animation: przesun 25s;}</span>
+</div>
+
+<div id="tekst"><h2>Wysuwający sie tekst</h2></div>
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

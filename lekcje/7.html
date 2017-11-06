@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 7 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 2282px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 2062px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 2261px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 430px;}
+#dwa{top: 620px;}
+#trzy{top: 820px;}
+
+#kotwicel{
+position: absolute;
+left: 130px;
+top: 1140px;
+width: 200px;
+height: 40px;
+background-color: #8a6382;
+color: white;
+text-align: center;
+border-radius: 10px;
+}
+
+#cztery{top: 1320px;}
+#piec{top: 1460px;}
+#szesc{top: 1640px;}
+#siedem{top: 1860px;}
+
+#a1{top: 510px;}
+#a2{top: 700px;}
+#a3{top: 900px;}
+#a4{top: 1170px;}
+#a5{top: 1390px;}
+#a6{top: 1540px;}
+#a7{top: 1720px;}
+#a8{top: 1940px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 1990px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="8.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="6.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">7. Hiperłącza i kotwice </h1>
+
+<p id="pierwsza" class="definicje">
+Na swojej stronie internetowej możesz również umieszczać  hiperłącza, łączące twój dokument z innymi stronami internetowymi lub z innymi dokumentami HTML, w twoim projekcie. Służy do tego specjalny znacznik kontenerowy <strong>&lt;a&gt;</strong> który ma jeden obowiązkowy atrybut <strong>href</strong>. Hiperłącze możemy stworzyć na dowolnym elemencie np. tekst lub obrazek. Hiperłącze tworzymy zagnieżdżając element pomiędzy znaczniki <strong>a</strong>. Poniżej przykład (h1 będzie hiperłączem):</p><p class="definicje" id="a1">
+<a href="kurs.html"> Efekt </a> <br>
+Hiperłącza możemy również użyć do wywołania wysłania meila:</p>
+<p class="definicje" id="a2"><a href="mailto:mail@onet.pl"> mail </a><br>
+Jest również funkcja która pozwoli pobrać plik użytkownikowi po kliknięciu na hiperłącze: </p> <p class="definicje" id="a3">
+<a href="zdjecia1/zdj.png"  download> download </a> <br>
+Dzięki hiperłączom możemy również tworzyć "kotwice", które umożliwiają przenoszenie się w inne miejsce elementu np. na dole strony możemy umieścić kotwice do przenoszenia na gorę strony. Poniżej możesz sprawdzic przykładowe działanie takiej kotwicy (przeniesie cię na górę strony): </p><p class="definicje" id="a4"> Kod który musisz zawrzeć w dokumencie żeby kotwica poprawnie działała to: <br> - Nadanie id na miejsce do którego chcesz się przenieść:</p><p class="definicje" id="a5">
+- Stworzenie kotwicy (umieszczenie id elementu do href)</p>
+<p class="definicje" id="a6">
+Możemy również stworzyć kotwice do elementu na innej stronie, wtedy etap tworzenia kotwicy będzie wyglądał tak:</p>
+<p class="definicje" id="a7">
+Możemy również określić gdzie będzie otwierało się nasze hiperłącze dzięki atrybutowi target np. <strong>_blank</strong> otwiera odnośnik w nowej karcie.</p><p class="definicje" id="a8"><a href="../projekt.html" target="_blank">Efekt </a>
+</p>
+<div class="przyklady" id="jeden">
+&lt;a href="index.html"&gt; &lt;h1&gt;Efekt&lt;/h1&gt; &lt;/a&gt;
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;a href="mailto:mail@onet.pl"&gt; mail &lt;/a&gt;
+</div>
+
+<div class="przyklady" id="trzy">
+&lt;a href="plik.jpg" download&gt; download &lt;/a&gt;
+</div>
+<a href="#gora">
+<div id="kotwicel">
+Przejdź na górę strony
+</div>
+</a>
+<div class="przyklady" id="cztery">
+&lt;h2 id="id_kotwicy"&gt;Nagłówek góra&lt;/h2&gt;
+</div>
+
+<div class="przyklady" id="piec">
+&lt;a href="id_kotwicy"&gt;Przejdź do kotwicy&lt;/a&gt;
+</div>
+
+<div class="przyklady" id="szesc">
+&lt;a href="nazwa_dokumentu.html#id_kotwicy"&gt;Przejdź na górę innej strony&lt;/a&gt;
+</div>
+
+<div class="przyklady" id="siedem">
+&lt;a href="index.html" target="_blank"&gt;&lt;h1&gt;Efekt&lt;/h1&gt; &lt;/a&gt;
+</div>
+
+<a href="8.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

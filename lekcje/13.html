@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 13 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3352px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top:3132px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3331px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+.definicjeefekt{
+background-image: url("zdjecia1/zdj.png");
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 640px;
+padding-top: 0px;
+height: 93px;}
+
+#dwa{top: 910px;}
+#kords{top: 1180px;
+position: absolute;
+left: 271px;}
+#trzy{top: 1600px;}
+#cztery{top: 2030px;
+font-size: 23px;
+padding-top: 0px;
+}
+#piec{top: 2270px;
+font-size: 24px;
+padding-top: 0px;
+height: 93px;
+}
+
+#szesc{top: 2480px;
+font-size: 24px;
+padding-top: 0px;
+height: 93px;
+}
+
+#mapeczka{position: absolute;
+left: 130px;
+border: 1px solid #8a6382;
+top: 2655px;}
+
+#a1{top: 500px;}
+#a2{top: 710px;}
+#a3{top: 980px;}
+#a4{top: 2080px;}
+#a5{top: 2350px;}
+#a6{top: 2570px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3070px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="14.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="12.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">13. Mapa odsyłaczy </h1>
+
+<p id="pierwsza" class="definicje">
+Celem tego kursu jest to żeby strony które po nim stworzysz były estetyczne oraz funkcjonalne. Wiedza po przyswojeniu tej lekcji pozwoli ci zwiększyć użytecznność twojej strony internetowej. Tematem dzisiejszej lekcji są <strong>mapy odsyłaczy</strong>, które polegają na nałożeniu niewidzialnych odnośników do innych stron na obrazku.<br>
+We wcześniejszych lekcjach dowiedziałeś się że pomiędzy znacznik <strong>a</strong> odpowiedzialny za odsyłacze można dać obrazek, wtedy cały obrazek będzie odsyłaczem do jednego miejsca. Dzięki tej lekcji dowiesz się jak na jednym obrazku stworzyć wiele różnych odsyłaczy.</p> <p class="definicje" id="a1">
+- Pierwszym najważniejszym krokiem będzie stworzenie mapy do której potem będziemy dodawali odnośniki, dodatkowo musimy nadać jej nazwę </p>
+<p class="definicje" id="a2">
+- Kolejnym krokiem będzie dodanie zdjęcia na stronę internetową (poza znacznikiem map) z odpowiednim atrybutem: <strong>usemap</strong> do którego wpiszemy nazwę mapy (jeśli dodajesz zdjęcia jako mapa odsyłaczy lepiej żeby zostało w pierwotnym rozmiarze ponieważ mogą wystąpić problemy)</p><p class="definicje" id="a3">
+- Teraz warto otworzyć nasz obrazek w dowolnym edytorze graficznym który pokaże nam koordynaty miejsca w którym znajduje się nasz kursor (ja proponuję skorzystać z <strong>Paint</strong>'a)<br>
+- Zacznijmy od stworzenia hiperłącza w kształcie koła.<br> W edytorze graficznym wyznaczamy środek koła na naszym obrazku
+</p>
+
+<div class="przyklady" id="jeden">
+&lt;map name="mapa"&gt; <br>
+<span class="wciecie">Odsyłacze</span> <br>
+&lt;/map&gt;
+</div>
+
+<div class="przyklady" id="dwa">
+&lt;img src="zdjecie.jpg" alt="blad" <strong>usemap="#mapa"</strong>/&gt;
+</div>
+
+<img src="zdjecia2/kordynaty.png" alt="kords" id="kords"/>
+
+<p id="trzy" class="definicje">
+- Przepisujemy sprawdzone wartości do naszego odnośnika. Za stworzenie odnośnika odpowiada znacznik <strong>area</strong>, który ma obowiązkowe atrybuty: <strong>shape</strong> gdzie określamy kształt odnośnika, <strong>circle</strong> to koło, <strong>rect</strong> to prostokąt i <strong>poly</strong> to wielokąt. My z uwagi na to że tworzymy odnośnik o kształcie koła wybierzemy <span id="pierwszyodnosnik">circle</span>. Następnie powinniśmy określić tekst alternatywny <strong>alt</strong> oraz tytuł <strong>title</strong>. Następnie do atrybutu <strong>coords</strong>, wpisujemy koordynaty środka koła oraz po przecinku jego promień którego również odmierzyliśmy w takim formacie: <strong>X1,Y1,R</strong>. Następnym atrybutem jest <strong>href</strong> który jak wiesz wyznacza link gdzie będzie nas przenosił odnośnik. Ostatnim atrybutem będzie <strong>target</strong> w którym określimy gdzie ma się otwierać karta(w nowym oknie)</p><p class="definicje" id="a4">
+- Przejdźmy do stworzenia odnośnika o kształcie kwadratu. <br>W atrybucie <strong>shape</strong> damy wartość<span id="drugiodnosnik"> <strong>rect</strong></span> a koordynaty podamy następująco: <strong>X1,Y1,X2,Y2</strong>. Gdzie koordynaty z jedynką to kordynaty lewego górnego wierzchołka a koordynaty z dwójką to koordynaty prawego dolnego wierzchołka</p><p class="definicje" id="a5">
+- Żeby stworzyć odnośnik o kształcie wielokąta jako <strong>shape</strong> ustawiamy <span id="trzeciodnosnik"><strong>poly</strong></span> a w coords wpisujemy kordynaty każdego <br>z wierzchołków wielokąta</p><p class="definicje" id="a6">Efekt:
+</p>
+
+<div class="przyklady" id="cztery">
+&lt;area shape="circle" alt="koło" title="" coords="120,110,73" href="strona.html" target="_blank" /&gt;
+</div>
+
+<div class="przyklady" id="piec">
+&lt;area shape="rect" alt="prostokat" title="" coords="470,25,642,151" href="strona.html" target="_blank" /&gt;
+</div>
+
+<div class="przyklady" id="szesc">
+&lt;area shape="poly" alt="wielokat" title="" <span style="font-size: 22px;">coords="235,250,316,206,399,249,399,337,316,382,235,337"</span> href="strona.html" target="_blank" /&gt;
+</div>
+
+<map name="mapa">
+<area shape="circle" alt="koło" title="" coords="120,110,73" href="#pierwszyodnosnik" target="_blank"/>
+<area shape="rect" alt="prostokat" title="" coords="470,25,642,151" href="#drugiodnosnik" target="_blank"/>
+<area shape="poly" alt="wielokat" title="" coords="235,250,316,206,399,249,399,337,316,382,235,337" href="#trzeciodnosnik" target="_blank"/>
+</map>
+
+
+
+<img src="zdjecia2/mapa.png" alt="alt" usemap="#mapa" id="mapeczka"/>
+
+
+<a href="14.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

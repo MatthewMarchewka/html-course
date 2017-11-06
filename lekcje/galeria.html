@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Zadania </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<style>
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+nav{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+nav ul{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+nav li{
+position: absolute;
+display: inline-block;}
+
+nav a{
+line-height: 65px;
+text-align: center;
+background-image: url("../zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 1931px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 1712px;
+background-color: #e2c3dc;
+}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 1911px;}
+
+
+
+#guziczek{
+position: absolute;
+left: 315px;
+background-color: #8a6382;
+color: white;
+width: 330px;
+text-align: center;
+height: 42px;
+padding-top: 8px;
+border-radius: 10px;
+font-size: 120%;
+top: 60px;
+}
+
+a[href="kurs.html"]:hover{
+font-weight: bold;}
+
+h1{
+position: absolute;
+color: #8a6382;
+text-shadow: 1px 1px 1px #a56c96;
+top: 30px;
+left: 113px;}
+
+.tematy{
+position: absolute;
+left: 130px;
+font-size: 30px;
+color: #8a6382;}
+
+.definicje{
+left: 160px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #e2c1da;
+text-shadow: 1px 1px 1px #8a6382;
+font-size: 25px;}
+
+table,td,th,tr{
+border: 2px solid #8a6382;}
+
+table{wdith: 700px;
+position: absolute;
+left: 130px;}
+
+#HTML{
+top: 120px;
+width: 700px;}
+#CSS{top: 1000px;
+width: 700px;}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"> Kurs </a> </li>
+<li id="galeria"> <strong><a class="menuchy" href="galeria.html"> Słownik </a></strong> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania  </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+
+
+
+<h1> Słownik znaczników HTML (ciągle dopracowywany) </h1>
+
+				<table id="HTML">
+					<tr>
+						<th> Znacznik </th>
+						<th> Definicja znacznika </th>
+					</tr>
+					<tr>
+						<td> <b>" &#60;title&#62;"</b> </td>
+						<td> Jest wymagany w dokumencie, zawieramy go w headzie</td>
+					</tr>
+					<tr>
+						<td><b> " &#60;meta charset&#62;"</b></td>
+						<td> Ustawienie kodowania strony</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;p&#62;"</b> </td>
+						<td> wpisujemy w nim tekst</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;h1-h6&#62;"</b></td>
+						<td> tym znacznikiem ustalamy nagłówek</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;em&#62;"</b> </td>
+						<td> kursywa, obecnie robi to css </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;strong &#62;"</b></td>
+						<td> pogrubienie, silne wyróżnienie w tekście</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;small&#62;"</b> </td>
+						<td> mniejszy tekst </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;cite&#62;"</b> </td>
+						<td> Oznaczamy nim tytuły </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;q&#62;"</b> </td>
+						<td> dłuższy cytat </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;blockquote&#62;"</b> </td>
+						<td> Oznaczenie bloku cytatu z jakiejs strony </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;code&#62;"</b> </td>
+						<td> Oznaczenie tekstu jakiegoś kodu np C++, HTML</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;pre&#62;"</b> </td>
+						<td> w nim możemy wpisywać rzeczy z enterem </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;sub&#62;"</b> </td>
+						<td> Indeks dolny </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;sup&#62;"</b> </td>
+						<td> indeks górny </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;i&#62;"</b> </td>
+						<td> Kursywa w tekście </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;b&#62;"</b> </td>
+						<td> Pogrubienie tekstu </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;br&#62;"</b> </td>
+						<td> Przejście do nowej linii </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;"hr&#62;"</b> </td>
+						<td> oddzielenie tekstu linią </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;ul&#62;"</b> </td>
+						<td> Lista nieuporządkowana </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;ol&#62;"</b> </td>
+						<td> Lista uporządkowana </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;li&#62;"</b> </td>
+						<td> Element w liście</td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;dl&#62;"</b> </td>
+						<td> Lista definicji </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;dt&#62;"</b> </td>
+						<td> Słowo definiowane </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;dd&#62;"</b> </td>
+						<td> Definiowanie słowa </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;a&#62;"</b> </td>
+						<td> Tworzenie odnośników, jego atrybut to href </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;img&#62;"</b> </td>
+						<td> Dodawanie obrazów, atrybut to src i alt </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;table&#62;"</b>  </td>
+						<td> Tworzenie tabeli </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;tr&#62;"</b> </td>
+						<td> Wiersz w tabeli </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;td&#62;"</b> </td>
+						<td> komórka w tabeli </td>
+					</tr>
+					<tr>
+						<td> <b>" &#60;div&#62;"</b> </td>
+						<td> tworzy pojemnik </td>
+					</tr>
+				</table>
+				
+				<table id="CSS">
+					<tr>
+						<th>  Właściwość </th>
+						<th>  Działanie </th>
+					</tr>
+					<tr>
+						<td>  text-align </td>
+						<td>  umiejscowienie tekstu: center,right,left </td>
+					</tr>
+					<tr>
+						<td>  text-decoration </td>
+						<td>  Podkreślenie, przekreślenie, nadkreślenie </td>
+					</tr>
+					<tr>
+						<td>  font-family </td>
+						<td>  Wybieramy typ czcionki i czcionke </td>
+					</tr>
+					<tr>
+						<td>  font-size </td>
+						<td>  Określanie wielkości czcionki </td>
+					</tr>
+					<tr>
+						<td>  font-weight </td>
+						<td>  Grubość czcionki </td>
+					</tr>
+					<tr>
+						<td>  font-style </td>
+						<td>  Nachylenie czcionki</td>
+					</tr>
+					<tr>
+						<td> list-style-type </td>
+						<td> służy do modyfikowania list </td>
+					</tr>
+					<tr>
+						<td> box-shadow </td>
+						<td> Służy do dodawania cienia elementom </td>
+					</tr>
+					<tr>
+						<td> text-shadow </td>
+						<td> służy do dodawania cienia na tekst </td>
+					</tr>
+					<tr>
+						<td> z-index </td>
+						<td> Służy do nakładania na siebie elementów </td>
+					</tr>
+					<tr>
+						<td> opacity </td>
+						<td> Określa przeźroczystośc elementu </td>
+					</tr>
+					<tr>
+						<td> display </td>
+						<td> służy do określania rodzaju elementu np. blokowy, liniowy </td>
+					</tr>
+					<tr>
+						<td>  line-height </td>
+						<td>  Wysokość wiersza </td>
+					</tr>
+					<tr>
+						<td> background-color </td>
+						<td> zmienia kolor tła </td>
+					<tr>
+						<td>  background-image </td>
+						<td>  Wybranie obrazu na tło </td>
+					</tr>
+					<tr>
+						<td>  background-repeat </td>
+						<td>  Ustawianie powtarzania obrazu w tle </td>
+					</tr>
+					<tr>
+						<td>  background-position </td>
+						<td>  Pozycjonowanie obrazu w tle </td>
+					</tr>
+					<tr>
+						<td>  background-attachment </td>
+						<td>  Ustawienie zachowania tła podczas przewijania strony </td>
+					</tr>
+				</table>
+  
+  
+  
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+</div>
+</body>
+
+</html>

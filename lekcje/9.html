@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 9 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 5132px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 4912px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 5111px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{top: 770px;
+padding-top: 0px;
+height: 93px;}
+#druga{top: 860px;
+font-size: 23px;}
+#dwa{top: 970px;
+padding-top: 0px;
+height: 32px;}
+#trzecia{top: 980px;}
+#czwarta{top: 1030px;}
+#trzy{top: 1120px;}
+#piata{top: 1200px;}
+#cztery{top: 1329px;}
+#szosta{top: 1400px;}
+.inna{font-family: "Times New Roman";}
+#piec{top: 1520px;}
+#siodma{top: 1600px;}
+#szesc{top: 1790px;}
+#osma{top: 1870px;}
+#dziewiata{top: 1870px;}
+#siedem{top: 2030px;}
+#dziesiata{top: 2100px;}
+#osiem{top: 2250px;}
+#jedynasta{top: 2330px;}
+#dziewiec{top: 2490px;}
+#dwunasta{top: 2570px;}
+#dziesiec{top: 2830px;}
+#trzynasta{top: 2900px;}
+#jedynascie{top: 3060px;}
+#czternasta{top: 3150px;}
+#wciecie{top: 3190px;
+text-indent: 50px;
+position: absolute;
+width: 700px;
+left: 130px;
+}
+#pietnasta{
+top: 3250px;}
+#dwanascie{top: 3350px;}
+#czternasta2{top: 3430px;}
+#trzynascie{top: 3580px;}
+#pietnasta2{
+top: 3665px;}
+#czternascie{top: 3885px;
+padding-top: 0px;
+height: 92px;}
+#szesnasta{top: 3960px;}
+.pierwszaliterka{position: absolute;
+font-size: 23px;
+top: 3965px;
+left: 210px;}
+.pierwszaliterka::first-letter{color: red;
+font-weight: bold;}
+#siedemnasta{
+top: 4015px;}
+#pietnascie{top: 4110px;
+padding-top: 0px;
+height: 92px;}
+#osiemnasta{top: 4200px;}
+#pierwszalinia{top: 4200px;
+left: 199px;}
+#pierwszalinia:first-line{font-weight: bold; 
+color: red;}
+#dziewietnasta{top: 4340px;}
+#szesnascie{top: 4440px;}
+#dwudziesta{top: 4520px;}
+#odstepy{top: 4520px;
+line-height: 50px;
+left: 199px;}
+#dwudziestapierwsza{top: 4700px;
+text-align: center;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 4830px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo" id="gora"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="10.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="8.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">9. Właściwości modyfikujące wygląd tekstu, jednostki </h1>
+
+<p id="pierwsza" class="definicje">
+By dobrze zrozumieć modyfikowanie wyglądu strony internetowej na początku najlepiej poznać jednostki miar którymi się będziemy posługiwać. Jednostki dzielą się na: <strong> bezwzględne </strong>np. minimetry lub punkty. Długości tych miar są stałe niezależnie od wielkości wyświetlacza. Drugim typem są <strong> względne </strong> np. procenty, em lub vh. Długości tych miar są dopasowywane względem monitora. Użwa się ich do tworzenia stron responsywnych (o których powiem w dalszej części kursu). Ale w tym kursie będziemy operować na <strong>pixelach</strong> czyli jednostce pośredniej ponieważ z jednej strony jest stała<br> a z drugiej na każdym monitorze wielkość pixela jest inna.<br><br>
+Przejdźmy teraz do różnych cech modyfikacji tekstu na stronie internetowej<strong> (pamiętaj że te cechy umieszcza się w arkuszu stylów CSS a nie w kodzie HTML)</strong>:<br>
+Zacznijmy od <strong>modyfikacji koloru</strong>, możemy robić to na 3 różne sposoby. Pierwszy z nich to <strong>podanie koloru przez nazwę</strong>, drugi to <strong>zapis RGB</strong> (z możliwością zapisu nasycenia) a treci to <strong>zapis szesnastkowy</strong>.
+</p>
+
+<div class="przyklady" id="jeden">
+color: red; <br>
+color: rgb(255,0,0); <br>
+color: #FF0000;
+</div>
+
+<p id="druga" class="definicje">
+Wszystkie te zapisy oznaczają jeden kolor - czerwony, inne kolory możesz sprawdzić na stronach jak <a href="https://color.adobe.com/pl/create/color-wheel/">ta</a>. Jeżeli chcesz zapisać nasycenie koloru zrób to w taki sposób (4 liczba oznacza nasycenie):
+</p>
+
+<div class="przyklady" id="dwa">
+color: rgba(255,0,0,0.5); 
+</div>
+<p class="definicje" id="trzecia">
+Efekt: <span style="color: red;">Czerwony tekst</span>
+</p>
+
+<p class="definicje" id="czwarta">
+Następną deklaracją jest <strong>pogrubienie tekstu</strong>.Możemy to zrobić za pomocą tej wartości:</p>
+
+<div class="przyklady" id="trzy">
+font-weight: bold; 
+</div>
+<p class="definicje" id="piata">
+Efekt: <span style="font-weight: bold;">Pogrubiony tekst</span> <br><br>
+Za pomocą CSS możesz również zapisać tekst <span style="font-style: italic;">kursywą</span>:
+</p>
+<div class="przyklady" id="cztery">
+font-style: italic; 
+</div>
+<p class="definicje" id="szosta">
+Efekt: <span style="font-style:italic;">Tekst kursywą</span> <br><br>
+Możesz również zapisać tekst <span class="inna">inną czcionką</span>:
+</p>
+<div class="przyklady" id="piec">
+font-family: "Times New Roman";
+</div>
+<p class="definicje" id="siodma">
+Efekt: <span class="inna">Tekst inną czcionką</span> <br><br>
+Następną właściwością jest położenie tekstu. Tekst możemy ustawić po lewej stronie <strong>left</strong> po prawej<strong> right</strong> lub na <br> środku<strong> center</strong>.
+</p>
+<div class="przyklady" id="szesc">
+text-align: center;
+</div>
+<p class="definicje" id="osma">Efekt: <br><br>
+Tekst możesz również spozycjonować pionowo i ustawić go na górze <strong> text-top</strong> lub na dole <strong>text-bottom</strong>.
+</p>
+<p class="definicje" id="dziewiata" style="text-align: center;"> Wyśrodkowany tekst </p>
+<div class="przyklady" id="siedem">
+vertical-align: text-bottom;
+</div>
+<p class="definicje" id="dziesiata">
+Efekt: <span style="vertical-align: text-bottom; font-size: 14px;">Tekst na dole</span> <br><br>
+W CSS możesz również dodać kreskę: nad tekstem: <strong>overline</strong>, pod tekstem: <strong>underline</strong>, lub na tekście: <strong>line-trough</strong>
+</p>
+<div class="przyklady" id="osiem">
+text-decoration: line-through;
+</div>
+<p class="definicje" id="jedynasta">
+Efekt: <span style="text-decoration: line-through;">Przekreślony tekst</span> <br><br>
+We właściwościach CSS możesz również zmienić wielkość czcionki: </p>
+<div class="przyklady" id="dziewiec">
+font-size: 40px;
+</div>
+<p class="definicje" id="dwunasta">
+Efekt: <span style="font-size: 40px;">Tekst o wielkości 40px</span> <br><br>
+Dzięki właściwości <strong>text-shadow</strong> możesz ustawić cień dla swojego tekstu. Pierwsze dwie wartości w pixelach określają oddalenie cienia od napisu. Trzecia wartość jest opcjonalna<br> i określa poziom rozmycia cienia. Czwarta wartośc to kolor cienia.
+</p> 
+<div class="przyklady" id="dziesiec">
+text-shadow: 2px 2px 5px black;
+</div>
+<p class="definicje" id="trzynasta">
+Efekt: <span style="text-shadow: 2px 2px 5px black;">Tekst z cieniem</span> <br><br>
+Możesz również zrobić wcięcie pierwszej lini tekstu dzięki właściwości <strong>text-indent</strong>.
+</p>
+<div class="przyklady" id="jedynascie">
+text-indent: 50px;
+</div>
+
+<p class="definicje" id="czternasta">
+Efekt:</p> <p id="wciecie">Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem Tekst z wcięciem </p>
+<p class="definicje" id="pietnasta">
+Możesz również wyrównaść wielkość liter w twojej czcionce żeby wszystkie były równej wielkości:</p>
+
+<div class="przyklady" id="dwanascie">
+font-variant: small-caps;
+</div>
+
+<p class="definicje" id="czternasta2">
+Efekt: <span style="font-variant: small-caps;">tekst z wyrównaną wielkością.</span> <br><br>
+Możesz również określić odległość literek od siebie:
+</p>
+<div class="przyklady" id="trzynascie">
+letter-spacing: 10px;
+</div>
+<p class="definicje" id="pietnasta2">
+Efekt: <span style="letter-spacing: 10px;">tekst z odstępami.</span> <br><br>
+By nie być zmuszonym do dawania pierwszej literki do osobnego znacznika istnieje sposób żeby to zrobić prościej. Wystarczy w CSS jako selektor umieścić taką frazę <strong>p::first-letter{cechy:własności}</strong></p>
+<div class="przyklady" id="czternascie">
+ p::first-letter{<br>
+ <span class="wciecie">cecha1: właściwość1;<br></span>
+ <span class="wciecie">cecha2: właściwość2;}</span>
+</div>
+<p class="definicje" id="szesnasta">
+Efekt: </p>
+<p class="pierwszaliterka">Modyfikacja pierwszej literki</p>
+<p class="definicje" id="siedemnasta">
+Analogicznie możemy zmodyfikować całą pierwszą linię zamieniając first-letter na <strong>first-line</strong>
+</p>
+<div class="przyklady" id="pietnascie">
+ p::first-line{<br>
+ <span class="wciecie">cecha1: właściwość1;<br></span>
+ <span class="wciecie">cecha2: właściwość2;}</span>
+</div>
+<p class="definicje" id="osiemnasta">
+Efekt: </p>
+<p id="pierwszalinia" class="definicje">Modyfikacja pierwszej linii<br>Modyfikacja pierwszej linii<br> Modyfikacja pierwszej linii</p>
+
+<p class="definicje" id="dziewietnasta">
+Ostatnią właściwością którą tutaj pokażę jest wielkość linii, dzięki której będziemy mogli modyfikować odstęp linii w pionie.
+</p>
+<div class="przyklady" id="szesnascie">
+line-height: 50px;
+</div>
+
+<p class="definicje" id="dwudziesta">
+Efekt: </p>
+<p id="odstepy" class="definicje">Odstepy miedzy liniami<br>Odstepy miedzy liniami<br> Odstepy miedzy liniami</p>
+
+<p class="definicje" id="dwudziestapierwsza">
+<strong>Pamiętaj o tym że każda z tych właściwości będzie działała dopiero wtedy gdy zapiszesz ją w arkuszu stylów w nawiasie klamrowym przy wybranym znaczniku.</strong>
+</p>
+
+<a href="10.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

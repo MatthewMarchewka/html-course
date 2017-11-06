@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Zadania </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<style>
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+nav{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+nav ul{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+nav li{
+position: absolute;
+display: inline-block;}
+
+nav a{
+line-height: 65px;
+text-align: center;
+background-image: url("../zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3431px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 3212px;
+background-color: #e2c3dc;
+}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3411px;}
+
+
+
+#guziczek{
+position: absolute;
+left: 315px;
+background-color: #8a6382;
+color: white;
+width: 330px;
+text-align: center;
+height: 42px;
+padding-top: 8px;
+border-radius: 10px;
+font-size: 120%;
+top: 60px;
+}
+
+a[href="kurs.html"]:hover{
+font-weight: bold;}
+
+h1{
+position: absolute;
+color: #8a6382;
+text-shadow: 1px 1px 1px #a56c96;
+top: 30px;
+left: 247px;}
+
+.tematy{
+position: absolute;
+left: 130px;
+font-size: 30px;
+color: #8a6382;}
+
+.definicje{
+left: 160px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #e2c1da;
+text-shadow: 1px 1px 1px #8a6382;
+font-size: 25px;}
+
+#jeden{top: 100px;}
+#jeden2{top: 150px;}
+
+#dwa{top: 250px;}
+#dwa2{top: 300px;}
+
+#trzy{top: 370px;}
+#trzy2{top: 420px;}
+
+#cztery{top: 510px;}
+#cztery2{top: 560px;}
+
+#piec{top: 650px;}
+#piec2{top: 700px;}
+
+#szesc{top: 810px;}
+#szesc2{top: 860px;}
+
+#siedem{top: 960px;}
+#siedem2{top: 1010px;}
+
+#osiem{top: 1110px;}
+#osiem2{top: 1160px;}
+
+
+#dziewiec{top: 1270px;}
+#dziewiec2{top: 1320px;}
+
+#dziesiec{top: 1460px;}
+#dziesiec2{top: 1510px;}
+
+#jedynascie{top: 1610px;}
+#jedynascie2{top: 1660px;}
+
+#dwanascie{top: 1730px;}
+#dwanascie2{top: 1780px;}
+
+#trzynascie{top: 1950px;}
+#trzynascie2{top: 2000px;}
+
+#czternascie{top: 2150px;}
+#czternascie2{top: 2200px;}
+
+#pietnascie{top: 2300px;}
+#pietnascie2{top: 2350px;}
+
+#szesnascie{top: 2450px;}
+#szesnascie2{top: 2500px;}
+
+#siedemnascie{top: 2580px;}
+#siedemnascie2{top: 2630px;}
+
+#osiemnascie{top: 2720px;}
+#osiemnascie2{top: 2770px;}
+
+#dziewietnascie{top: 2860px;}
+#dziewietnascie2{top: 2910px;}
+
+#dwadziescia{top: 3000px;}
+#dwadziescia2{top: 3050px;}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"> Kurs </a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"><strong> Zadania </strong> </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+
+
+
+<h1> Zadania do kursu HTML5 / CSS3 </h1>
+<p class="tematy" id="jeden">
+Zadanie do drugiej lekcji
+</p>
+
+<p class="definicje" id="jeden2">
+Stwórz dokument HTML zawierający podstawowy "szkielet" <br>i zwaliduj go w celu sprawdzenia czy na pewno nie popełniłeś żadnego błędu. </p>
+
+<p class="tematy" id="dwa">
+Zadanie do trzeciej lekcji
+</p>
+
+<p class="definicje" id="dwa2">
+ Wypróbuj pięć dowolnych znaczników z tej lekcji.</p>
+ 
+ <p class="tematy" id="trzy">
+Zadanie do czwartej lekcji
+</p>
+
+<p class="definicje" id="trzy2">
+ Sporządź uporządkowaną listę znaczników które poznałeś na tej lekcji oraz nieuporządkowaną listę znaczników które poznałeś na tej lekcji.</p>
+ 
+  <p class="tematy" id="cztery">
+Zadanie do piątej lekcji
+</p>
+
+<p class="definicje" id="cztery2">
+Zaprojektuj tabelę która będzie zawierała w swoich komórkach dwie inne tabele z właściwością colspan i rowspan. Następnie stwórz tabele na stronie internetowej. </p>
+
+  <p class="tematy" id="piec">
+Zadanie do szóstej lekcji
+</p>
+
+<p class="definicje" id="piec2">
+ Wstaw na swoją stronę internetową dwa obrazki. W jednym skorzystaj z adresacji względnej a w drugim obrazku bezwzględnie. Spróbuj otworzyć swój dokument HTML na innym komputerze.  </p>
+
+  <p class="tematy" id="szesc">
+Zadanie do siódmej lekcji
+</p>
+
+<p class="definicje" id="szesc2">
+Stwórz dwa dokumenty HTML na każdym z nich umieść dowolną zawartość i dwie kotwice (na górę i dół strony). Stwórz połączenia tych stron hiperłączami.
+  </p>
+  
+   <p class="tematy" id="siedem">
+Zadanie do ósmej lekcji
+</p>
+
+<p class="definicje" id="siedem2">
+Stwórz nieuporządkowaną listę hierarchi stylów oraz zmodyfikuj każdy element z listy trzema rodzajami arkuszów stylów.
+  </p>
+  
+  <p class="tematy" id="osiem">
+Zadanie do dziewiątej lekcji
+</p>
+
+<p class="definicje" id="osiem2">
+Stwórz stronę internetową z tekstem zmodyfikowanym przynajmniej pięcioma właściwościami z tej lekcji
+  </p>
+
+  <p class="tematy" id="dziewiec">
+Zadanie do dziesiątej lekcji
+</p>
+
+<p class="definicje" id="dziewiec2">
+Stwórz pojemnik o zaokrąglonych rogach który będzie miał na tle obrazek oraz jego zawartość będzie wymagała przewijania.
+  </p>
+  
+    <p class="tematy" id="dziesiec">
+Zadanie do jedynastej lekcji
+</p>
+
+<p class="definicje" id="dziesiec2">
+Stwórz na swojej stronie układ z nagłówkiem, stopkom i trzema kolumnami
+</p>
+  
+   <p class="tematy" id="jedynascie">
+Zadanie do dwunastej lekcji
+</p>
+
+<p class="definicje" id="jedynascie2">
+Stwórz menu poziome złożone z 4 zakładek.
+</p>
+  
+     <p class="tematy" id="dwanascie">
+Zadanie do trzynastej lekcji
+</p>
+
+<p class="definicje" id="dwanascie2">
+Stwórz na swojej stronie mapę odsyłaczy o wybranym przez ciebie temacie ale zawierającej po jednym z każdego typu odnośników.
+</p>
+  
+       <p class="tematy" id="trzynascie">
+Zadanie do czternastej lekcji
+</p>
+
+<p class="definicje" id="trzynascie2">
+Stwórz stronę z trzema kolumnami, gdzie w każdej kolumnie ma znajdować się zdjęcie któe po najechaniu pokaże opis zdjęcia a pod zdjęciem tekst dłuższy niż jedną linijkę (wyśrodkowany).
+</p>
+  
+        <p class="tematy" id="czternascie">
+Zadanie do piętnastej lekcji
+</p>
+
+<p class="definicje" id="czternascie2">
+Stwórz stronę o dowolnym układzie z nagłówkiem który będzie zostawał w miejscu pomimo przesuwania strony.
+</p> 
+  
+          <p class="tematy" id="pietnascie">
+Zadanie do szesnastej lekcji
+</p>
+
+<p class="definicje" id="pietnascie2">
+Stwórz stronę z dwoma kolumnami, w lewej kolumnie rozwijane pionowe menu a w prawej zdjęcie z podpisem.
+</p> 
+  
+            <p class="tematy" id="szesnascie">
+Zadanie do siedemnastej lekcji
+</p>
+
+<p class="definicje" id="szesnascie2">
+Stwórz formularz rejestracyjny na forum tematyczne który będzie zawierał przynajmniej 5 typów inputów
+</p> 
+  
+  <p class="tematy" id="siedemnascie">
+Zadanie do osiemnastej lekcji
+</p>
+
+<p class="definicje" id="siedemnascie2">
+Stwórz trzy strony internetowe każda z innym układem.
+</p>
+
+  <p class="tematy" id="osiemnascie">
+Zadanie do dziewiętnastej lekcji
+</p>
+
+<p class="definicje" id="osiemnascie2">
+Stwórz stronę z układem hybrydowym na którą wstawisz film z youtuba, film i plik audio
+</p>
+
+  <p class="tematy" id="dziewietnascie">
+Zadanie do dwudziestej lekcji
+</p>
+
+<p class="definicje" id="dziewietnascie2">
+Stwórz 5 pojemników o zaokrąglonych rogach z różnymi rodzajami gradientów.
+</p>
+
+  <p class="tematy" id="dwadziescia">
+Zadanie do dwudziestejpierwszej lekcji
+</p>
+
+<p class="definicje" id="dwadziescia2">
+Stwórz animację która będzie zawierała wszystkie akcje związane z <strong>transform</strong>
+</p>
+  
+  
+  
+  
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+</div>
+</body>
+
+</html>

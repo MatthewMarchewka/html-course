@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kurs </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<style>
+#pojemnik{
+margin: 0px auto;
+position: relative;
+width: 960px;
+height: 800px;
+font-family: lato;
+}
+header{
+width: 960px;
+height: 250px;
+position: absolute;
+top: 0px;
+text-align: center;
+background-color: #f3ecf6;
+}
+
+header img{
+position: absolute;
+left: 370px;
+top: 57px;
+width: 220px;
+height: 137px;
+}
+header p{
+position: absolute;
+top: 190px;
+left: 310px;
+font-size:23px;
+color: #ba93b2;
+}
+nav{
+position: absolute;
+width: 960px;
+height: 64px;
+border_bottom: 1px solid #e2c1d8;
+top: 250px;
+background: linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -webkit-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -moz-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+background: -o-linear-gradient(top,#e2c1da,#dcb4d2 , #c194b7);
+}
+nav ul{
+position: relative;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+nav li{
+position: absolute;
+display: inline-block;}
+
+nav a{
+line-height: 65px;
+text-align: center;
+background-image: url("zdjecia/guzik.jpg");
+height: 65px;
+width: 160px;
+font-size: 33px;
+text-shadow: 1px 1px 1px #a56c96;
+color: white;
+display: block;
+border-bottom: 0px;
+text-decoration: none;
+}
+.menuchy:hover{
+font-weight: bold;
+}
+
+#kontakt{
+right: 130px;}
+
+#galeria{
+right: 310px;}
+
+#cennik{
+left: 310px;}
+
+#onas{
+left: 130px;}
+
+.pozycjonowanie{
+position: relative;}
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 8001px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 7782px;
+background-color: #e2c3dc;
+}
+
+#krotkiopis{
+position: absolute;
+left:70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+font-size: 14px;
+}
+
+#danekontaktowe{
+Position: absolute;
+left: 370px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;}
+
+
+#logonapis{
+position: absolute;
+right:  70px;
+width: 220px;
+top: 20px;
+height: 160px;
+background-color: #ba93b2;
+border-radius: 10px;
+color: white;
+text-align: center;
+fon-size: 14px;
+}
+
+
+#mapa{
+position: absolute;
+left: 610px;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 7981px;}
+
+#dlaczegowarto{
+position: absolute;
+color: #8a6382;
+text-shadow: 1px 1px 1px #a56c96;
+top: 30px;
+left: 70px;
+}
+
+#longtext{
+position: absolute;
+color: #8a6382;
+left: 70px;
+top: 90px;
+font-size: 150%;
+font-family: lato;
+}
+
+.kreska{
+position: absolute;
+height: 2px;
+background-color: #ba93b2;
+width: 220px;}
+
+#podstawowylewa{
+top: 370px;
+left: 70px;
+}
+
+#podstawowyprawa{
+top: 370px;
+right: 70px;}
+
+#poziompodstawowy{
+position: absolute;
+left: 335px;
+font-size: 190%;
+color: #8a6382;
+top: 319px;
+}
+
+#srednilewa{
+top: 2142px;
+left: 70px;
+}
+
+#sredniprawa{
+top: 2142px;
+right: 70px;}
+
+#poziomsredni{
+position: absolute;
+left: 380px;
+font-size: 190%;
+color: #8a6382;
+top: 2090px;
+}
+
+#srednizaawlewa{
+top: 3900px;
+left: 70px;
+}
+
+#srednizaawprawa{
+top: 3900px;
+right: 70px;}
+
+#poziomsrednizaaw{
+position: absolute;
+left: 295px;
+font-size: 190%;
+color: #8a6382;
+top: 3855px;
+}
+
+#zaawlewa{
+top: 5330px;
+left: 70px;
+}
+
+#zaawprawa{
+top: 5330px;
+right: 70px;}
+
+#poziomzaaw{
+position: absolute;
+left: 330px;
+font-size: 190%;
+color: #8a6382;
+top: 5281px;
+}
+
+.lekcyjne{
+position: absolute;
+background-color: #8a6382;
+left: 70px; 
+width: 820px;
+height: 314px;
+border-radius: 35px;
+}
+
+#pierwsza{
+top: 432px;
+}
+
+#druga{
+top: 766px;}
+
+#trzecia{
+top: 1100px;
+}
+
+#czwarta{
+top: 1434px;
+}
+
+#piata{
+top: 1768px;}
+
+#szosta{
+top: 2192px;}
+
+#siodma{
+top: 2526px;}
+
+#osma{
+top: 2860px;}
+
+#dziewiata{
+top: 3194px;}
+
+#dziesiata{
+top: 3528px;}
+
+#jedynasta{
+top: 3957px;}
+
+#dwunasta{
+top: 4291px;}
+
+#trzynasta{
+top: 4625px;}
+
+#czternasta{
+top: 4959px;}
+
+#pietnasta{
+top: 5387px;}
+
+#szesnasta{
+top: 5721px;}
+
+#siedemnasta{
+top: 6055px;}
+
+#osiemnasta{
+top: 6389px; }
+
+#dziewietnasta{
+top: 6723px; }
+
+#dwudziesta{
+top: 7057px;}
+
+#dwudziestapierwsza{
+top: 7391px; }
+
+.tytuly{
+color: white;
+position: absolute;
+left: 60px;
+top: -13px;
+font-size: 157%;
+}
+
+.bialakreska{
+position: absolute;
+background-color:white;
+height: 2px;
+left: 60px;
+top: 50px;
+width: 727px;}
+
+.bialykwadrat{
+left: 180px;
+
+width: 460px;
+position: absolute;
+text-align: center;
+color: #8a6382;
+height: 63px;
+top: 68px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+}
+
+.opisdzialu{
+position: absolute;
+color: white;
+left: 60px;
+top: 177px;
+width: 700px;
+font-size: 120%;
+}
+.guziklekcja{
+position: absolute;
+left: 600px;
+top: 262px;
+background-color: white;
+height: 25px;
+width: 160px;
+text-align: center;
+font-size: 110%;
+padding-top: 5px;
+border-radius: 10px;
+}
+
+.guzikdolekcji{
+text-decoration: none;
+color: #8a6382;}
+
+.guzikdolekcji:hover{
+font-weight: bold;}
+
+#guziczek{
+position: absolute;
+left: 315px;
+background-color: #8a6382;
+color: white;
+width: 330px;
+text-align: center;
+height: 42px;
+padding-top: 8px;
+border-radius: 10px;
+font-size: 120%;
+top: 280px;
+}
+
+a[href="skroconykurs.html"]:hover{
+font-weight: bold;}
+
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+
+<h1 id="dlaczegowarto">Dlaczego warto nauczyć się jezyka HTML oraz CSS?</h1>
+
+<pre id="longtext">	 Programowanie zazwyczaj kojarzone jest ze skomplikowanym, <br> niezrozumiałym kodem. Natomiast w języku pisania współczesnych stron - <br> HTML5 jedynie bardzo intuicyjnie określamy układ oraz zawartość strony, <br> następnie w kodzie CSS3 modyfikujemy naszą zawartość by wyglądała <br> estetycznie. Do każdej lekcji zostało przygotowane specjalne zadanie, które <br> pomoże Ci w nauce! </pre>
+
+<a href="skroconykurs.html"><div id="guziczek">Przejdź do skróconego spisu tematów </div> </a>
+<a id="poziompodst">
+<div class="kreska" id="podstawowylewa"></div>
+<div class="kreska" id="podstawowyprawa"></div>
+<p id="poziompodstawowy"> Poziom podstawowy </p>
+</a>
+<div class="lekcyjne" id="pierwsza">
+<div class="pozycjonowanie">
+<p class="tytuly">1. Podstawowe definicje dotyczące tworzenia stron internetowych</p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> Strony internetowe - definicje </div>
+
+<p class="opisdzialu">
+Rozpocznij swój kurs tworzenia stron internetowych od poznania podstawowych definicji związanych z tym tematem.
+</p>
+
+<a class="guzikdolekcji" href="1.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="druga">
+<div class="pozycjonowanie">
+<p class="tytuly">2. Struktura pliku HTML </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;title&gt; Struktura pliku HTML &lt;/title&gt; </div>
+
+<p class="opisdzialu">
+Ta lekcja zawiera informacje o elementach które obowiązkowo muszą się znajdować w twoim pliku .html by był poprawnie interpretowany przez przeglądarkę.
+</p>
+
+<a class="guzikdolekcji" href="2.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="trzecia">
+<div class="pozycjonowanie">
+<p class="tytuly">3. Kompendium wiedzy o znacznikach </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;p&gt; Znaczniki HTML &lt;/p&gt; </div>
+
+<p class="opisdzialu">
+Fundamentalnymi elementami strony internetowej są znaczniki, na tej lekcji nauczysz się parę przykładowych znaczników oraz zasady jak powinno się je stosować.
+</p>
+
+<a class="guzikdolekcji" href="3.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="czwarta">
+<div class="pozycjonowanie">
+<p class="tytuly">4. Listy uporządkowane, nieuporządkowane,definicji i zagnieżdżone </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;li&gt; Element listy &lt;/li&gt; </div>
+
+<p class="opisdzialu">
+Dowiedz się jak tworzyć listy na stronie internetowej oraz jak modyfikować ich wygląd.
+</p>
+
+<a class="guzikdolekcji" href="4.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="piata">
+<div class="pozycjonowanie">
+<p class="tytuly">5. Tworzenie tabel </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;td&gt; Element tabeli &lt;/td&gt; </div>
+
+<p class="opisdzialu">
+Ta lekcja zawiera informacje na temat tworzenia listy definicji oraz umieszczania tabeli na twojej stronie internetowej.
+</p>
+
+<a class="guzikdolekcji" href="5.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<a id="poziomsredniowy">
+<div class="kreska" id="srednilewa"></div>
+<div class="kreska" id="sredniprawa"></div>
+<p id="poziomsredni"> Poziom średni </p>
+</a>
+<div class="lekcyjne" id="szosta">
+<div class="pozycjonowanie">
+<p class="tytuly">6. Adresowanie względne i bezwzględne, umieszczanie obrazków </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;a href="odnosnik.html"&gt; Strona &lt;/a&gt; </div>
+
+<p class="opisdzialu">
+W tej lekcji dowiesz się jak umieszczać obrazki na twojej stronie internetowej oraz jak je adresować.
+</p>
+
+<a class="guzikdolekcji" href="6.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="siodma">
+<div class="pozycjonowanie">
+<p class="tytuly">7. Hiperłącza i kotwice </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;img src="zdj.jpg" alt="blad"/&gt; </div>
+
+<p class="opisdzialu">
+Dowiedz się jak umieścić hiperłącze na twojej stronie internetowej oraz jak stworzyć odnosnik do wybranego elementu na stronie.
+</p>
+
+<a class="guzikdolekcji" href="7.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="osma">
+<div class="pozycjonowanie">
+<p class="tytuly">8. Podstawowe informacje na temat arkusza stylów CSS </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;style&gt; Arkusz stylów &lt;/style&gt; </div>
+
+<p class="opisdzialu">
+Żeby twoja strona internetowa wyglądała profesjonalnie warto zadbać o jej szatę graficzną, do tego użyjemy języka CSS.
+</p>
+
+<a class="guzikdolekcji" href="8.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dziewiata">
+<div class="pozycjonowanie">
+<p class="tytuly">9. Właściwości modyfikujące wygląd tekstu, jednostki </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> color: rgb(255.255.255); </div>
+
+<p class="opisdzialu">
+Poznaj znaczniki odpowiedzialne za wygląd tekstu na twojej stronie.
+</p>
+
+<a class="guzikdolekcji" href="9.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dziesiata">
+<div class="pozycjonowanie">
+<p class="tytuly">10. Właściwości modyfikujące odległości, tło i wygląd elementów </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> margin: 0px auto; </div>
+
+<p class="opisdzialu">
+Naucz się modyfikować wygląd twojej strony by twoja strona była przyjazna dla oka użytkownika.
+</p>
+
+<a class="guzikdolekcji" href="10.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<a id="poziomsredniowyzaaw">
+<div class="kreska" id="srednizaawlewa"></div>
+<div class="kreska" id="srednizaawprawa"></div>
+<p id="poziomsrednizaaw" style="font-size: 170%;"> Poziom średniozaawansowany </p>
+</a>
+
+
+<div class="lekcyjne" id="jedynasta">
+<div class="pozycjonowanie">
+<p class="tytuly">11. Pudełkowy układ strony  </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;div id="pojemnik"&gt; Zawartość &lt;/div&gt; </div>
+
+<p class="opisdzialu">
+Po przyswojeniu tego rozdziału będziesz umiał stworzyć stronę internetową która będzie miała bardziej skomplikowany układ niż jedna kolumna.
+</p>
+
+<a class="guzikdolekcji" href="11.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dwunasta">
+<div class="pozycjonowanie">
+<p class="tytuly">12. Tworzenie menu poziomego i pionowego   </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;nav&gt; menu &lt;/nav&gt; </div>
+
+<p class="opisdzialu">
+Poznaj sposób na tworzenie menu poziomego i pionowego, ponieważ są nieodzownym elementem każdej profesjonalnej strony internetowej.
+</p>
+
+<a class="guzikdolekcji" href="12.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="trzynasta">
+<div class="pozycjonowanie">
+<p class="tytuly">13. Mapa odsyłaczy  </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;map name="mapaobrazka"&gt; odsyłacze &lt;/map&gt; </div>
+
+<p class="opisdzialu">
+Poznaj sposób na stworzenie interaktywnego obrazka który po kliknięciu <br>w wybrane miejsce przeniesie cie do innego elementu np. podstrony.
+</p>
+
+<a class="guzikdolekcji" href="13.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="czternasta">
+<div class="pozycjonowanie">
+<p class="tytuly">14. Tworzenie "galerii zdjęć"  </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;figure&gt; Sekcja obrazka &lt;/figure&gt; </div>
+
+<p class="opisdzialu">
+Naucz się wstawiać podpisy do obrazków by twoja galeria zdjęć na stronie wyglądała profesjonalnie.
+</p>
+
+<a class="guzikdolekcji" href="14.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+<a id="zaaw">
+<div class="kreska" id="zaawlewa"></div>
+<div class="kreska" id="zaawprawa"></div>
+<p id="poziomzaaw" > Poziom zaawansowany </p>
+</a>
+<div class="lekcyjne" id="pietnasta">
+<div class="pozycjonowanie">
+<p class="tytuly" style="font-size: 150%;">15. Pozycjonowanie relatywne, absolutne, statyczne oraz kontekstowe  </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> position: absolute; </div>
+
+<p class="opisdzialu">
+Dzięki zastosowaniu pozycjonowania na swojej stronie będziesz miał całkowity wpływ na to gdzie są położone twoje elementy na stronie.
+</p>
+
+<a class="guzikdolekcji" href="15.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="szesnasta">
+<div class="pozycjonowanie">
+<p class="tytuly" >16. Tworzenie menu rozwijanego pionowego lub poziomego </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat">nav ul li:hover&gt; ul {display: block;} </div>
+
+<p class="opisdzialu">
+Zmodyfikuj swoje menu dzięki paru prostym krokom by było bardziej funkcjonalne <br> i przejżyste.
+</p>
+
+<a class="guzikdolekcji" href="16.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="siedemnasta">
+<div class="pozycjonowanie">
+<p class="tytuly" >17. Tworzenie formularzy </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat">&lt;form&gt; Formularz &lt;/form&gt; </div>
+
+<p class="opisdzialu">
+Naucz się tworzyć formularze które sprawią że twoja strona będzie mogła nie tylko prezentować treść lecz również ją pobierać. (W tym kursie poruszana jest tylko kwestia estetyki formularzy).
+</p>
+
+<a class="guzikdolekcji" href="17.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="osiemnasta">
+<div class="pozycjonowanie">
+<p class="tytuly" >18. Rodzaje układów strony i responsywność </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> body{width: 100%;} </div>
+
+<p class="opisdzialu" style="margin-top: -2px;">
+Skoro przyswoiłeś już wszystkie etapy mojego kursu, możesz przejść do moim zdaniem najtrudniejszego etapu tworzenia stron internetowych - responsywności. Do tego pokażę Ci jakie układy elementów możesz stosować na swojej stronie.
+</p>
+
+<a class="guzikdolekcji" href="18.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dziewietnasta">
+<div class="pozycjonowanie">
+<p class="tytuly" >19. Umieszczanie multimediów na stronie </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> &lt;video controls&gt; Filmik &lt;/video&gt;</div>
+
+<p class="opisdzialu">
+Jesteś już na ostatniej prostej do opanowania tworzenia stron. W tym dziale nauczysz się umieszczać wideo oraz muzykę na swoją stronę oraz elementy <br> z innych stron w tak zwanych ramkach płynnych.
+</p>
+
+<a class="guzikdolekcji" href="19.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dwudziesta">
+<div class="pozycjonowanie">
+<p class="tytuly" >20. Dodawanie gradientów </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat">background: linear-gradient(top,black, white); </div>
+
+<p class="opisdzialu">
+Dowiedz się jak zastąpić monotonne, jednokolorowe tło gradientem. Gradientów możesz użyć również jako pattern zamiast dodawania zdjęcia na tło (co sprawi, że twoja strona będzie lżejsza).
+</p>
+
+<a class="guzikdolekcji" href="20.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+<div class="lekcyjne" id="dwudziestapierwsza">
+<div class="pozycjonowanie">
+<p class="tytuly" >21. Tworzenie animacji w CSS </p>
+<div class="bialakreska"> </div>
+
+<div class="bialykwadrat"> @keyframes animacja </div>
+
+<p class="opisdzialu">
+Ostatnim działem w moim kursie są animacje. Dzięki nim twoja strona będzie ciekawsza dla odbiorcy.
+</p>
+
+<a class="guzikdolekcji" href="21.html"><div class="guziklekcja">WIĘCEJ</div></a>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+</div>
+</body>
+
+</html>

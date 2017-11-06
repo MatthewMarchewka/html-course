@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lekcja 4 </title>
+<meta charset="UTF-8"/>
+<meta name="author" content="Marchewka"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+
+#srodek{
+position: absolute;
+top: 315px;
+width: 960px;
+height: 3501px;
+background-color: #fffafa;
+}
+
+
+footer{
+position: absolute;
+width: 960px;
+height: 199px;
+top: 3282px;
+background-color: #e2c3dc;
+}
+
+#ministopka{
+background-color: #ecadcc;
+position: absolute;
+width: 960px;
+height: 20px;
+top: 3481px;}
+
+
+
+.definicje{
+left: 130px;
+width: 700px;
+text-align: left;
+position: absolute;
+color: #8a6382;
+font-size: 25px;}
+
+
+
+
+
+#pierwsza{
+top: 150px;
+}
+
+#druga{
+top: 580px;}
+
+.przyklady{
+left: 130px;
+position: absolute;
+text-align: left;
+color: #8a6382;
+height: 63px;
+width: 620px;
+font-size: 160%;
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+border-radius: 15px;
+padding-top: 30px;
+padding-left: 80px;
+}
+
+#jeden{
+height: 93px;
+padding-top:0px;
+top: 500px;}
+
+#dwa{
+height: 93px;
+padding-top:0px;
+top: 680px;}
+
+#cztery{
+height: 93px;
+padding-top: 0px;
+top: 1140px;}
+
+#trzecia{
+top: 760px;}
+
+#trzy{
+top: 820px;}
+
+#listauporzadkowana{
+position: absolute;
+top: 900px;
+left: 130px;
+color: #8a6382;
+font-size: 25px;}
+
+#listanieuporzadkowana{
+position: absolute;
+top: 900px;
+right: 130px;
+color: #8a6382;
+font-size: 25px;
+}
+
+#uporzadkow{
+top: 940px;
+font-size: 20px;
+left: 170px;
+color: black;
+position: absolute;}
+
+#nieuporzadkow{
+top: 940px;
+font-size: 20px;
+right: 210px;
+color: black;
+position: absolute;}
+
+#czwarta{
+top: 1040px;}
+
+#piata{
+top: 1220px;}
+#piec{
+top: 1310px;}
+
+#listadefinicji{
+position: absolute;
+left: 130px;
+top: 1399px;
+color: #8a6382;
+font-size: 25px;
+text-align: left;
+}
+
+dl{
+position: absolute;
+left: 130px;
+font-size: 20px;
+top: 1450px;}
+
+#szosta{
+top: 1500px;}
+
+#szesc{
+height: 310px;
+padding-top: 0px;
+top: 1670px;}
+
+#siedem{
+height: 160px;
+padding-top: 0px;
+top: 2490px;}
+
+#siodma{
+top: 1960px;}
+
+#zagniezdzona{
+position: absolute;
+top: 2029px;
+font-size: 20px;
+left: 130px;}
+
+#osma{
+top: 2170px;}
+#kwadraty{
+top: 2630px;}
+#kwadracik{
+position: absolute;
+left: 130px;
+top: 2670px;
+font-size: 20px;}
+
+#dziewiata{
+top: 2750px;}
+
+#osiem{height: 160px;
+padding-top: 0px;
+top: 2870px;}
+
+#zdjecia{
+top: 3030px;}
+
+#zdjeciowe{
+position: absolute;
+top: 3070px;
+left: 130px;}
+
+#nastepnalekcja2{
+position: absolute;
+height: 38px;
+width: 280px;
+text-align: center;
+color: white;
+right: 10px;
+top: 3200px;
+border-radius: 15px;
+padding-top: 5px;
+font-size: 140%;
+background-color: #ba93b2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="pojemnik">
+<header>
+<img src="../zdjecia/BJUTI.png" alt="logo"/>
+<p>Designed by: Mateusz Marchewka </p>
+</header>
+<nav>
+<ul>
+<li id="onas"> <a class="menuchy" href="../index.html"> Start </a> </li>
+<li id="cennik"> <a class="menuchy" href="kurs.html"><strong> Kurs </strong></a> </li>
+<li id="galeria"> <a class="menuchy" href="galeria.html"> Słownik </a> </li>
+<li id="kontakt"> <a class="menuchy" href="kontakt.html"> Zadania </a> </li>
+</ul>
+</nav>
+<div id="srodek">
+<div class="pozycjonowanie">
+<a href="kurs.html">
+<div id="innetematy">
+Wróć do spisu tematów
+</div>
+</a>
+<a href="5.html">
+<div id="nastepnalekcja">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+<a href="3.html">
+<div id="poprzednialekcja">
+&lt;&lt;- Poprzednia lekcja
+</div>
+</a>
+
+<h1 id="tytul">4.Listy uporządkowane, nieuporządkowane, definicji i zagnieżdżone </h1>
+
+<p id="pierwsza" class="definicje">
+Często potrzebujemy umieścić na stronie internetowej listę. Zamiast układać pod sobą akapity z tekstem, lepiej użyć do tego specjalnych znaczników które znacząco ułatwią tę czynność. Tworzenie listy polega na umieszczeniu znacznika li w znaczniku listy Do tego możemy dowolnie modyfikować punktory naszej listy za pomocą arkuszy stylów CSS które poznasz w następnym poziomie kursu.<br>
+Pierwszy znacznik to: <strong> &lt;ul&gt; </strong>. ten znacznik jest kontenerowy<br> i określa ramy listy nieuporządkowanej (jej punktory to kółka). Pomiędzy tym znacznikiem będą znajdować się elementy listy.
+</p>
+
+<div id="jeden" class="przyklady">
+&lt;ul&gt; <br>
+Elementy listy <br>
+&lt;/ul&gt;
+</div>
+
+<p id="druga" class="definicje">
+Listę uporządkowaną (punktory to cyferki) tworzymy umieszczając w dokumencie znacznik <strong> &lt;ol&gt; </strong>.
+</p>
+
+<div id="dwa" class="przyklady">
+&lt;ol&gt; <br>
+Elementy listy <br>
+&lt;/ol&gt;
+</div>
+
+<p id="trzecia" class="definicje">
+Elementy listy dodajemy za pomocą znacznika <strong> &lt;li&gt; </strong>.
+</p>
+
+<div id="trzy" class="przyklady">
+&lt;li&gt;element listy&lt;/li&gt;
+</div>
+
+<p id="listauporzadkowana">
+Lista uporządkowana
+</p>
+<p id="listanieuporzadkowana">
+Lista nieuporządkowana
+</p>
+<ol id="uporzadkow">
+<li> element </li>
+<li> element </li>
+<li> element </li>
+</ol>
+
+<ul id="nieuporzadkow">
+<li> element </li>
+<li> element </li>
+<li> element </li>
+</ul>
+<p id="czwarta" class="definicje">
+Istnieje również jeden typ: lista definicji. Jej ramy zaznaczamy przez znacznik: <strong> &lt;dl&gt; </strong>.
+</p>
+<div id="cztery" class="przyklady">
+&lt;dl&gt; <br>
+elementy listy definicji <br>
+&lt;/dl&gt;
+</div>
+<p id="piata" class="definicje">
+W takiej liście słowo definiowane oznaczamy znacznikiem <strong> &lt;dt&gt; </strong> a jego definicje w znaczniku <strong> &lt;dd&gt; </strong>. </p>
+<div id="piec" class="przyklady">
+&lt;dt&gt; Definiowane słowo &lt;/dt&gt; <br>
+&lt;dd&gt; Definicja słowa &lt;/dd&gt;
+</div>
+
+<p id="listadefinicji">
+Lista definicji
+</p>
+
+<dl>
+<dt>Słowo definiowane </dt>
+<dd>Definicja słowa </dd>
+</dl>
+<p id="szosta" class="definicje">
+Jest również możliwość zrobienia<strong> listy zagnieżdżonej</strong>. Lista zagnieżdżona to lista w liście. Żeby stworzyć taką listę musimy wkleić listę przed zamknięciem jednego z elementu listy nadrzędnej --&gt; <strong> &lt;/li&gt;</strong>
+</p>
+
+<div id="szesc" class="przyklady">
+&lt;ol&gt;  <br>
+<span class="wciecie"> &lt;li&gt; 1 element &lt;/li&gt; <br></span>
+<span class="wciecie"> <strong>&lt;li&gt; 2 element</strong>  <br></span>
+<span class="wciecie2" style="color: black;"> &lt;ul&gt; <br></span>
+<span class="wciecie2" style="color: black;">&lt;li&gt; 1 element 2 lista &lt;/li&gt; <br></span>
+<span class="wciecie2" style="color: black;">&lt;li&gt; 2 element 2 lista &lt;/li&gt; <br></span>
+<span class="wciecie2" style="color: black;">&lt;/ul&gt; <br></span>
+<span class="wciecie"> <strong>&lt;/li&gt;</strong> <br></span>
+<span class="wciecie"> &lt;li&gt; 3 element &lt;/li&gt; <br></span>
+&lt;/ol&gt; 
+</div>
+
+<p id="siodma" class="definicje">
+Gdybyśmy wkleili taki kod w nasz dokument html, wyglądałby tak:
+</p>
+
+<ol id="zagniezdzona">
+	<li>1 element </li>
+	<li>2 element
+		<ul>
+		<li> 1 element 2 lista </li>
+		<li> 2 element 2 lista </li>
+		</ul>
+	</li>
+	<li>3 element </li>
+</ol>
+
+<p id="osma" class="definicje">
+W tej części lekcji chciałbym ci pokazać jak można zmodyfikować punktory listy. <strong> Uwaga! będę wykorzystywał właściwości CSS w arkuszu stylów który będę wyjaśniał na następnym poziomie </strong> więc jeśli wydaje ci się że możesz nie zrozumieć przejdź dalej a potem wróć do tej lekcji.<br><br>
+Jeśli chcesz zmienić punktory listy możesz użyć właściwości <strong> list-style-type </strong> którego będziemy umieszać w atrybucie style (sprawdź przykład). Dokładny spis punktorów znajdziesz <a href="https://www.w3schools.com/cssref/pr_list-style-type.asp"> tutaj </a>
+</p>
+
+<div id="siedem" class="przyklady">
+&lt;ul style="list-style-type: square;"&gt; <br>
+&lt;li&gt;1 element&lt;/li&gt; <br>
+&lt;li&gt;2 element&lt;/li&gt; <br>
+&lt;li&gt;3 element&lt;/li&gt; <br>
+&lt;/ul&gt;
+</div>
+<p class="definicje" id="kwadraty"> Tak będzie wyglądała nasza lista: </p>
+<ul style="list-style-type: square;" id="kwadracik"> 
+<li>1 element</li> 
+<li>2 element</li> 
+<li>3 element</li> 
+</ul>
+
+<p id="dziewiata" class="definicje">
+Możesz również ustawić jako punktor twojej listy dowolne zdjęcie, dzięki właściwości <strong> list-style-image </strong> gdzie * to nazwa zdjęcia.
+</p>
+<div id="osiem" class="przyklady">
+&lt;ul style="list-style-image: url(*.jpg);"&gt; <br>
+&lt;li&gt;1 element&lt;/li&gt; <br>
+&lt;li&gt;2 element&lt;/li&gt; <br>
+&lt;li&gt;3 element&lt;/li&gt; <br>
+&lt;/ul&gt;
+</div>
+
+<p class="definicje" id="zdjecia"> Tak będzie wyglądała nasza lista: </p>
+
+<ul id="zdjeciowe" style="list-style-image: url(zdjecia1/zdj.png);"> 
+<li>1 element</li> 
+<li>2 element</li> 
+<li>3 element</li> 
+</ul>
+
+<a href="5.html">
+<div id="nastepnalekcja2">
+Następna lekcja -&gt;&gt;
+</div>
+</a>
+
+
+
+
+
+
+<footer>
+<div class="pozycjonowanie">
+	<div id="krotkiopis">
+		Programowanie jeszcze nigdy nie <br> było takie proste! Przekonaj się o <br> tym wybierając moją propozycję <br> kursu. W sposób czytelny <br> i zrozumiały. Przedstawiam tutaj <br> niezbędne informacje dzięki <br> którym będziesz mógł stworzyć <br> swoją własną stronę <br> internetową.
+	</div>
+	<div id="danekontaktowe">
+	<div class="pozycjonowanie">
+		<p style="margin-top: 0px;"> Nazywam się Mateusz Marchewka i jestem uczniem drugiej klasy w Zespole Szkół Łączności w Krakowie. Kształce się na kierunku - technik informatyk. Tworzeniem stron  zająłem się we wrześniu 2016 roku.  </p>
+		
+	</div>
+	</div>
+	
+	<div id="logonapis">
+	<div class="pozycjonowanie">
+		<img src="../zdjecia/BJUTI2.png" alt="logo" style="width: 100px; height:75px; left: 60px; margin-top: 8px;"/>
+		<p> Projekt zaliczeniowy. <br>Wykonał: Mateusz Marchewka </p>
+		
+	</div>
+	</div>
+	
+</div>
+</footer>
+<div id="ministopka">
+Strona utworzona przez: Mateusza Marchewkę
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</body>
+
+</html>
